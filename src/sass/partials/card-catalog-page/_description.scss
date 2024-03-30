@@ -1,0 +1,142 @@
+.description {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $light;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    // gap: 10px;
+  }
+
+  &__content {
+    width: 850px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    width: 850px;
+    flex-shrink: 0;
+  }
+}
+.description-form {
+  &__bug {
+    width: 374px;
+    height: 560px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  &__title {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 30px;
+    width: 286px;
+  }
+
+  &__input {
+    display: flex;
+    padding-left: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid $grey-light;
+    background: #fff;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 350px;
+  }
+
+  &__input::placeholder {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    height: 30px;
+  }
+
+  &__input-review {
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid $grey-light;
+    background: #fff;
+    padding-bottom: 110px;
+  }
+
+  &__text {
+    color: $grey;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  &__item {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__svg {
+    width: 33.379px;
+    height: 31.889px;
+    fill: $grey-light;
+  }
+
+  &__btn {
+    display: flex;
+    width: 350px;
+    height: 50px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: $yellow;
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: #feb74b;
+      transition: 250ms;
+    }
+  }
+}
