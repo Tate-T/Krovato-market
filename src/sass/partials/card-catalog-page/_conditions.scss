@@ -1,0 +1,67 @@
+.conditions {
+  background-color: $light;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__icon-bc {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__svg {
+    width: 33.794px;
+    height: 40px;
+    fill: $yellow;
+  }
+
+  &__subtitle {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  &__text {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1, 46;
+    width: 200px;
+  }
+
+  &__more {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin-top: 11px;
+  }
+
+  &__more span {
+    color: $yellow;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.46;
+  }
+
+  &__arrow {
+    width: 12px;
+    height: 12px;
+    fill: $yellow;
+  }
+}
