@@ -1,0 +1,17 @@
+.filter {
+
+    &__list > .filter__item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__catalog > .filter__item   {
+        width: 300px;
+    }
+
+}

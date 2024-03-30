@@ -1,0 +1,54 @@
+.pay-advantages {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__list { 
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__item { 
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &__text {
+        color: $dark;
+        font-family: "Proxima Nova";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        /* 130.769% */
+    }
+
+    &__subtext {
+        color: $dark;
+        font-family: "Proxima Nova";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 1170px;
+        margin-top: 10px;
+    }
+
+    &__box {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 80px;
+        height: 53px;
+        fill: white;
+    }
+
+}

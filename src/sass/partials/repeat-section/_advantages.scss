@@ -1,0 +1,33 @@
+.advantages {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.advantages__list { 
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__item { 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    // width: 300px;
+}
+
+.advantages__icon { 
+    width: 80px;
+    height: 80px;
+}
+
+.advantages__text { 
+    color: #2B2929;
+font-family: "Proxima Nova";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 140% */
+max-width: 200px;
+}

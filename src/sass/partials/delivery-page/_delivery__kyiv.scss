@@ -1,0 +1,90 @@
+.delivery-kyiv {
+  background-color: $light;
+  padding-bottom: 70px;
+
+
+&__bc-container {
+    background-image: url(../../../images/delivery-page/kyiv-ellipse@2x.webp), url(../../../images/delivery-page/kyiv-map@2x.webp);
+    background-size: 420px, contain;
+    background-position: 550px 315px, right;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
+  &__container {
+    width: 520px;
+  }
+  &__title {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__svg-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid $yellow;
+    border-radius: 50%;
+    min-width: 70px;
+    height: 70px;
+  }
+
+  &__svg {
+    fill: $yellow;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__lead {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.307;
+  }
+
+  &__sub-desc {
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}

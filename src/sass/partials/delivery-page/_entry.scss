@@ -1,0 +1,149 @@
+.entry {
+  padding-bottom: 70px;
+  &__title {
+    color: $dark;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  &__header {
+    display: flex;
+    width: 1070px;
+    padding: 15px 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: $grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+
+  &__subject {
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    width: 500px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  &__heading {
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    width: 106px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  &__caption {
+    color: #fff;
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__text {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    width: 420px;
+    white-space: nowrap;
+  }
+
+  &__worth {
+    color: $grey;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    white-space: nowrap;
+    width: 106px;
+  }
+
+  &__cost {
+    color: $grey;
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    width: 1070px;
+    padding: 15px 10px;
+    border-radius: 8px;
+    gap: 10px;
+
+    &:nth-child(2n + 1) {
+      background-color: $light;
+    }
+  }
+
+  &__dots1 {
+    width: 70px;
+    border: 1px dotted black;
+  }
+  &__dots2 {
+    border: 1px dotted black;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__dots2-1,
+  &__dots2-2,
+  &__dots2-3 {
+    width: 312px;
+  }
+
+  &__dots2-4,
+  &__dots2-5 {
+    width: 122px;
+  }
+
+  &__dots2-6,
+  &__dots2-7,
+  &__dots2-8,
+  &__dots2-9 {
+    width: 367px;
+  }
+
+  &__slogan {
+    color: $grey;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-top: 40px;
+  }
+}

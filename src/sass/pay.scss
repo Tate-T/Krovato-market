@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/Proxima\ Nova\ Regular.ttf') format('woff2')
+}
+
+@import './utils/mixin';
+@import './utils/placeholder';
+@import './utils/variable';
+@import './common/reset';
+@import './common/base';
+@import './partials/repeat-section/header';
+@import './partials/pay-page/hero';
+@import './partials/pay-page/pay__kyiv';
+@import './partials/pay-page/advantages';
+@import './partials/repeat-section/questions'; 
+@import './partials/repeat-section/advantages';
+@import './partials/repeat-section/footer';

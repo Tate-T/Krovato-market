@@ -1,0 +1,227 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: $dark;
+
+  &__main-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-box {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 40px;
+  }
+
+  &__logo-sofa {
+    height: 50px;
+    width: 74px;
+    fill: $yellow;
+  }
+
+  &__logo-text {
+    width: 168px;
+    height: 42px;
+  }
+
+  &__box-join {
+    margin-bottom: 30px;
+  }
+
+  &__text-join {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    margin-bottom: 15px;
+  }
+
+  &__svg {
+    width: 39px;
+    height: 39px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  &__instagram {
+    fill: rgba(175, 36, 209, 1);
+    border: 1px solid rgb(174, 36, 209);
+  }
+
+  &__facebook {
+    fill: rgba(23, 120, 208, 1);
+    border: 1px solid rgb(23, 119, 208);
+    margin-right: 15px;
+  }
+
+  &__box-help {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__svg-bug {
+    background-color: rgba(117, 183, 59, 1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__svg-whatsapp {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__telegram {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  &__text-help {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    margin-bottom: 15px;
+  }
+
+  &__pay-svg {
+    fill: $grey-light;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  &__pay-svg-visa {
+    width: 70px;
+    margin-right: 20px;
+  }
+
+  &__pay-svg-mastercard {
+    width: 89px;
+  }
+
+  &__main-list {
+    display: flex;
+    gap: 83px;
+  }
+
+  &__informations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__customers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    color: $light;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+
+    &:hover {
+      color: $yellow;
+      transition-duration: 200ms;
+    }
+  }
+
+  &__call {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  &__adress {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__schedule {
+    display: flex;
+  }
+
+  &__svg-phone-border,
+  &__adress-svg-border,
+  &__calendar-border {
+    border: 2px solid #b1b1b166;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  &__svg-phone,
+  &__adress-svg,
+  &__calendar {
+    fill: $grey-light;
+    width: 23px;
+    height: 23px;
+  }
+
+  &__number {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  &__call-me {
+    color: $yellow;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__adress-text {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    width: 174px;
+  }
+
+  &__schedule-text {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    width: 174px;
+  }
+
+  &__copyright {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: solid rgba(61, 61, 61, 1);
+  }
+
+  &__copyright-text {
+    color: $grey-light;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.46;
+  }
+}

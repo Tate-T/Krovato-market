@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/Proxima\ Nova\ Regular.ttf') format('woff2')
+}
+
+@import './utils/mixin';
+@import './utils/placeholder';
+@import './utils/variable';
+@import './common/reset';
+@import './common/base';
+@import './partials/repeat-section/header';
+@import './partials/about-us-page/hero';
+@import './partials/about-us-page/advantages';
+@import './partials/repeat-section/last__reviews';
+@import './partials/about-us-page/showroom';
+@import './partials/repeat-section/advantages'; 
+@import './partials/repeat-section/footer' 

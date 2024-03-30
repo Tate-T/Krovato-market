@@ -1,0 +1,68 @@
+.pay-kyiv { 
+    background-color: #F8F8F8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.pay-kyiv__title { 
+    color: $dark;
+text-align: center;
+font-family: "Proxima Nova";
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 120% */
+}
+
+.pay-kyiv__list { 
+    margin-right: 40px;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pay-kyiv__item { 
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pay-kyiv__icon-box { 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-kyiv__icon { 
+    width: 50px;
+    height: 48px;
+    fill: white;
+}
+
+.pay-kyiv__text { 
+    color: $dark;
+text-align: center;
+font-family: "Proxima Nova";
+font-size: 26px;
+font-style: normal;
+font-weight: 600;
+line-height: 34px; /* 130.769% */
+margin-top: 20px;
+}
+
+.pay-kyiv__subtext { 
+    color: $dark;
+text-align: center;
+font-family: "Proxima Nova";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+margin-top: 20px;
+}

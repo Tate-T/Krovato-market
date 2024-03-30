@@ -1,0 +1,77 @@
+.header {
+    &__logo {
+        width: 250px;
+        height: 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding-bottom: 43px;
+        padding-top: 40px;
+    }
+
+    &__list3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    &__list3 > li:nth-child(1) > a {
+        display: flex; 
+        align-items: center; 
+        text-decoration: none; 
+        margin-right: 20px; 
+    }
+
+    &__list3 > li:nth-child(1) > a > svg {
+        padding-right: 5px;
+
+    }
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+.icon__svg-whatsapp {
+    width: 18px;
+    height: 18px;
+}
+
+.bug-icon {
+    background-color: #75B73B;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.obrane__svg,
+.korzina__svg {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #FFBC57; 
+    border-radius: 50%; 
+    padding: 10px; 
+    fill: #535353;
+}

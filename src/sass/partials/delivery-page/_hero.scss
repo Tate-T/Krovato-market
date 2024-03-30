@@ -1,0 +1,83 @@
+.hero {
+  background-color: $light;
+  padding-top: 5px;
+  padding-bottom: 70px;
+
+  &__nav {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__nav-link {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+
+    &:hover {
+      color: $yellow;
+    }
+    &:focus {
+      color: $yellow;
+    }
+  }
+
+  &__nav-svg-box {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+  }
+
+  &__nav-svg {
+    fill: $grey;
+    height: 9px;
+  }
+
+  &__nav-active-link {
+    color: $yellow;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+  }
+
+  &__container {
+    background-color: #fff;
+    background-image: url(../../../images/delivery-page/hero-bg@2x.webp);
+    background-size: contain;
+    padding: 88px 50px;
+    border-radius: 8px;
+  }
+
+  &__text-box {
+    width: 450px;
+  }
+
+  &__title {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.307;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}
