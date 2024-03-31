@@ -1,6 +1,10 @@
 .advantages {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 70px;
+    }
 }
 
 .advantages__list { 
@@ -26,7 +30,7 @@
     max-width: 200px;
     width: 100%;
 
-    @media screen and (min-with: 1200px) {
+    @media screen and (min-width: 1200px) {
         flex-direction: row;
         max-width: 300px;
         gap: 20px;
@@ -49,6 +53,6 @@ max-width: 200px;
 text-align: center;
 
 @media screen and (min-width: 1200px) {
-    text-align: right;
+    text-align: left;
 }
 }
