@@ -1,0 +1,29 @@
+.contact {
+
+
+
+    &__list {
+        display: flex;
+        gap: 50px;
+        justify-content: space-around;
+        padding-bottom: 76px;
+    }
+
+    &__item-map {
+        display: flex;
+    }
+
+    &__map {
+        width: 660px;
+        height: 650px;
+        flex-shrink: 0;
+    }
+
+    &__img {
+        width: 630px;
+        height: 650px;
+        flex-shrink: 0;
+    }
+
+
+}
