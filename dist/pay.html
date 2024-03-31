@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Оплата</title>
+    
+    
+    <script type="module" crossorigin src="/krovato-market/assets/index-3cfb730f.js"></script>
+    <link rel="stylesheet" href="/krovato-market/assets/pay-21babd02.css">
+  </head>
+  <body>
+    <header class="header">
+    <div class="container">
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="../../about-us.html" class="header__link">Про нас</a>
+                    <a href="../../pay.html" class="header__link">Оплата</a>
+                    <a href="../../delivery.html" class="header__link">Доставка та збірка</a>
+                    <a href="../../reviews.html" class="header__link">Відгуки</a>
+                    <a href="../../blog-page.html" class="header__link">Блог</a>
+                    <a href="../../contacts.html" class="header__link">Контакти</a>
+                </li>
+                <li class="header__item">
+                    <p>Допомога і консультація:
+                    <div class="bug-icon">
+                        <svg class="icon__svg-whatsapp">
+                            <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+                        </svg>
+                    </div>
+                    <svg class="icon__svg">
+                        <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                    </svg><svg class="icon__svg">
+                        <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                    </svg></p>
+                </li>
+            </ul>
+            <ul class="header__list2">
+                <li class="header__item">
+                    <a href="../../index.html" class="header__link">
+                        <picture>
+                            <source
+                                srcset="../../images/main-page/logo-header@1x.webp 1x, ../../images/main-page/logo-header@2x.webp 2x"
+                                media="(min-width: 1200px)">
+                            <!-- <source srcset=""> -->
+                            <img class="header__logo" src="../../images/main-page/logo-header@1x.webp" alt="Krovato">
+                        </picture>
+                    </a>
+                    <button>
+                        <svg class="catalog__svg">
+                            <use href="../../images/symbol-defs.svg#icon-menu-catalog"></use>
+                        </svg>
+                        Каталог
+                    </button>
+
+                    <form>
+                        <input type="text" id="name" placeholder="Пошук товарів">
+                    </form>
+                    <svg class="search__svg">
+                        <use href="../../images/symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </li>
+
+                <li class="header__item">
+                    <div class="icon-container">
+                        <svg class="icon__svg">
+                            <use href="../../images/symbol-defs.svg#icon-telephone"></use>
+                        </svg>
+                        <div>
+                            <p class="header__paragraph">Щодня з 9:00 до 18:00</p>
+                            <h4 class="header__number">067 929-45-45</h4>
+                        </div>
+                        <svg class="icon__svg">
+                            <use href="../../images/symbol-defs.svg#icon-bottom"></use>
+                        </svg>
+                    </div>
+                    <svg class="obrane__svg">
+                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                    </svg>
+                    <svg class="korzina__svg">
+                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                    </svg>
+
+                </li>
+            </ul>
+            <ul class="header__list3">
+                <li class="header__item">
+                    <a href="#">
+                        <svg class="icon-star">
+                            <use href="../../images/symbol-defs.svg#icon-star"></use>
+                        </svg>
+                        <h4>Акції</h4>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-sale">
+                            <use href="../../images/symbol-defs.svg#icon-sale"></use>
+                        </svg>
+                        <h4>Розпродаж</h4>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-credit">
+                            <use href="../../images/symbol-defs.svg#icon-credit"></use>
+                        </svg>
+                        <h4>Купити в кредит</h4>
+                    </a>
+                </li>                
+                <li class="header__item">
+                    <a href="#" class="header__link">Дитяча</a>
+                    <a href="#" class="header__link">Кухня</a>
+                    <a href="#" class="header__link">Ванна</a>
+                    <a href="#" class="header__link">Спальня</a>
+                    <a href="#" class="header__link">Передпокій</a>
+                    <a href="#" class="header__link">Вітальня</a>
+                    <a href="#" class="header__link">Офіс</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <section class="pay">
+  <div class="container">
+    <nav class="pay__navigation">
+      <a class="pay__main-link" href="#">Головна</a>
+      <svg class="pay__icon">
+        <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+      </svg>
+      <a class="pay__pay-link" href="">Оплата</a>
+    </nav>
+
+    <div class="pay__section">
+      <h2 class="pay__title">Оплата товару</h2>
+      <p class="pay__text">
+        Клієнти Krovato можуть в один клік провести оплату товару на сайті.
+      </p>
+      <p class="pay__subtext">
+        Оплата готівкою при отриманні товару, за безготівковим розрахунком,
+        оплата замовлення онлайн банківською картою Visa або MasterCard або
+        кредит - у нас можливо все!
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section class="pay-kyiv">
+  <div class="container">
+    <h2 class="pay-kyiv__title">Оплата по Києву:</h2>
+    <ul class="pay-kyiv__list">
+      <li class="pay-kyiv__item">
+        <div class="pay-kyiv__icon-box">
+          <svg class="pay-kyiv__icon">
+            <use href="../../images/symbol-defs.svg#icon-terminal"></use>
+          </svg>
+        </div>
+
+        <p class="pay-kyiv__text">Через термінал</p>
+        <p class="pay-kyiv__subtext">
+          Ви можете оплатити Ваше замовлення карткою на нашій виставці за
+          адресою: пров. Ізяславський 52, поверх 2
+        </p>
+      </li>
+      <li class="pay-kyiv__item">
+        <div class="pay-kyiv__icon-box">
+          <svg class="pay-kyiv__icon">
+            <use href="../../images/symbol-defs.svg#icon-two-cards"></use>
+          </svg>
+        </div>
+
+        <p class="pay-kyiv__text">На карту ПриватБанку</p>
+        <p class="pay-kyiv__subtext">
+          Ви можете це зробити через термінал самообслуговування, або Приват24.
+        </p>
+      </li>
+      <li class="pay-kyiv__item">
+        <div class="pay-kyiv__icon-box"> 
+          <svg class="pay-kyiv__icon">
+            <use href="../../images/symbol-defs.svg#icon-bezgotivkova"></use>
+        </svg>
+        </div>
+        
+        <p class="pay-kyiv__text">Безготівкова</p>
+        <p class="pay-kyiv__subtext">
+          Оплата проводиться в касі відділення будь-якого банку або з
+          розрахункового рахунку Вашої фірми.
+        </p>
+      </li>
+      <li class="pay-kyiv__item">
+        <div class="pay-kyiv__icon-box">
+          <svg class="pay-kyiv__icon">
+            <use href="../../images/symbol-defs.svg#icon-pay-money"></use>
+          </svg>
+        </div>
+        
+        <p class="pay-kyiv__text">Післяплатою</p>
+        <p class="pay-kyiv__subtext">
+          Оплата готівкою безпосередньо при отриманні і перевірці товару від
+          кур'єра.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="pay-advantages">
+  <div class="container">
+    <ul class="pay-advantages__list">
+      <li class="pay-advantages__item">
+        <div class="pay-advantages__box">
+          <svg class="pay-advantages__icon">
+          <use href="../../images/symbol-defs.svg#icon-small-ukraine"></use>
+        </svg>
+        </div>
+        
+        <div>
+        <h4 class="pay-advantages__text">Оплата по Україні</h4>
+        <p class="pay-advantages__subtext">
+          Доставка по Україні здійснюється Новою Поштою. Ви можете оплатити Ваше
+          замовлення при отриманні післяплатою. Вартість післяплати 35грн +1-2%
+          від суми. Також Ви можете оплатити Ваше замовлення на карту
+          ПриватБанку, перед відправкою замовлення Вам.
+        </p>
+      </div>
+      </li>
+      <li class="pay-advantages__item">
+        <div class="pay-advantages__box"> 
+          <svg class="pay-advantages__icon">
+          <use href="../../images/symbol-defs.svg#icon-kredyt-rozsrochka-circle"></use>
+        </svg>
+        </div>
+        
+        <div>
+        <h4 class="pay-advantages__text">Кредит\Розстрочка</h4>
+        <p class="pay-advantages__subtext">
+          На нашій виставці, ви можете оплатити Ваше замовлення за допомогою
+          сервісів ПриватБанку "Миттєва Розстрочка" та "Оплата частинами", з
+          мінімальними відсотками.
+        </p>
+      </div>
+      </li>
+      <li class="pay-advantages__item">
+        <div class="pay-advantages__box">
+            <svg class="pay-advantages__icon">
+          <use href="../../images/symbol-defs.svg#icon-peredplata-check"></use>
+        </svg>
+        </div>
+
+        <div>
+        <h4 class="pay-advantages__text">Передплата</h4>
+        <p class="pay-advantages__subtext">
+          У зв'язку з частими випадками замовлень "клієнтами", які не збираються
+          забирати їх керівництвом, було прийнято рішення про введення,
+          мінімальної передоплати 20% (на стандартні замовлення). Залишок суми
+          (80%) Ви оплачуєте при отриманні за фактом складання.
+          <br> На нестандартні
+          та великі замовлення передоплата 50%. На нестандартні матраци
+          передплата 100%.
+        </p>
+      </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="questions">
+  <div class="container">
+    <h2 class="questions__title">У вас все ще залишилися питання?</h2>
+    <ul class="questions__list">
+      <li class="questions__item">
+        <input  class="questions__input" type="checkbox" name="questions__input-name" id="cb1"/>
+        <label class="questions__label" for="cb1">
+            <svg class="questions__icon">
+                <use href="../../images/symbol-defs.svg#icon-question"></use>
+            </svg>
+          <p class="questions__text">Як повернути або обміняти замовлення?</p>
+        </label>
+        <div class="questions__paragraph">
+            <p class="questions__subtext">Ми гарантуємо повернення або обмін вашого замовлення протягом 14 днів з моменту отримання товару. Зверніть увагу, що меблі повинні мати належний товарний вигляд та бути в оригінальній упаковці для здійснення обміну або повернення. Для подальших кроків, будь ласка, зв'яжіться з нашим відділом обслуговування клієнтів.
+            </p>
+        </div>
+      </li>
+      <li class="questions__item">
+        <input checked class="questions__input" type="checkbox" name="questions__input-name" id="cb2" />
+        <label class="questions__label" for="cb2">
+            <svg class="questions__icon">
+                <use href="../../images/symbol-defs.svg#icon-question"></use>
+            </svg>
+          <p class="questions__text">Чи можна повернути/обміняти товар, якщо втрачено чек?</p>
+        </label>
+        <div class="questions__paragraph">
+            <p class="questions__subtext">Ми постараємося Вам допомогти, навіть якщо відповідно до закону України Про захист прав споживачів, при поверненні Покупцем товару або відмові від наданої послуги продавцю подається заява про повернення коштів, до якого обов`язково додається квитанція, товарний або касовий чек, рахунок (розрахунковий документ), який підтверджує покупку товару (надання послуги). У нвс ведеться облік всіх замовлень, тому клієнту достатньо знати номер замовлення, написати заяву і надати дані на кого був оформлений замовлення, що б ми могли ідентифікувати покупку</p>
+        </div>
+      </li>
+      <li class="questions__item">
+        <input  class="questions__input" type="checkbox" name="questions__input-name" id="cb3" />
+        <label class="questions__label" for="cb3">
+            <svg class="questions__icon">
+                <use href="../../images/symbol-defs.svg#icon-question"></use>
+            </svg>
+          <p class="questions__text">В який термін будуть повернуті гроші?</p>
+        </label>
+        <div class="questions__paragraph">
+            <p class="questions__subtext">Гроші за повернення товару будуть повернуті протягом 5-10 робочих днів з моменту отримання і перевірки поверненого товару. Ми робимо все можливе, щоб забезпечити оперативність та швидкість обробки повернень та повернення коштів нашим клієнтам.
+            </p>
+        </div>
+      </li>
+      <li class="questions__item">
+        <input  class="questions__input" type="checkbox" name="questions__input-name" id="cb4" />
+        <label class="questions__label" for="cb4">
+            <svg class="questions__icon">
+                <use href="../../images/symbol-defs.svg#icon-question"></use>
+            </svg>
+          <p class="questions__text">Чи можна повернути кошти на іншу карту?</p>
+        </label>
+        <div class="questions__paragraph">
+            <p class="questions__subtext">Так, можливо повернути кошти на іншу карту. Для цього будь ласка, надайте нам необхідні банківські реквізити карти, на яку ви бажаєте отримати повернення коштів, і ми здійснимо відповідний переказ.
+            </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="advantages">
+    <div class="container">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+            <use href="../../images/symbol-defs.svg#icon-bus"></use>
+          </svg>
+          <p class="advantages__text">Безкоштовна доставка</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+            <use href="../../images/symbol-defs.svg#icon-korobka"></use>
+          </svg>
+          <p class="advantages__text">Безкоштовна збірка</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+            <use href="../../images/symbol-defs.svg#icon-headphone"></use>
+          </svg>
+          <p class="advantages__text">Післягарантійне обслуговування</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+              <use href="../../images/symbol-defs.svg#icon-discounts"></use>
+          </svg>
+          <p class="advantages__text">Знижки клієнтам</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+    <section class="footer">
+    <div class="container">
+        <div class="footer__main-container">
+            <div class="footer__container1">
+                <div class="footer__logo-box">
+                    <svg class="footer__logo-sofa">
+                        <use href="../../images/symbol-defs.svg#icon-logo-sofa"></use>
+                    </svg>
+                    <svg class="footer__logo-text">
+                        <use href="../../images/symbol-defs.svg#icon-footer-logo-text"></use>
+                    </svg>
+                </div>
+                <p class="footer__text-join">Приєднуйтесь:</p>
+                <div class="footer__box-join">
+                    <a href="#" class="footer__icon-link">
+                        <svg class="footer__svg footer__facebook">
+                            <use href="../../images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__icon-link">
+                        <svg class="footer__svg footer__instagram">
+                            <use href="../../images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__text-help">Допомога і консультація:</p>
+                <div class="footer__box-help">
+                    <a href="#" class="footer__icon-link">
+                    <div class="footer__svg-bug">
+                        <svg class="footer__svg-whatsapp">
+                            <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+                        </svg>
+                    </div>
+                    </a>
+                    <a href="#" class="footer__icon-link">
+                    <svg class="footer__svg footer__telegram">
+                        <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                    </a>
+                    <a href="#" class="footer__icon-link">
+                    <svg class="footer__svg footer__viber">
+                        <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                    </svg>
+                    </a>
+                </div>
+                <div class="footer__box-pay">
+                    <a href="#" class="footer__icon-link">
+                    <svg class="footer__pay-svg footer__pay-svg-visa">
+                        <use href="../../images/symbol-defs.svg#icon-visa"></use>
+                    </svg>
+                    </a>
+                    <a href="#" class="footer__icon-link">
+                    <svg class="footer__pay-svg footer__pay-svg-mastercard">
+                        <use href="../../images/symbol-defs.svg#icon-mastercard"></use>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer__main-list">
+                <li class="footer__main-item">
+                    <ul class="footer__informations">
+                        <li class="footer__informations"><a href="#" class="footer__link">Інформація</a></li>
+                        <li class="footer__informations"><a href="#" class="footer__link">Про нас</a></li>
+                        <li class="footer__informations"><a href="#" class="footer__link">Оплата</a></li>
+                        <li class="footer__informations"><a href="#" class="footer__link">Доставка та збірка</a></li>
+                        <li class="footer__informations"><a href="#" class="footer__link">Відгуки</a></li>
+                        <li class="footer__informations"><a href="#" class="footer__link">Блог</a></li>
+                        <li class="footer__informations"><a href="#" class="footer__link">Контакти</a></li>
+                        <li class="footer__informations"><a href="#" class="footer__link">Мапа сайту</a></li>
+                    </ul>
+                </li>
+                <li class="footer__main-item">
+                    <ul class="footer__categories">
+                        <li class="footer__categorie"><a href="#" class="footer__link">Категорії</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Ліжка</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Матраци</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">М’які меблі</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Шафи</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Комоди</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Тумби</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Столи</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Стільці</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Меблеві стіни</a></li>
+                        <li class="footer__categorie"><a href="#" class="footer__link">Кухні</a></li>
+                    </ul>
+                </li>
+                <li class="footer__main-item">
+                    <ul class="footer__customers">
+                        <li class="footer__customer"><a href="#" class="footer__link">Клієнтам</a></li>
+                        <li class="footer__customer"><a href="#" class="footer__link">Акції</a></li>
+                        <li class="footer__customer"><a href="#" class="footer__link">Розпродаж</a></li>
+                        <li class="footer__customer"><a href="#" class="footer__link">Купити в кредит</a></li>
+                        <li class="footer__customer"><a href="#" class="footer__link">Обмін і повернення товару</a></li>
+                        <li class="footer__customer"><a href="#" class="footer__link">Часто задавані питання</a></li>
+                        <li class="footer__customer"><a href="#" class="footer__link">Умови покупки</a></li>
+                        <li class="footer__customer"><a href="#" class="footer__link">Політика конфіденційності</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer__box3">
+                <div class="footer__call">
+                    <div class="footer__svg-phone-border">
+                        <svg class="footer__svg-phone">
+                            <use href="../../images/symbol-defs.svg#icon-telephone"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__numbers">
+                        <p class="footer__number">+38 067 929-45-45</p>
+                        <p class="footer__number"> +38 050 133-45-45</p>
+                        <p class="footer__number"> +38 093 170-75-45</p>
+                        <p class="footer__call-me">Передзвоніть мені</p>
+                    </div>
+                </div>
+                <div class="footer__adress">
+                    <div class="footer__adress-svg-border">
+                        <svg class="footer__adress-svg">
+                            <use href="../../images/symbol-defs.svg#icon-adres"></use>
+                        </svg>
+                    </div>
+                    <p class="footer__adress-text">м. Київ, провулок Ізяславський 52, поверх 2</p>
+                </div>
+                <div class="footer__schedule">
+                    <div class="footer__calendar-border">
+                        <svg class="footer__calendar">
+                            <use href="../../images/symbol-defs.svg#icon-calendar"></use>
+                        </svg>
+                    </div>
+                    <p class="footer__schedule-text">Працюємо щодня з 9:00 до 18:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p class="footer__copyright-text">© KROVATO - Технології сну - 2022. Всі права захищені.</p>
+    </div>
+</section>
+  </body>
+</html>
