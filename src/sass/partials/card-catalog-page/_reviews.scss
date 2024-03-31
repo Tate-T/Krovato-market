@@ -4,15 +4,63 @@
 
 .reviews {
   background-color: #fff;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 30px;
   border-radius: 8px;
-  width: 850px;
+  width: 790px;
+
+  &__line-yellow {
+    width: 720px;
+    height: 2px;
+    background-color: $yellow;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__line-grey {
+    width: 790px;
+    height: 3px;
+    background-color: #f8f8f8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__button-bug {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    }
+
+  &__button {
+    display: flex;
+    height: 50px;
+    padding: 8px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: $yellow;
+  }
+
+  &__button-svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+  }
+
+  &__button span {
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+  }
 }
 
 .reviews-header {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
   &__title {
     color: $dark;
     font-family: "Proxima Nova";
@@ -64,6 +112,606 @@
   }
 
   &__otsinka {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+}
+.review1 {
+  &__header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__icon-border {
+    width: 50px;
+    height: 50px;
+    border: solid $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__user {
+    width: 21.429px;
+    height: 21.429px;
+    flex-shrink: 0;
+    fill: $grey;
+  }
+
+  &__name {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    display: flex;
+    width: 476px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__date {
+    color: $grey;
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__star-svg {
+    width: 20.015px;
+    height: 19.082px;
+    fill: $yellow;
+  }
+
+  &__text {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__button-svg {
+    width: 20.011px;
+    height: 20.01px;
+    flex-shrink: 0;
+    fill: $yellow;
+  }
+
+  &__button span {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+}
+
+.answer1 {
+  width: 720px;
+  margin-left: auto;
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  &__icon-border {
+    width: 50px;
+    height: 50px;
+    border: solid $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__user {
+    width: 21.429px;
+    height: 21.429px;
+    flex-shrink: 0;
+    fill: $grey;
+  }
+
+  &__name {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    display: flex;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 24px;
+    fill: $yellow;
+  }
+
+  &__name-answer {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+  }
+
+  &__date {
+    color: $grey;
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__star-svg {
+    width: 20.015px;
+    height: 19.082px;
+    fill: $yellow;
+  }
+
+  &__text {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+  }
+}
+
+.answer2 {
+  width: 720px;
+  margin-left: auto;
+  margin-top: 30px;
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  &__icon-border {
+    width: 50px;
+    height: 50px;
+    border: solid $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__user {
+    width: 36px;
+    height: 20.432px;
+    flex-shrink: 0;
+    fill: $yellow;
+  }
+
+  &__name {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 24px;
+    fill: $yellow;
+  }
+
+  &__name-answer {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+  }
+
+  &__date {
+    color: $grey;
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__text {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+  }
+}
+
+.review2 {
+  margin-bottom: 30px;
+  &__header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__icon-border {
+    width: 50px;
+    height: 50px;
+    border: solid $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__user {
+    width: 21.429px;
+    height: 21.429px;
+    flex-shrink: 0;
+    fill: $grey;
+  }
+
+  &__name {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    display: flex;
+    width: 476px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__date {
+    color: $grey;
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__star-svg {
+    width: 20.015px;
+    height: 19.082px;
+    fill: $yellow;
+  }
+
+  &__text {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__button-svg {
+    width: 20.011px;
+    height: 20.01px;
+    flex-shrink: 0;
+    fill: $yellow;
+  }
+
+  &__button-number-border {
+    width: 20.246px;
+    height: 20.246px;
+    background-color: $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button-number {
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  &__button span {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+}
+
+.reviews-form {
+  padding: 30px;
+  border-radius: 8px;
+  background-color: $light;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 26px;
+  }
+
+  &__arrow-box {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__arrow {
+    width: 21.327px;
+    height: 14.672px;
+    fill: $yellow;
+  }
+
+  &__name {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__input {
+    height: 50px;
+    width: 308px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    border: 1px solid $grey-light;
+    background: #fff;
+  }
+
+  &__input::placeholder {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+  }
+
+  &__input-review {
+    width: 688px;
+    display: flex;
+    padding-bottom: 100px;
+  }
+
+  &__input-review::placeholder {
+    margin-bottom: auto;
+    display: flex;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  &__btn-submit {
+    width: 160px;
+    height: 50px;
+    padding: 8px 20px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: $yellow;
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.26;
+  }
+
+  &__btn-cancel {
+    display: flex;
+    width: 160px;
+    height: 50px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: transparent;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid $yellow;
+    color: $yellow;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+  }
+}
+
+.review-features {
+  &__header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__icon-border {
+    width: 50px;
+    height: 50px;
+    border: solid $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__user {
+    width: 21.429px;
+    height: 21.429px;
+    flex-shrink: 0;
+    fill: $grey;
+  }
+
+  &__name {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+    display: flex;
+    width: 476px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__date {
+    color: $grey;
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__star-svg {
+    width: 20.015px;
+    height: 19.082px;
+    fill: $yellow;
+  }
+
+  &__text {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__button-svg {
+    width: 20.011px;
+    height: 20.01px;
+    flex-shrink: 0;
+    fill: $yellow;
+  }
+
+  &__button-number-border {
+    width: 20.246px;
+    height: 20.246px;
+    background-color: $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button-number {
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  &__button span {
     color: $grey;
     font-family: "Proxima Nova";
     font-size: 17px;

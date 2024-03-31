@@ -104,7 +104,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="reviews__line"></div>
+            <div class="reviews__line-yellow"></div>
             <div class="answer1">
                 <div class="answer1__header">
                     <div class="answer1__icon-border">
@@ -112,7 +112,7 @@
                             <use href="../../images/symbol-defs.svg#icon-avatar"></use>
                         </svg>
                     </div>
-                    <p class="answer1__name">Іван Стедниця</p>
+                    <p class="answer1__name">Андрій Іванович</p>
                     <svg class="answer1__arrow">
                         <use href="../../images/symbol-defs.svg#icon-long-arrow"></use>
                     </svg>
@@ -139,6 +139,7 @@
                 </div>
                 <p class="answer2__text">Дякуємо за відгуки! будемо раді бачити Вас знову!</p>
             </div>
+            <div class="reviews__line-grey"></div>
             <div class="review2">
                 <div class="review2__header">
                     <div class="review2__icon-border">
@@ -209,27 +210,30 @@
             </div>
             <form class="reviews-form">
                 <div class="reviews-form__header">
-                    <svg class="reviews-form__arrow">
-                        <use href="../../images/symbol-defs.svg#icon-arrow-from-top-to-right"></use>
-                    </svg>
+                    <div class="reviews-form__arrow-box">
+                        <svg class="reviews-form__arrow">
+                            <use href="../../images/symbol-defs.svg#icon-arrow-from-top-to-right"></use>
+                        </svg>
+                    </div>
                     <p class="reviews-form__name">Відповідь для Іван Стедниця</p>
                 </div>
                 <ul class="reviews-form__list">
                     <li class="reviews-form__item">
-                        <input type="text" class="reviews-form__input" placeholder="Ваше ім'я прізвище">
+                        <input type="text" class="reviews-form__input" placeholder="Ваше ім'я прізвище" required>
                     </li>
                     <li class="reviews-form__item">
-                        <input type="text" class="reviews-form__input" placeholder="E-mail">
+                        <input type="email" class="reviews-form__input" placeholder="E-mail" required>
                     </li>
                     <li class="reviews-form__item">
-                        <input type="text" class="reviews-form__input" placeholder="Відгук">
+                        <input type="text" class="reviews-form__input reviews-form__input-review" placeholder="Відгук">
                     </li>
                 </ul>
                 <div class="reviews-form__buttons">
-                    <button class="reviews-form__btn-submit">Відправити</button>
-                    <button class="reviews-form__btn-cancel">Відмінити</button>
+                    <button class="reviews-form__btn-submit" type="submit">Відправити</button>
+                    <button type="button" class="reviews-form__btn-cancel">Відмінити</button>
                 </div>
             </form>
+            <div class="reviews__line-grey"></div>
             <ul class="reviews__list">
                 <li class="reviews__item">
                     <div class="review-features">
@@ -302,6 +306,7 @@
                         </ul>
                     </div>
                 </li>
+                <div class="reviews__line-grey"></div>
                 <li class="reviews__item">
                     <div class="review-features">
                         <div class="review-features__header">
@@ -373,6 +378,7 @@
                         </ul>
                     </div>
                 </li>
+                <div class="reviews__line-grey"></div>
                 <li class="reviews__item">
                     <div class="review-features">
                         <div class="review-features__header">
@@ -445,12 +451,14 @@
                     </div>
                 </li>
             </ul>
-            <button class="reviews__button">
-                <svg class="reviews__button-svg">
-                    <use href="../../images/symbol-defs.svg#icon-reload"></use>
-                </svg>
-                <span>Показати ще відгуки</span>
-            </button>
+            <div class="reviews__button-bug">
+                <button class="reviews__button">
+                    <svg class="reviews__button-svg">
+                        <use href="../../images/symbol-defs.svg#icon-reload"></use>
+                    </svg>
+                    <span>Показати ще відгуки</span>
+                </button>
+            </div>
         </div>
     </div>
 </section>
