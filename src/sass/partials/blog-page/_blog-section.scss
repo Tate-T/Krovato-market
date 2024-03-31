@@ -2,10 +2,13 @@
 
     &__title {
         color: var(--Theme-Dark, #2B2929);
+        /* H1 - Headline */
         font-family: "Proxima Nova";
         font-size: 40px;
+        font-style: normal;
         font-weight: 600;
         line-height: 48px;
+        /* 120% */
     }
 
     &__img {
@@ -63,12 +66,7 @@
     }
 
     &__box {
-        display: flex;
-        width: 350px;
-        height: 102px;
-        flex-direction: column;
-        justify-content: center;
-        flex-shrink: 0;
-        margin-left: 10px;
+        padding-left: 15px;
+
     }
 }
