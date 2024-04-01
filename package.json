@@ -1,5 +1,5 @@
 {
-  "name": "krovato-project",
+  "name": "vanilla-app-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,14 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "glob": "^8.1.0",
-    "vite": "^4.0.5"
+    "vite": "^4.5.2",
+    "glob": "^8.1.0"
   },
-  "author": "",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.72.0",
-    "swiper": "^10.3.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
