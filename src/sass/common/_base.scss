@@ -5,12 +5,13 @@
       margin-left: auto;
       margin-right: auto;
       outline: solid red;
+      // overflow: visible;
 
       @media screen and (min-width: 320px) {
         width: 320px;
       }
 
-      @media screen and (min-width:410px) {
+      @media screen and (min-width: 410px) {
           width: 410px;
       }
 
@@ -18,7 +19,7 @@
     //       width: 768px;
     //   }
 
-      @media screen and (min-width:1290px) {
+      @media screen and (min-width: 1290px) {
           width: 1290px;
           padding-left: 15px;
           padding-right: 15px;

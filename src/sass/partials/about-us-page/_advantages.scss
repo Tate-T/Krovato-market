@@ -1,7 +1,12 @@
-.about-advantages {
+    .about-advantages {
     background-color: #F8F8F8;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 
 
     &__title {
@@ -19,6 +24,11 @@
         margin-top: 40px;
         display: flex;
         gap: 30px;
+        flex-direction: column;
+        
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
     }
 
     &__item { 
