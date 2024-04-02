@@ -1,8 +1,8 @@
-.pay { 
+.pay {
     background-color: #F8F8F8;
 }
 
-.pay__navigation { 
+.pay__navigation {
     display: flex;
     gap: 9px;
     align-items: center;
@@ -24,32 +24,36 @@
     color: $yellow;
 }
 
-.pay__icon { 
+.pay__icon {
     width: 6px;
     height: 10px;
     fill: $dark;
 }
 
-.pay__pay-link { 
+.pay__pay-link {
     color: $yellow;
-font-family: "Proxima Nova";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 187.5% */
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
 }
 
 .pay__section { 
     background-color: white;
     margin-top: 30px;
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 100%;
-    max-width: 1290px;
-    max-height: 454px;
-    width: 100%;
-    height: 100%;
-    // background-size: contain;
+    height: 525px;
+    background-position: bottom;
+    background-size: contain;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1290px;
+        height: 454px;
+        background-position: right;
+    }
+
     background-image: url(../../../images/pay-page/phone/hero-bg@1x.webp);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -68,41 +72,67 @@ line-height: 30px; /* 187.5% */
 
 }
 
-.pay__title { 
+.pay__title {
     color: $dark;
-font-family: "Proxima Nova";
-font-size: 40px;
-font-style: normal;
-font-weight: 600;
-line-height: 48px; /* 120% */
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    /* 120% */
 
-padding-top: 88px;
-padding-left: 50px;
+    max-width: 410px;
+    padding-top: 40px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        font-size: 40px;
+        padding-top: 71px;
+        padding-left: 50px;
+        max-width: 450px;
+    }
 }
 
-.pay__text { 
+.pay__text {
     color: $dark;
-font-family: "Proxima Nova";
-font-size: 26px;
-font-style: normal;
-font-weight: 600;
-line-height: 34px; /* 130.769% */
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    /* 130.769% */
+    max-width: 410px;
+    margin-top: 30px;
 
-max-width: 450px;
-margin-top: 30px;
-padding-left: 50px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 50px;
+        font-size: 26px;
+        line-height: 34px;
+        max-width: 450px;
+        text-align: left;
+    }
 }
 
-.pay__subtext { 
+.pay__subtext {
     color: $dark;
-font-family: "Proxima Nova";
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 28px; /* 140% */
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    /* 140% */
 
-max-width: 450px;
-margin-top: 20px;
-padding-left: 50px;
-padding-bottom: 88px;
+    max-width: 410px;
+    margin-top: 20px;
+    padding-bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 71px;
+        padding-left: 50px;
+        max-width: 450px;
+        text-align: left;
+    }
 }
