@@ -1,0 +1,85 @@
+.delivery-ukraine {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__bc-container {
+    background-image: url(../../../images/delivery-page/ukraine-ellipse@2x.webp),
+      url(../../../images/delivery-page/ukraine-map@2x.webp);
+    background-size: 420px, 740px;
+    background-position: 550px 330px, 550px 0;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  &__container {
+    width: 520px;
+  }
+
+  &__title {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__svg-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid $yellow;
+    border-radius: 50%;
+    min-width: 70px;
+    height: 70px;
+  }
+
+  &__svg {
+    fill: $yellow;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__lead {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 40px;
+
+    & span {
+      display: block;
+      margin-top: 11px;
+    }
+  }
+  &__slogan {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-top: 104px;
+  }
+}
