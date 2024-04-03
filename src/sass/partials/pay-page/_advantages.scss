@@ -1,11 +1,20 @@
 .pay-advantages {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 
     &__list { 
         display: flex;
         flex-direction: column;
         gap: 40px;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
     }
 
     &__item { 
