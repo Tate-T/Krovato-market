@@ -1,0 +1,125 @@
+.recommended-products {
+  padding-top: 70px;
+  background-color: $light;
+  &__title {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #e3e2e2;
+    background: #fff;
+    box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+    width: 260px;
+  }
+
+  &__size {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.69;
+    width: 260px;
+    margin-top: 20px;
+  }
+
+  &__text {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+    margin-bottom: 20px;
+  }
+
+  &__active-flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__svg {
+    height: 24px;
+    fill: #82b09d;
+  }
+
+  &__active {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.69;
+  }
+
+  &__non-cost {
+    color: #e03d3d;
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.46;
+    text-decoration-line: line-through;
+  }
+
+  &__cost {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__item-footer {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  &__obrane-bc {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: $light;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  &__obrane-svg {
+    width: 25.927px;
+    height: 23px;
+    fill: $grey-light;
+  }
+
+  &__koshyk-bc {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: $yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  &__koshyk-svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+  }
+}
