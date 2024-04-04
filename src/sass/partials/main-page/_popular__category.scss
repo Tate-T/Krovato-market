@@ -1,0 +1,52 @@
+.category {
+    padding-bottom: 70px;
+
+  &__title {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    padding-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__item {
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px 20px;
+    width: 230px;
+    height: 270px;
+  }
+
+  &__item > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__name {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  &__number {
+    color: var(--Theme-Grey-light, #b1b1b1);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}

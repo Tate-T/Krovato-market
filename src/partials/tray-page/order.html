@@ -1,0 +1,247 @@
+<section class="tray">
+    <div class="container">
+        <nav class="pay__navigation">
+            <a class="pay__main-link" href="#">Головна</a>
+            <svg class="pay__icon">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+            <a class="pay__pay-link" href="">Кошик</a>
+          </nav>
+          <h2>Оформлення замовлення</h3>
+
+          <div class="tray__order">
+            <div class="tray__order-information">
+                <div>
+            <svg class="questions__icon-arrow">
+                <use href="../../images/symbol-defs.svg#icon-info"></use>
+              </svg>
+              <h3>Інформація про покупця</h3>
+            </div>
+            <form class="tray__form-first">
+                <input type="text" id="surname" name="surname" placeholder="Прізвище">
+                <input type="text" id="name" name="name" placeholder="Ім’я">
+                <input type="text" id="patronymic" name="patronymic" placeholder="По батькові">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">Отримуватиме замовлення інша людина</label>
+            </form>
+            <form class="tray__form-second">
+                <input type="text" id="name" name="name" placeholder="Контактний телефон">
+                <input type="text" id="name" name="name" placeholder="E-mail">
+            </form>
+          </div>
+
+          <div class="tray__delivery">
+            <div>
+                <svg class="questions__icon-arrow">
+                    <use href="../../images/symbol-defs.svg#icon-small-bus"></use>
+                  </svg>
+                  <h3 class="tray__delivery-text">Вибір способу доставки</h3>
+                </div>
+                <ul class="tray__delivery-list">
+                    <li class="tray__delivery-item">
+                        <svg class="tray__delivery-svg">
+                            <use href="../../images/symbol-defs.svg#icon-check"></use>
+                        </svg>
+                        <h3 class="tray__delivery-title">Самовивіз із магазину</h3>
+                        <p class="tray__delivery-descr">Бесплатно</p>
+                    </li>
+                    <li class="tray__delivery-item">
+                        <svg>
+                            <use href="../../images/symbol-defs.svg#icon-nova-poshta"></use>
+                        </svg>
+                        <h3 class="tray__delivery-title">Доставка Нова Пошта</h3>
+                        <p class="tray__delivery-descr">≈ від 500 грн</p>
+                    </li>
+                    <li class="tray__delivery-item">
+                        <svg>
+                            <use href="../../images/symbol-defs.svg#icon-man"></use>
+                        </svg>
+                        <h3 class="tray__delivery-title">Доставка кур'єром</h3>
+                        <p class="tray__delivery-descr">≈ від 200 грн</p>
+                    </li>
+                </ul>
+                    <div class="tray__delivery-adress">
+                        <svg>
+                            <use href="../../images/symbol-defs.svg#icon-adres"></use>
+                        </svg>
+                        <div>
+                        <h3 class="tray__delivery-title">Графік роботи: щодня з 9:00 до 18:00</h3>
+                        <p class="tray__delivery-descr"> м. Київ, пров. Ізяславський 52, пов. 2</p>
+                    </div>
+                    <button class="tray__delivery-btn">
+                        <svg>
+                            <use href="../../images/symbol-defs.svg#icon-map"></use>
+                        </svg>На мапі</button>
+                    </div>
+                  </div>
+                  <div class="tray__pay">
+                    <div>
+                        <svg class="questions__icon-arrow">
+                            <use href="../../images/symbol-defs.svg#icon-wallet-сard"></use>
+                          </svg>
+                          <h3 class="tray__delivery-text">Вибір способу оплати</h3>
+                        </div>
+                        <form>
+                            <div>
+                                <input type="radio" id="cashOnDelivery" name="paymentMethod" class="tray__page-cash">
+                                <label for="cashOnDelivery">Готівкою при отриманні (Післясплата)</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="cardOnline" name="paymentMethod" class="tray__page-cash">
+                                <label for="cardOnline">Оплата карткою на сайті</label>
+                                <svg>
+                                    <use href="../../images/symbol-defs.svg#icon-mastercard-color"></use>
+                                </svg>
+                                <svg>
+                                    <use href="../../images/symbol-defs.svg#icon-visa-card-logo"></use>
+                                </svg>
+
+                            </div>
+                            <div>
+                                <input type="radio" id="privatPay" name="paymentMethod" class="tray__page-cash">
+                                <label for="privatPay">Privat Pay</label>
+                                <svg>
+                                    <use href="../../images/symbol-defs.svg#icon-privat-pay-logo"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <input type="radio" id="creditKrovatoPay" name="paymentMethod" class="tray__page-cash">
+                                <label for="creditKrovatoPay">Кредит від Krovato</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="creditPrivatPay" name="paymentMethod" class="tray__page-cash">
+                                <label for="creditPrivatPay">Оплата частинами ПриватБанк</label>
+                                <svg>
+                                    <use href="../../images/symbol-defs.svg#icon-privaty-credit-logo"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <input type="radio" id="creditMonoPay" name="paymentMethod" class="tray__page-cash">
+                                <label for="creditMonoPay">Оплата частинами МоноБанк</label>
+                                <svg>
+                                    <use href="../../images/symbol-defs.svg#icon-mono-bank-logo"></use>
+                                </svg>
+                            </div>
+                        </form>
+                  </div>
+                  <div class="tray__comment">
+                    <div>
+                        <svg class="questions__icon-arrow">
+                            <use href="../../images/symbol-defs.svg#icon-chat-check"></use>
+                          </svg>
+                          <h3 class="tray__delivery-text">Коментар до замовлення</h3>
+                        </div>
+                        <form>
+                            <input id="tray__comment-input" type="text" placeholder="Ваш коментар">
+                        </form>
+                  </div>
+        </div>
+
+        <div class="tray__right">
+            <h3 class="tray__right-text">Ваш кошик <span class="tray__right-span">4</span></h3>
+            <ul class="tray__right-list">
+                <li class="tray__right-item">
+                    <div>
+                        <img src="../../images/main-page/bed-sparta@1x.webp" alt="Bed Sparta">
+                        <div>
+                        <button onclick="decrement()">-</button>
+                        <input type="text" id="count" value="1" readonly>
+                        <button onclick="increment()">+</button>
+                    </div>
+                    </div>
+                    <p>Розмір: 61 x 184 x 2130 мм</p>
+                    <h3>Ліжко Спарта / Sparta з підйомним механізмом</h3>
+                    <svg class="beds__icon">
+                        <use href="../../images/symbol-defs.svg#icon-check"></use>
+                    </svg>
+                    <div>
+                        <h3>15 400 грн.</h3>
+                        <p>25 400 грн.</p>
+                    </div>
+                    <svg class="beds__icon">
+                        <use href="../../images/symbol-defs.svg#icon-circle-close"></use>
+                    </svg>
+                </li>
+                <li class="tray__right-item">
+                    <div>
+                        <img src="../../images/main-page/bed-sparta@1x.webp" alt="Bed Sparta">
+                        <div>
+                        <button onclick="decrement()">-</button>
+                        <input type="text" id="count" value="2" readonly>
+                        <button onclick="increment()">+</button>
+                    </div>
+                    </div>
+                    <p>Розмір: 61 x 184 x 2130 мм</p>
+                    <h3>Ліжко Спарта / Sparta з підйомним механізмом</h3>
+                    <svg class="beds__icon">
+                        <use href="../../images/symbol-defs.svg#icon-check"></use>
+                    </svg>
+                        <h3>15 400 грн.</h3>
+                        <svg class="beds__icon">
+                            <use href="../../images/symbol-defs.svg#icon-circle-close"></use>
+                        </svg>
+                </li>
+                <li class="tray__right-item">
+                    <div>
+                        <img src="../../images/main-page/bed-sparta@1x.webp" alt="Bed Sparta">
+                        <div>
+                        <button onclick="decrement()">-</button>
+                        <input type="text" id="count" value="1" readonly>
+                        <button onclick="increment()">+</button>
+                    </div>
+                    </div>
+                    <p>Розмір: 61 x 184 x 2130 мм</p>
+                    <h3>Ліжко Спарта / Sparta з підйомним механізмом</h3>
+                    <svg class="beds__icon">
+                        <use href="../../images/symbol-defs.svg#icon-check"></use>
+                    </svg>
+                        <h3>15 400 грн.</h3>
+                        <svg class="beds__icon">
+                            <use href="../../images/symbol-defs.svg#icon-circle-close"></use>
+                        </svg>
+                </li>
+            </ul>
+
+            <div class="tray__right-promo">
+                <div>
+                <svg class="tray__right-svg">
+                    <use href="../../images/symbol-defs.svg#icon-promo"></use>
+                </svg>
+                <h3 class="tray__right-promo-text">Є промокод?</h3>
+            </div>
+            <form>
+            <input class="tray__right-promo-input" type="text" placeholder="Введіть код">
+            </form>
+            <button class="tray__right-promo-btn">ОК</button>
+            </div>
+
+            <div class="tray__right-pay">
+                <h2 class="tray__right-pay-title">Разом:</h2>
+                <ul class="tray__right-pay-list">
+                    <li class="tray__right-pay-item">
+                    <p class="tray__right-pay-text">4 товари на суму:</p>
+                    <div class="line"></div>
+                    <p class="tray__right-pay-text">540 269 грн.</p>
+                </li>
+                <li>
+                    <p class="tray__right-pay-text">Вартість доставки:</p>
+                    <div class="line"></div>
+                    <p class="tray__right-pay-text">За тарифами оператора</p>
+                </li>
+                <li>
+                    <p class="tray__right-pay-text">До оплати:</p>
+                    <div class="line"></div>
+                    <p class="tray__right-pay-price">540 269 грн.</p>
+                </li>
+                </ul>
+
+                <form>
+                    <input id="trayRightCheckbox" type="checkbox">
+                    <label for="trayRightCheckbox">Не передзвонюйте мені для підтвердження замовлення</label>
+                </form>
+                <button class="tray__right-pay-btn">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+                <p class="tray__right-pay-terms">Підтверджуючи замовлення, я приймаю умови<span class="terms-span">Угоди користувача</span></p>
+            </div>
+        </div>
+    </div>
+</section>
