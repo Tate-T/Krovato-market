@@ -1,0 +1,68 @@
+.news {
+  padding: 70px 0;
+  background-color: #f8f8f8;
+
+  &__title {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  &__link {
+    color: var(--Theme-Yellow, #ffbc57);
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-left: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 410px;
+    height: 476px;
+    border-radius: 8px;
+    border: 1px solid #e3e2e2;
+    background: #fff;
+    box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  &__name {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+    height: 102px;
+  }
+
+  &__link-more {
+    color: var(--Theme-Yellow, #ffbc57);
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    gap: 10px;
+    margin-left: 30px;
+  }
+
+  &__link-more svg {
+    width: 24px;
+    height: 24px;
+  }
+}
