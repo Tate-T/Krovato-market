@@ -1,0 +1,254 @@
+.reviews {
+  background-color: #e9e9e9;
+  padding: 70px 0;
+  height: 498px;
+
+  &__icon-svg {
+    width: 60px;
+    height: 60px;
+    fill: #ffbc57;
+  }
+
+  &__title {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    padding-bottom: 40px;
+  }
+
+  &__name {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    padding-left: 20px;
+  }
+
+  &__date {
+    color: var(--Theme-Grey, #535353);
+    text-align: right;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 80px;
+  }
+
+  &__text {
+    color: var(--Theme-Grey, #535353);
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 370px;
+    height: 150px;
+  }
+
+  &__rate {
+    color: #f90;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-right: 10px;
+  }
+
+  &__star-svg {
+    width: 24px;
+    height: 24px;
+    fill: #ff9900;
+  }
+
+  &__reviews {
+    color: var(--Theme-Grey, #535353);
+    font-family: "Proxima Nova";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    width: 410px;
+  }
+
+  &__stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__write {
+    border-radius: 8px;
+    background: var(--Theme-Yellow, #ffbc57);
+    width: 220px;
+    height: 50px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &__write-svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+
+  &__all-link {
+    color: var(--Theme-Grey, #535353);
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__all-link svg {
+    width: 24px;
+    height: 24px;
+    fill: #535353;
+    margin-right: 15px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    width: 390px;
+    padding: 30px;
+    height: 310px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 8px;
+    border: 1px solid #e3e2e2;
+    background: #fff;
+    box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  &__avatar {
+    width: 21.429px;
+    height: 21.429px;
+    fill: #535353;
+  }
+
+  &__item > div > div:nth-child(1) {
+    border-color: #ffbc57;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  &__item > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  &__scroll {
+    width: 6px;
+    height: 150px;
+  }
+
+  &__shop {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  &__stars-list {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__bed-name {
+    color: var(--Theme-Grey, #535353);
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}
+
+.stars-container {
+  flex-direction: row;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.logo-sofa {
+  background-color: white;
+  width: 85px;
+  height: 85px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.container-reviews > div:nth-child(1) {
+  width: 100%;
+}
