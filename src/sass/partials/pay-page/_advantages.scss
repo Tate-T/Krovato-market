@@ -1,6 +1,11 @@
 .pay-advantages {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 70px;
@@ -13,14 +18,23 @@
         gap: 40px;
 
         @media screen and (min-width: 1200px) {
-            flex-direction: row;
+            flex-direction: column;
         }
     }
 
     &__item { 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+
+    &__box { 
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__text {
@@ -31,6 +45,11 @@
         font-weight: 600;
         line-height: 34px;
         /* 130.769% */
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
     &__subtext {
@@ -42,6 +61,13 @@
         line-height: 30px;
         max-width: 1170px;
         margin-top: 10px;
+        text-align: center;
+        max-width: 410px;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            max-width: 1170px;
+        }
     }
 
     &__box {
