@@ -137,9 +137,14 @@ max-width: 380px;
 }
 
 .questions__item .questions__input:checked ~ .questions__paragraph {
-    max-height: 100px;
     display: block;
-    transition: all 0.35s;
+    transition: all 1.5s;
+    max-height: 520px;
+
+    @media screen and (min-width: 1200px) {
+        max-height: 100px;
+        transition: all 0.35s;
+    }
 }
 
 .questions__input:checked + .questions__label::after {
