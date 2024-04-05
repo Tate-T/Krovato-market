@@ -1,14 +1,26 @@
 .delivery-ukraine {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1290px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 
   &__bc-container {
     background-image: url(../../../images/delivery-page/ukraine-ellipse@2x.webp),
       url(../../../images/delivery-page/ukraine-map@2x.webp);
-    background-size: 420px, 740px;
-    background-position: 550px 330px, 550px 0;
+    background-size: 250px, contain;
     background-repeat: no-repeat;
     height: 100%;
+    background-position: 0 1070px, center 820px;
+    height: 1678px;
+
+    @media screen and (min-width: 1290px) {
+      background-size: 420px, 740px;
+      background-position: 550px 330px, 550px 0;
+      height: auto;
+    }
   }
 
   &__container {
@@ -18,10 +30,19 @@
   &__title {
     color: $dark;
     font-family: "Proxima Nova";
-    font-size: 40px;
+    text-align: center;
+    font-size: 30px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.33;
+    width: 410px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 1290px) {
+      font-size: 40px;
+      line-height: 1.2;
+      text-align: left;
+      width: auto;
+    }
   }
 
   &__list {
@@ -41,10 +62,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 7px solid $yellow;
+    border: 5px solid $yellow;
     border-radius: 50%;
-    min-width: 70px;
-    height: 70px;
+    min-width: 63px;
+    height: 63px;
   }
 
   &__svg {
@@ -54,24 +75,35 @@
   }
 
   &__text {
-    color: var(--Theme-Dark, #2b2929);
+    color: $dark;
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
+    width: 316px;
+
+    @media screen and (min-width: 1290px) {
+      width: auto;
+    }
   }
 
   &__lead {
-    color: var(--Theme-Dark, #2b2929);
+    color: $dark;
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
-    margin-bottom: 40px;
+    width: 410px;
+    margin-bottom: 485px;
 
     & span {
       display: block;
       margin-top: 11px;
+    }
+
+    @media screen and (min-width: 1290px) {
+      margin-bottom: 40px;
+      width: auto;
     }
   }
   &__slogan {
@@ -80,6 +112,9 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;
-    margin-top: 104px;
+
+    @media screen and (min-width: 1290px) {
+      margin-top: 104px;
+    }
   }
 }
