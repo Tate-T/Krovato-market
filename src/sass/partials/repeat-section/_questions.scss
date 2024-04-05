@@ -7,10 +7,16 @@
     color: var($dark);
     text-align: center;
     font-family: "Proxima Nova";
-    font-size: 40px;
-    font-style: normal;
+    font-size: 30px;
     font-weight: 600;
-    line-height: 48px; /* 120% */
+    line-height: 40px; /* 133.333% */
+    max-width: 410px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 40px;
+        line-height: 48px;
+        max-width: 1070px;
+    }
 }
 
 .questions__list { 
@@ -84,6 +90,11 @@
 
 .questions__text { 
     margin-left: 15px;
+    max-width: 286px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 946px;
+    }
 }
 
 .questions__icon-arrow {
@@ -110,6 +121,11 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 30px; /* 187.5% */
+max-width: 380px;
+
+@media screen and (min-width: 1200px) {
+    max-width: 1040px;
+}
 }
 
 .questions__paragraph {
