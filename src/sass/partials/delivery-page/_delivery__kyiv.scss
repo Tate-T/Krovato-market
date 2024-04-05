@@ -1,27 +1,51 @@
 .delivery-kyiv {
+  padding-bottom: 60px;
   background-color: $light;
+
+  @media screen and (min-width: 1290px) {
   padding-bottom: 70px;
+  }
 
-
-&__bc-container {
-    background-image: url(../../../images/delivery-page/kyiv-ellipse@2x.webp), url(../../../images/delivery-page/kyiv-map@2x.webp);
-    background-size: 420px, contain;
-    background-position: 550px 315px, right;
+  &__bc-container {
+    background-image: url(../../../images/delivery-page/kyiv-ellipse@2x.webp),
+      url(../../../images/delivery-page/kyiv-map@2x.webp);
+    background-size: 250px, contain;
     background-repeat: no-repeat;
     height: 100%;
+    background-position: bottom left ,bottom;    
 
-}
+    @media screen and (min-width: 1290px) {
+      height: auto;
+      background-size: 400px, contain;
+      background-position: 550px 315px, right;
+      }
+  }
 
   &__container {
-    width: 520px;
+    height: 1171px;
+    width: 410px;
+
+    @media screen and (min-width: 1290px) {
+      width: 520px;
+      height: auto;
+    }
   }
   &__title {
-    color: $dark;
     font-family: "Proxima Nova";
-    font-size: 40px;
+    color: $dark;
+    text-align: center;
+    font-size: 30px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.33;
     margin-bottom: 40px;
+    width: 410px;
+
+    @media screen and (min-width: 1290px) {
+      font-size: 40px;
+      line-height: 1.2;
+      text-align: left;
+      width: auto;
+    }
   }
 
   &__list {
@@ -41,10 +65,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 7px solid $yellow;
+    border: 5px solid $yellow;
     border-radius: 50%;
-    min-width: 70px;
-    height: 70px;
+    min-width: 63px;
+    height: 63px;
   }
 
   &__svg {
@@ -54,20 +78,31 @@
   }
 
   &__text {
-    color: var(--Theme-Dark, #2b2929);
+    color: $dark;
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
+    width: 316px;
+
+    @media screen and (min-width: 1290px) {
+width: auto;
+    }
   }
 
   &__lead {
-    color: var(--Theme-Dark, #2b2929);
+    color: $dark;
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    width: 410px;
+
+    @media screen and (min-width: 1290px) {
+      margin-bottom: 40px;
+      width: auto;
+    }
   }
 
   &__desc {
