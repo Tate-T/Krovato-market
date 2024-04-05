@@ -1,33 +1,56 @@
 .discount {
-  padding-top: 70px;
-  padding-bottom: 70px;
   background-color: $light;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1290px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 
   &__title {
     color: $dark;
     text-align: center;
     font-family: "Proxima Nova";
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.33;
+    width: 410px;
+
+    @media screen and (min-width: 1290px) {
+      width: auto;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     margin-bottom: 40px;
-    padding-top: 40px;
-    justify-content: space-between;
+    margin-top: 40px;
+
+    @media screen and (min-width: 1290px) {
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 0;
+    }
   }
 
   &__item {
-    width: 234px;
     display: flex;
-    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: 1290px) {
+      width: 234px;
+      flex-direction: column;
+    }
   }
 
   &__svg {
-    width: 70px;
+    min-width: 70px;
     height: 70px;
     fill: $yellow;
     margin-left: auto;
@@ -36,11 +59,15 @@
   }
   &__text {
     color: $dark;
-    text-align: center;
+    text-align: left;
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
+
+    @media screen and (min-width:1290px) {
+      text-align: center;
+    }
   }
 
   &__slogan {
@@ -50,9 +77,18 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;
-    width: 1070px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+    @media screen and (min-width:1290px) {
+      color: $dark;
+      text-align: center;
+      font-family: "Proxima Nova";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.87;
+      width: 1070px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
