@@ -1,20 +1,21 @@
 .filter {
   background: var(--Theme-Light, #f8f8f8);
-
   padding-top: 70px;
+  padding-bottom: 70px;
 
   aside {
     background-color: #2b2929;
     width: 300px;
-    height: 2024px;
+    height: 2005px;
     border-radius: 8px 8px 0px 0px;
     border: 1px solid #e3e2e2;
     background: #fff;
   }
 
   &__container {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   &__title {
@@ -24,11 +25,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
   }
 
   &__svg-filter {
@@ -117,16 +113,19 @@
 }
 
 .catalog {
+  width: 960px;
   & > div:nth-child(1) {
     width: 960px;
     height: 84px;
     flex-shrink: 0;
+    margin-bottom: 40px;
   }
 
   &__head-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 
   &__head-svgs {
@@ -356,7 +355,7 @@
     border-radius: 8px;
     background: var(--Theme-Yellow, #ffbc57);
     fill: white;
-    margin-left: 25.7%;
+    margin-left: 34.5%;
     margin-top: 40px;
   }
 
@@ -365,7 +364,7 @@
     flex-direction: row;
     gap: 10px;
     margin-top: 30px;
-    margin-left: 11.5%;
+    margin-left: 16%;
   }
 
   &__number-item {
@@ -379,6 +378,22 @@
     border-radius: 8px;
     border: 1px solid var(--Theme-Grey-light, #b1b1b1);
     background: #fff;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  &__number-item:hover {
+    background: var(--Theme-Yellow, #ffbc57);
+    color: white;
+  }
+
+  &__number-item:hover > &__number {
+    color: white;
+  }
+
+  &__number-item:hover > .icon-arrow-right,
+  &__number-item:hover > .icon-arrow-left {
+    fill: white;
   }
 
   &__number-item:nth-child(2) {
@@ -412,11 +427,11 @@
 }
 
 .icon-arrow-left {
-    width: 12px;
-    height: 12px;
-    fill: #535353;
-    transform: rotate(180deg);
-  }
+  width: 12px;
+  height: 12px;
+  fill: #535353;
+  transform: rotate(180deg);
+}
 
 .right-svg {
   width: 24px;
@@ -513,4 +528,69 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
+
+.filter__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.prices {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.prices-box {
+  display: flex;
+  padding: 7px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--Theme-Grey-light, #b1b1b1);
+  background: #fff;
+}
+
+.prices-box > h3 {
+  color: var(--Theme-Dark, #2b2929);
+  text-align: center;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; 
+}
+
+.prices {
+  padding-bottom: 15px;
+}
+
+.prices-btn {
+  display: inline-flex;
+  height: 40px;
+  padding: 14px 19px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Theme-Yellow, #ffbc57);
+  color: white;
+  color: #fff;
+  font-family: "Proxima Nova";
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.prices-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }

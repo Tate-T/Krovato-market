@@ -1,5 +1,5 @@
 .advice {
-    padding-top: 76px;
+  background-color: #f8f8f8;
     &__container {
       display: flex;
       justify-content: center;
@@ -17,6 +17,7 @@
       font-weight: 600;
       line-height: 48px;
       width: 1070px;
+      margin-bottom: 30px;
     }
   
     &__descr {
@@ -40,7 +41,7 @@
       width: 100%;
       height: 145px;
       flex-shrink: 0;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.80) 33.85%, #FFF 72.4%);
+      background: linear-gradient(180deg, rgba(248, 248, 248, 0.00) 0%, rgba(248, 248, 248, 0.80) 33.85%, #F8F8F8 72.4%);
       justify-content: center;
       display: flex;
       align-items: center;
