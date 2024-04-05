@@ -287,7 +287,11 @@
 
   &__item:nth-child(4) > div,
   &__item:nth-child(7) > div,
-  &__item:nth-child(8) > div {
+  &__item:nth-child(8) > div,
+  &__item:nth-child(9) > div,
+  &__item:nth-child(10) > div,
+  &__item:nth-child(11) > div,
+  &__item:nth-child(12) > div {
     margin-bottom: 55px;
   }
 
