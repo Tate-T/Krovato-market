@@ -2,7 +2,8 @@
     background-repeat: no-repeat;
     background-position: bottom;
     height: 100%;
-    height: 912px;
+    height: 850px;
+    background-size: contain;
 
     @media screen and (min-width: 1200px) {
         height: 506px;
@@ -39,15 +40,18 @@
         color: $dark ;
         max-width: 410px;
         font-family: "Proxima Nova";
-        font-size: 30px;
-        font-style: normal;
+        font-size: 40px;
         font-weight: 600;
-        line-height: 40px;
+        line-height: 48px;
+        padding-left: 5px;
 
         @media screen and (min-width: 1200px) {
             max-width: 520px;
             font-size: 40px;
             line-height: 48px;
+            font-size: 30px;
+            line-height: 40px;
+            padding-left: 0;
         }
     }
 
@@ -59,11 +63,13 @@
         line-height: 34px;
         max-width: 410px;
         margin-top: 30px;
+        padding-left: 5px;
 
         @media screen and (min-width: 1200px) {
             max-width: 520px;
             font-family: "Proxima Nova";
             font-size: 26px;
+            padding-left: 0;
         }
     }
 
@@ -75,12 +81,14 @@
         line-height: 28px;
         max-width: 410px;
         margin-top: 20px;
+        padding-left: 5px;
 
         @media screen and (min-width: 1200px) {
             max-width: 520px;
             font-family: "Proxima Nova";
             font-size: 20px;
             line-height: 28px;
+            padding-left: 0;
         }
     }
 
