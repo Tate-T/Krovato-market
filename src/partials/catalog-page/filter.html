@@ -1,12 +1,46 @@
 <section class="filter">
   <div class="container">
-    <aside class="filter__container">
+    <div class="filter__container">
+    <aside class="filter__aside">
       <ul class="filter__list">
-        <h3 class="filter__text"></h3>
-        <li class="filter__item"></li>
+        <li class="filter__title-box">
+        <svg class="filter__svg-filter">
+          <use href="../../images/symbol-defs.svg#icon-search-filter"></use>
+        </svg>
+        <h3 class="filter__title">Фільтр пошуку</h3>
+        </li>
       </ul>
       <ul class="filter__list">
-        <h3 class="filter__text">Наявність</h3>
+        <div>
+          <h3 class="filter__text">Ціна, грн</h3>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </div>
+        <li class="filter__item">
+          <div class="prices-container">
+          <div class="prices">
+            <div class="prices-box">
+              <h3>1195</h3>
+            </div>
+            <div class="prices-box">
+              <h3>9566</h3>
+          </div>
+          <button class="prices-btn">OK</button>
+          </div>
+          <div class="prices-img-box">
+          <img class="prices-img" src="../../images/catalog/scroll.png" alt="scroll">
+        </div>
+      </div>
+        </li>
+      </ul>
+      <ul class="filter__list">
+        <div>
+          <h3 class="filter__text">Наявність</h3>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </div>
         <li class="filter__item">
           <input type="checkbox" name="Avalible" id="Avalible" checked />
           <label for="Avalible">В наявності</label>
@@ -17,52 +51,65 @@
         </li>
       </ul>
       <ul class="filter__list">
-        <h3 class="filter__text">Виробник</h3>
+        <div>
+          <h3 class="filter__text">Виробник</h3>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </div>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" checked />
-          <label for="Avalible">Corners</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners" class="custom-checkbox" checked />
+          <label for="avalible-corners">Corners</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Estella</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners2" class="custom-checkbox" /> 
+          <label for="avalible-corners">Estella</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Green Line</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners3" class="custom-checkbox" />
+          <label for="avalible-corners">Green Line</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Legko</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners4" class="custom-checkbox" />
+          <label for="avalible-corners">Legko</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">MiroMark</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners5" class="custom-checkbox" />
+          <label for="avalible-corners">MiroMark</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Novelty</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners6" class="custom-checkbox" />
+          <label for="avalible-corners">Novelty</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Soft-line</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners7" class="custom-checkbox" />
+          <label for="avalible-corners">Soft-line</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Venger</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners8" class="custom-checkbox" />
+          <label for="avalible-corners">Venger</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Арбор Древ</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners9" class="custom-checkbox" />
+          <label for="avalible-corners">Арбор Древ</label>
         </li>
         <li class="filter__item">
-          <input type="checkbox" name="Avalible" id="Avalible" />
-          <label for="Avalible">Городок мебель</label>
+          <input type="checkbox" name="Avalible" id="avalible-corners10" class="custom-checkbox" />
+          <label for="avalible-corners">Городок мебель</label>
         </li>
       </ul>
-      <a href="#">Показати всі</a>
+      <div class="see-container">
+      <a class="see-all" href="#">Показати всі</a>
+      <div class="see-line"></div>
+    </div>
 
       <ul class="filter__list">
-        <h3 class="filter__text">Тип ліжка</h3>
+        <div>
+          <h3 class="filter__text">Тип ліжка</h3>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </div>
         <li class="filter__item">
           <input type="checkbox" name="Avalible" id="Avalible" checked />
           <label for="Avalible">Без узголов'я</label>
@@ -85,7 +132,12 @@
         </li>
       </ul>
       <ul class="filter__list">
+        <div>
         <h3 class="filter__text">Розмір спального місця</h3>
+        <svg class="filter__svg-cross">
+          <use href="../../images/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </div>
         <li class="filter__item">
           <input type="checkbox" name="Avalible" id="Avalible" checked />
           <label for="Avalible">200x210 см</label>
@@ -126,442 +178,623 @@
           <input type="checkbox" name="Avalible" id="Avalible" />
           <label for="Avalible">120x200 см</label>
         </li>
+        <li class="see-container">
+          <a class="see-all" href="#">Показати всі</a>
+          <div class="see-line"></div>
+        </li>
+      </ul>
+      <ul>
         <li class="filter__item-closed">
-          <h3 class="filter__text">Ширина спального місця</h3>
+          <div>
+            <h3 class="filter__text">Ширина спального місця</h3>
+            <svg class="filter__svg-cross">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </div>
         </li>
         <li class="filter__item-closed">
-          <h3 class="filter__text">Довжина спального місця</h3>
+          <div>
+            <h3 class="filter__text">Довжина спального місця</h3>
+            <svg class="filter__svg-cross">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </div>
         </li>
         <li class="filter__item-closed">
-          <h3 class="filter__text">Форма</h3>
+          <div>
+            <h3 class="filter__text">Форма</h3>
+            <svg class="filter__svg-cross">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </div>
         </li>
         <li class="filter__item-closed">
-          <h3 class="filter__text">Матеріал корпусу</h3>
+          <div>
+            <h3 class="filter__text">Основа для матраца</h3>
+            <svg class="filter__svg-cross">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </div>
         </li>
         <li class="filter__item-closed">
-          <h3 class="filter__text">Основа для матраца</h3>
+          <div>
+            <h3 class="filter__text">Розмір спального місця</h3>
+            <svg class="filter__svg-cross">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </div>
         </li>
       </ul>
     </aside>
 
-    <div class="catalog__container">
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-sparta@1x.webp 1x,
-                ../../images/main-page/bed-sparta@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-sparta@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">
-            Ліжко Спарта / Sparta з підйомним механізмом
-          </h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <div class="catalog__price-container">
-            <p class="catalog__discount">25 400 грн.</p>
-            <h4 class="catalog__price">15 400 грн.</h4>
-          </div>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
+    <div class="catalog">
+      <div>
+        <div class="catalog__head-box">
+        <h4 class="catalog__head-text">Ви вибрали:</h4>
+        <div class="catalog__head-svgs">
+          <svg class="catalog__svg-sort">
+            <use href="../../images/symbol-defs.svg#icon-sortirovka"></use>
+          </svg>
+          <h4 class="catalog__head-sort">Сортування:</h4>
+          <p class="catalog__head-price">За зростанням ціни</p>
+          <svg class="catalog__svg-arrow">
+            <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+        </div>
+      </div>
+      <ul class="catalog__head-list">
+        <li class="catalog__head-item">
+          <h4>Очистити</h4>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
         </li>
-
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-argon@1x.webp 1x,
-                ../../images/main-page/bed-argon@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-argon@1x.webp"
-              alt="argon"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Ліжко Аргон з підйомним механізмом</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">16 400 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
+        <li class="catalog__head-item">
+          <h4>Ціна: 1195-9566</h4>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
         </li>
-
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-prestige@1x.webp 1x,
-                ../../images/main-page/bed-prestige@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-prestige@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Ліжко Престиж з підйомним механізмом</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">14 969 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
+        <li class="catalog__head-item">
+          <h4>В наявності</h4>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
         </li>
-
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/sofa-tokio@1x.webp 1x,
-                ../../images/main-page/sofa-tokio@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/sofa-tokio@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Диван Токіо-2</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">13 211 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
+        <li class="catalog__head-item">
+          <h4>Виробник: Corners</h4>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
         </li>
-
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/matrace-largo@1x.webp 1x,
-                ../../images/main-page/matrace-largo@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/matrace-largo@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Матрац Largo SLIM / Ларго Слім</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <div class="catalog__price-container">
-            <p class="catalog__discount">3 122 грн.</p>
-            <h4 class="catalog__price">2 810 грн.</h4>
-          </div>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
+        <li class="catalog__head-item">
+          <h4>Без узголов'я</h4>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
         </li>
-
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/matrace-argentum@1x.webp 1x,
-                ../../images/main-page/matrace-argentum@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/matrace-argentum@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">
-            Матрац ARGENTUM AMALTEA / Аргентум Амалті
-          </h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <div class="catalog__price-container">
-            <p class="catalog__discount">5 966 грн.</p>
-            <h4 class="catalog__price">5 071 грн.</h4>
-          </div>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
+        <li class="catalog__head-item">
+          <h4>200x210 см</h4>
+          <svg class="filter__svg-cross">
+            <use href="../../images/symbol-defs.svg#icon-cross"></use>
+          </svg>
         </li>
-
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/sofa-bravo@1x.webp 1x,
-                ../../images/main-page/sofa-bravo@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/sofa-bravo@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Диван Браво</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">10 008 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-mk5@1x.webp 1x,
-                ../../images/main-page/bed-mk5@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-mk5@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Ліжко МК-5</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">8 775 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-mk5@1x.webp 1x,
-                ../../images/main-page/bed-mk5@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-mk5@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Ліжко МК-5</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">8 775 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-mk5@1x.webp 1x,
-                ../../images/main-page/bed-mk5@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-mk5@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Ліжко МК-5</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">8 775 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-mk5@1x.webp 1x,
-                ../../images/main-page/bed-mk5@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-mk5@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Ліжко МК-5</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">8 775 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <picture>
-            <source
-              srcset="
-                ../../images/main-page/bed-mk5@1x.webp 1x,
-                ../../images/main-page/bed-mk5@2x.webp 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <!-- <source srcset=""> -->
-            <img
-              class="catalog__img"
-              src="../../images/main-page/bed-mk5@1x.webp"
-              alt="Sparta"
-            />
-          </picture>
-          <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
-          <h3 class="catalog__name">Ліжко МК-5</h3>
-          <div class="catalog__svg-container">
-            <svg></svg>
-            <p class="catalog__avalible">В наявності</p>
-          </div>
-          <h4 class="catalog__price">8 775 грн.</h4>
-          <div class="svg-container">
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
-            </svg>
-            <svg class="questions__icon-arrow">
-              <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-            </svg>
-          </div>
-        </li>
-        <button class="filter__button">
-          <svg class="right-svg">
+      </ul>
+    </div>
+    <ul class="catalog__list">
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-sparta@1x.webp 1x,
+              ../../images/main-page/bed-sparta@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-sparta@1x.webp 1x,
+              ../../images/main-page/phone/bed-sparta@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-sparta@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">
+          Ліжко Спарта / Sparta з підйомним механізмом
+        </h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__discount">25 400 грн.</p>
+        <p class="catalog__price">15 400 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-argon@1x.webp 1x,
+              ../../images/main-page/bed-argon@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-argon@1x.webp 1x,
+              ../../images/main-page/phone/bed-argon@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-argon@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Ліжко Аргон з підйомним механізмом</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">16 400 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-prestige@1x.webp 1x,
+              ../../images/main-page/bed-prestige@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-prestige@1x.webp 1x,
+              ../../images/main-page/phone/bed-prestige@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-prestige@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Ліжко Престиж з підйомним механізмом</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">14 969 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/sofa-tokio@1x.webp 1x,
+              ../../images/main-page/sofa-tokio@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/sofa-tokio@1x.webp 1x,
+              ../../images/main-page/phone/sofa-tokio@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/sofa-tokio@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Диван Токіо-2</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">13 211 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/matrace-largo@1x.webp 1x,
+              ../../images/main-page/matrace-largo@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/matrace-largo@1x.webp 1x,
+              ../../images/main-page/phone/matrace-largo@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/matrace-largo@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Матрац Largo SLIM / Ларго Слім</h4>
+        <div>
+        <div class="catalog__svg">
+        <svg class="catalog_svg-buy">
+          <use href="../../images/symbol-defs.svg#icon-check"></use>
+        </svg>
+      </div>
+        <p class="catalog__paragraph">
+          В наявності
+        </p>
+      </div>
+        <p class="catalog__discount">3 122 грн.</p>
+        <p class="catalog__price">2 810 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/matrace-argentum@1x.webp 1x,
+              ../../images/main-page/matrace-argentum@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/matrace-argentum@1x.webp 1x,
+              ../../images/main-page/phone/matrace-argentum@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/matrace-argentum@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">
+          Матрац ARGENTUM AMALTEA / Аргентум Амалті
+        </h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__discount">5 966 грн.</p>
+        <p class="catalog__price">5 071 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/sofa-bravo@1x.webp 1x,
+              ../../images/main-page/sofa-bravo@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/sofa-bravo@1x.webp 1x,
+              ../../images/main-page/phone/sofa-bravo@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/sofa-bravo@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Диван Браво</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">10 008 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-mk5@1x.webp 1x,
+              ../../images/main-page/bed-mk5@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-mk5@1x.webp 1x,
+              ../../images/main-page/phone/bed-mk5@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-mk5@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Ліжко МК-5</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">8 775 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-mk5@1x.webp 1x,
+              ../../images/main-page/bed-mk5@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-mk5@1x.webp 1x,
+              ../../images/main-page/phone/bed-mk5@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-mk5@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Ліжко МК-5</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">8 775 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-mk5@1x.webp 1x,
+              ../../images/main-page/bed-mk5@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-mk5@1x.webp 1x,
+              ../../images/main-page/phone/bed-mk5@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-mk5@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Ліжко МК-5</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">8 775 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-mk5@1x.webp 1x,
+              ../../images/main-page/bed-mk5@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-mk5@1x.webp 1x,
+              ../../images/main-page/phone/bed-mk5@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-mk5@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Ліжко МК-5</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">8 775 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+      <li class="catalog__item">
+        <picture>
+          <source
+            srcset="
+              ../../images/main-page/bed-mk5@1x.webp 1x,
+              ../../images/main-page/bed-mk5@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../../images/main-page/phone/bed-mk5@1x.webp 1x,
+              ../../images/main-page/phone/bed-mk5@2x.webp 2x
+            "
+          />
+          <img
+            class="slider__img"
+            src="../../images/main-page/bed-mk5@1x.webp"
+            alt="Slider"
+          />
+        </picture>
+        <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+        <h4 class="catalog__name">Ліжко МК-5</h4>
+        <div>
+          <div class="catalog__svg">
+          <svg class="catalog_svg-buy">
+            <use href="../../images/symbol-defs.svg#icon-check"></use>
+          </svg>
+        </div>
+          <p class="catalog__paragraph">
+            В наявності
+          </p>
+        </div>
+        <p class="catalog__price">8 775 грн.</p>
+        <svg class="like__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <svg class="tray__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </li>
+    </ul>
+        <button class="catalog__button">
+          <svg class="repeat-svg">
             <use href="../../images/symbol-defs.svg#icon-repeat"></use></svg>
             Показати ще товари
         </button>
         <ul class="catalog__number-list">
           <li class="catalog__number-item">
-            <svg class="icon-star">
-              <use href="../../images/symbol-defs.svg#icon-left-arrow"></use>
+            <svg class="icon-arrow-left">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
             </svg>
           </li>
           <li class="catalog__number-item">
-            <p class="catalog__number">1</p>
+            <p class="catalog__number1">1</p>
           </li>
           <li class="catalog__number-item">
             <p class="catalog__number">2</p>
@@ -588,12 +821,13 @@
             <p class="catalog__number">18</p>
           </li>
           <li class="catalog__number-item">
-              <svg class="icon-star">
-                <use href="../../images/symbol-defs.svg#icon-right-arrow"></use>
+              <svg class="icon-arrow-right">
+                <use href="../../images/symbol-defs.svg#icon-arrow"></use>
               </svg>
           </li>
         </ul>
       </ul>
     </div>
   </div>
+</div>
 </section>

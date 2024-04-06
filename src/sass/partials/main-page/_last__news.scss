@@ -1,6 +1,7 @@
 .news {
   padding: 70px 0;
   background-color: #f8f8f8;
+  position: relative;
 
   &__title {
     color: var(--Theme-Dark, #2b2929);
@@ -21,10 +22,13 @@
     margin-left: 30px;
   }
 
+
+
   &__list {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    margin-top: 40px;
   }
 
   &__item {
@@ -65,4 +69,46 @@
     width: 24px;
     height: 24px;
   }
+
+  &__left {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    right: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__left-svg {
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  &__right {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__right-svg {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.svg-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
