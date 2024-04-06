@@ -19,9 +19,9 @@
         line-height: 28px;
     }
 
-    &__list-one {
+    &__list {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
 
     }
 
@@ -29,6 +29,21 @@
         display: flex;
         padding-bottom: 10px;
         padding-right: 30px;
-        flex-direction: column;
+        width: 578px;
+        flex-wrap: wrap;
+
+    }
+
+    &__svg {
+        width: 32px;
+        height: 32px;
+        fill: yellow;
+
+
+
+    }
+
+    &__span {
+        float: right;
     }
 }

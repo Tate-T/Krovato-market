@@ -25,5 +25,29 @@
         flex-shrink: 0;
     }
 
+    &__link {
+        color: var(--Theme-Dark, #2B2929);
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    &__text {
+        color: var(--Theme-Dark, #2B2929);
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    &__name {
+        color: var(--Theme-Grey-light, #B1B1B1);
+        font-family: "Proxima Nova";
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
 
 }
