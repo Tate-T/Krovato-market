@@ -181,7 +181,7 @@
     line-height: 24px;
   }
 
-  &__list3 > &__item:nth-child(2) > &__link {
+  &__list3 > &__item:nth-child(3) > &__link {
     color: var(--Theme-Grey, #535353);
     font-family: "Proxima Nova";
     font-size: 19px;
@@ -245,7 +245,7 @@ svg {
 .search__svg {
   position: absolute;
   top: 25%;
-  right: 2%;
+  right: 5%;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -333,3 +333,97 @@ svg {
     margin: 0;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__section1 {
+      display: block;
+    }
+
+    &__mobile {
+      display: none;
+    }
+
+    &__logo {
+      width: 215px;
+      height: 45px;
+      margin: 0;
+    }
+
+    &__button {
+      display: block;
+    }
+
+    &__form {
+      display: block;
+    }
+
+    &__item:nth-child(3) {
+      display: block;
+    }
+
+    &__item:last-child {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__list3 > &__item:nth-child(1) > &__link {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__list3 > &__item > &__link {
+      display: block;
+    }
+
+    &__list3 > &__item:nth-child(3) {
+      gap: 40px ;
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+    }
+
+    &__form{
+      margin-right: 30px;
+    }
+
+    &__list3 > &__button {
+      display: none;
+    }
+
+    &__list3 > li:nth-child(1) > a {
+      display: none;
+    }
+
+    &__item-mobile {
+      display: none;
+    }
+
+    &__list2 {
+      justify-content: inherit;
+    }
+
+  }
+
+  .search__svg {
+    display: block;
+  }
+
+  .icon__svg-phone {
+    display: block;
+    margin-right: 15px;
+  }
+
+  .icon__svg-mobile {
+    display: none;
+  }
+
+
+  .obrane__svg {
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+}
+

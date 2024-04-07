@@ -639,3 +639,57 @@ input[type="checkbox"]:checked::before {
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    aside {
+      width: 300px;
+    }
+    &__container {
+      flex-direction: row;
+    }
+
+    &__list:nth-child(2) > &__item {
+      justify-content: start;
+    }
+  }
+
+  .catalog {
+    padding: 0;
+
+    &__item {
+      width: 260px;
+    }
+
+    &__img {
+      width: 260px;
+    }
+
+    &__number-list {
+      display: flex;
+    }
+
+    &__button {
+      display: flex;
+      width: 300px;
+      height: 50px;
+      padding: 8px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-shrink: 0;
+      color: #fff;
+      text-align: center;
+      font-family: "Proxima Nova";
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      border-radius: 8px;
+      background: var(--Theme-Yellow, #ffbc57);
+      fill: white;
+      margin-left: 34.5%;
+      margin-top: 40px;
+    }
+  }
+}
