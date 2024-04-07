@@ -64,3 +64,25 @@
     }
   }
 }
+
+
+@media screen and (min-width:1200px) {
+  .slider {
+    &__left,
+    &__right {
+      display: block;
+    }
+
+    &__right-svg {
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    &__left-svg {
+      padding-top: 20px;
+      padding-left: 15px;
+    }
+
+    
+  }
+}

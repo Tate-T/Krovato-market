@@ -296,3 +296,38 @@
     flex-direction: column;
   }
 }
+
+@media screen and (min-width:1200px) {
+  .reviews {
+    &__title {
+      font-size: 40px;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__item {
+      width: 366px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    &__item:nth-child(2),
+    &__item:nth-child(3) {
+      display: flex;
+    }
+
+    &__list2 {
+      display: none;
+    }
+
+    &__empty:nth-child(3) > svg {
+      border-color: white;
+    }
+  }
+
+  .container-reviews {
+    flex-direction: row;
+  }
+}

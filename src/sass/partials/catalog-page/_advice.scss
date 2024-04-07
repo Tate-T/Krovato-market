@@ -74,3 +74,24 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .advice {
+    &__title {
+      font-size: 40px;
+      width: 1070px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    &__descr {
+      width: 900px;
+      height: 360px;
+      flex-shrink: 0;
+    }
+
+    &__descr span {
+      display: block;
+    }
+  }
+}

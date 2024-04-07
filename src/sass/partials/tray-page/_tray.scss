@@ -333,6 +333,7 @@
 
   &__right-beds {
     padding-left: 30px;
+    width: 445px;
   }
 
   &__right-text {
@@ -372,7 +373,6 @@
   &__right-list {
     display: flex;
     flex-direction: column;
-    gap: 60px;
     margin-bottom: 32px;
   }
 
@@ -1071,7 +1071,7 @@ input[type="radio"]:checked::before {
     &__top-svg {
       width: 12px;
       height: 12px;
-      fill: #FFBC57;
+      fill: #ffbc57;
       transform: rotate(180deg);
     }
 
@@ -1131,13 +1131,225 @@ input[type="radio"]:checked::before {
   .tray__right-pay-item:nth-child(2) > .pay-line {
     width: 33px;
   }
-  
+
   .tray__right-pay-item:nth-child(3) > .pay-line {
     width: 115px;
   }
 
   .forms-container {
     flex-direction: column-reverse;
+  }
+
+  #surname,
+  #name,
+  #patronymic {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tray {
+    &__container {
+      flex-direction: row;
+    }
+
+    &__title {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    &__delivery {
+      width: 740px;
+      height: 365px;
+    }
+
+    &__information-text {
+      font-size: 20px;
+    }
+
+    &__order-information {
+      width: 740px;
+      height: 325px;
+    }
+
+    &__pay {
+      width: 740px;
+      height: 345px;
+    }
+
+    &__comment {
+      width: 740px;
+      height: 240px;
+    }
+
+    &__comment-input {
+      width: 700px;
+    }
+
+    &__delivery-list {
+      flex-direction: row;
+    }
+
+    &__delivery-item {
+      width: 360px;
+    }
+
+    &__delivery-adress {
+      display: flex;
+      width: 700px;
+    }
+
+    &__delivery-adress-mobile {
+      display: none;
+    }
+
+    &__delivery-btn-mobile {
+      display: none;
+    }
+
+    &__delivery-adress-mobile svg {
+      display: none;
+    }
+
+    &__delivery-adress-mobile p {
+      display: none;
+    }
+
+    &__delivery-adress-mobile h3 {
+      display: none;
+    }
+
+    &__right {
+      margin-top: 143.5px;
+      padding-top: 30px;
+      width: 490px;
+      height: 1371px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    &__right-beds {
+      padding-left: 30px;
+    }
+
+    &__right-item:nth-child(2) {
+      background: #fff;
+    }
+
+    &__shadow {
+      display: none;
+    }
+
+    &__shadow div {
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__right-item:nth-child(4) {
+      display: none;
+    }
+
+    &__right-line:nth-child(3) {
+      display: block;
+    }
+
+    &__right-line {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__hide {
+      color: var(--Theme-Yellow, #ffbc57);
+      font-family: "Proxima Nova";
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    &__top-svg {
+      width: 12px;
+      height: 12px;
+      fill: #ffbc57;
+      transform: rotate(180deg);
+    }
+
+    &__right-counter2 {
+      display: inline-flex;
+      padding: 13px 32px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 15px;
+      border-radius: 8px;
+      border: 1px solid var(--Theme-Grey-light, #b1b1b1);
+      background: var(--Theme-Light, #f8f8f8);
+      margin-top: 15px;
+    }
+
+    &__right-item:nth-child(4) {
+      display: block;
+    }
+
+    &__right-promo {
+      border-top: 2px solid #c5c5c5;
+      background-color: #fff;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      width: 445px;
+      flex-direction: row;
+      gap: 0px;
+      align-items: center;
+    }
+
+    &__right-promo-input {
+      width: 90px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    &__right-promo-btn {
+      height: 53px;
+      width: 90px;
+    }
+
+    &__right-pay {
+      background-color: white;
+      width: 445px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    &__right-pay-label {
+      width: 426px;
+    }
+
+    &__right-pay-btn {
+      width: 405px;
+      height: 50px;
+    }
+
+    &__right-pay-terms {
+      width: 410px;
+    }
+  }
+
+  .tray__right-pay-item:nth-child(1) > .pay-line {
+    width: 158px;
+  }
+
+  .tray__right-pay-item:nth-child(2) > .pay-line {
+    width: 66px;
+  }
+  
+  .tray__right-pay-item:nth-child(3) > .pay-line {
+    width: 150px;
+  }
+
+  .forms-container {
+    flex-direction: row;
   }
 
   #surname,

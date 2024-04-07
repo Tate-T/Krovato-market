@@ -186,3 +186,21 @@
     margin-left: 20%;
   }
 }
+
+
+@media screen and (min-width: 1200px) {
+  .beds {
+    &__title {
+      font-size: 40px;
+    }
+
+    &__item {
+      width: 250px;
+      height: 180px;
+    }
+  }
+
+  .hide-container {
+    margin-left: 42%;
+  }
+}
