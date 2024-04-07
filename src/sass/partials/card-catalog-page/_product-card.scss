@@ -14,6 +14,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;
+    white-space: nowrap;
 
     &:hover {
       color: $yellow;
@@ -21,12 +22,37 @@
     }
   }
 
-  &__active-link {
+  &__link-mob-bug {
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
+  }
+
+  &__active-link-desk {
     color: $yellow;
     font-family: "Proxima Nova";
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
+  }
+
+  &__active-link-mob {
+    color: $yellow;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87;
+
+    @media screen and (min-width: 1290px) {
+      display: none;
+    }
   }
 
   &__arrow-box {
@@ -42,28 +68,130 @@
     height: 9px;
   }
 
-  &__container {
-    display: flex;
-    gap: 30px;
+  &__arrow-mob-bug {
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
   }
 
-  &__img {
+  &__container {
+    @media screen and (min-width: 1290px) {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__title-mob {
+    color: $dark;
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1290px) {
+      display: none;
+    }
+  }
+
+  &__active-box-mob {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+  }
+
+  &__model-mob {
+    margin-top: 10px;
+  }
+
+  &__container1 {
+    position: relative;
+  }
+
+  &__img-desk {
     width: 630px;
     height: 538px;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
+  }
+
+  &__img-mob {
+    width: 410px;
+    height: 410px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 1290px) {
+      display: none;
+    }
+  }
+
+  &__buttons-mob {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1290px) {
+      display: none;
+    }
+  }
+
+  &__button-mob {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &__button-border-mob {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: $grey-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button-bc-mob {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  &__button-active-border-mob {
+    background-color: #fff;
+  }
+
+  &__button-active-bc-mob {
+    background-color: $yellow;
   }
 
   &__button-left {
     position: absolute;
-    top: 525px;
-    left: 90px;
+    top: 239px;
+    left: 20px;
     width: 60px;
     height: 60px;
     flex-shrink: 0;
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: flex;
+    }
   }
 
   &__svg-left {
@@ -75,16 +203,20 @@
 
   &__button-right {
     position: absolute;
-    top: 525px;
-    left: 630px;
+    top: 239px;
+    right: 20px;
     width: 60px;
     height: 60px;
     flex-shrink: 0;
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: flex;
+    }
   }
 
   &__svg-right {
@@ -93,36 +225,57 @@
     fill: $yellow;
   }
 
-  &__list {
-    display: flex;
+  &__images {
+    display: none;
     gap: 20px;
     justify-content: center;
     margin-top: 30px;
+
+    @media screen and (min-width: 1290px) {
+      display: flex;
+    }
   }
 
-  &__item {
+  &__image {
     width: 100px;
     height: 100px;
     flex-shrink: 0;
   }
 
-  &__image {
+  &__image-img {
     width: 100px;
   }
 
-  &__title {
+  &__title-desk {
     color: $dark;
     font-family: "Proxima Nova";
     font-size: 40px;
     font-weight: 600;
     line-height: 1.2;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
   }
 
-  &__frame {
-    display: flex;
+  &__frame-desk {
+    display: none;
     gap: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 1290px) {
+      display: flex;
+    }
+  }
+
+  &__frame-mob {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1290px) {
+      display: none;
+    }
   }
 
   &__active-box {
@@ -189,21 +342,30 @@
 }
 
 .product-card-box {
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 30px 20px;
   border-radius: 8px 8px 0 0;
   background: #fff;
-  padding-bottom: 30px;
 
   &__header {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 1290px) {
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
   }
 
   &__cost-box {
     display: flex;
-    gap: 20px;
     align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 1290px) {
+      gap: 20px;
+      flex-direction: row;
+    }
   }
 
   &__cost {
@@ -233,10 +395,14 @@
     width: 50px;
     height: 50px;
     background-color: $light;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+
+    @media screen and (min-width: 1290px) {
+      display: flex;
+    }
   }
 
   &__heard-svg {
@@ -250,6 +416,11 @@
     font-size: 19px;
     font-weight: 600;
     line-height: 1.26;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
   }
 
   &__line {
@@ -262,11 +433,20 @@
   &__list {
     display: flex;
     gap: 30px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 190px;
+
+    @media screen and (min-width: 1290px) {
+      width: auto;
+    }
   }
 
   &__item-flex {
     display: flex;
-    gap: 5px;
+    gap: 15px;
     align-items: center;
     margin-bottom: 10px;
   }
@@ -287,16 +467,19 @@
 
   &__choice-button {
     display: flex;
-    width: 280px;
+    width: 100%;
     padding: 10px 15px;
     align-items: center;
     gap: 15px;
     border-radius: 8px;
     background-color: $light;
+
+    @media screen and (min-width: 1290px) {
+      width: 280px;
+    }
   }
 
   &__choice-text {
-    width: 211px;
     flex-shrink: 0;
     color: $grey;
     font-family: "Proxima Nova";
@@ -304,18 +487,27 @@
     font-weight: 400;
     line-height: 1.87;
     text-align-last: left;
+
+    @media screen and (min-width: 1290px) {
+      width: 211px;
+    }
   }
 
   &__arrow {
     height: 11px;
     width: 6px;
     transform: rotate(90deg);
+    margin-left: auto;
   }
 
   &__coose-cloth-flex {
     display: flex;
     gap: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
+
+    @media screen and (min-width: 1290px) {
+      margin-top: 20px;
+    }
   }
 
   &__coose-cloth {
@@ -328,20 +520,42 @@
 
   &__cloths {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: start;
     margin-top: 10px;
+
+    @media screen and (min-width: 1290px) {
+      gap: 20px;
+    }
   }
 
   &__cloth {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     flex-shrink: 0;
+
+    @media screen and (min-width: 1290px) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__cloth-green {
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
   }
 
   &__cloth-img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+
+    @media screen and (min-width: 1290px) {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__more-link {
@@ -350,6 +564,11 @@
     gap: 18px;
     align-items: center;
     margin-bottom: 30px;
+    justify-content: center;
+
+    @media screen and (min-width: 1290px) {
+      justify-content: start;
+    }
   }
 
   &__more-text {
@@ -369,14 +588,20 @@
 
   &__buttons {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 1290px) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
   }
 
   &__kol-vo {
     display: flex;
     gap: 15px;
-    display: flex;
-    width: 110px;
+    width: 100%;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -384,6 +609,10 @@
     border-radius: 8px;
     border: 1px solid $grey-light;
     background: $light;
+
+    @media screen and (min-width: 1290px) {
+      width: 110px;
+    }
   }
 
   &__number {
@@ -410,7 +639,7 @@
 
   &__buy-btn {
     display: flex;
-    width: 208px;
+    width: 100%;
     height: 50px;
     padding: 8px 15px;
     justify-content: center;
@@ -419,6 +648,10 @@
     flex-shrink: 0;
     border-radius: 8px;
     background: $yellow;
+
+    @media screen and (min-width: 1290px) {
+      width: 208px;
+    }
   }
 
   &__korzina {
@@ -465,16 +698,51 @@
     line-height: 1.26;
   }
 
+  &__mob-obrane-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+
+    @media screen and (min-width: 1290px) {
+      display: none;
+    }
+  }
+
+  &__mob-heard-svg-border {
+    width: 50px;
+    height: 50px;
+    background-color: $light;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  &__mob-heard-svg {
+    height: 23px;
+    width: 26px;
+  }
+
+  &__mob-obrane {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+  }
+
   &__footer {
     background-color: $light;
     display: flex;
-    padding: 10px 20px;
+    // padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
     gap: 20px;
     box-shadow: -3px 4px 15px 0px $light;
-
-
-}
+  }
 
   &__call-svg {
     width: 30px;
@@ -487,23 +755,24 @@
     color: $grey-light;
     font-family: "Proxima Nova";
     font-size: 20px;
-    font-weight: 600;
     line-height: 1.4;
-    width: 293px;
+    width: 151px;
     height: 30px;
     flex-shrink: 0;
-    text-align-last: left;
+
+    @media screen and (min-width: 1290px) {
+      width: 293px;
+      text-align-last: left;
+    }
   }
 
   &__btn-click {
     display: flex;
-    width: 212px;
     height: 50px;
-    padding: 8px 30px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    flex-shrink: 0;
     border-radius: 8px;
     border: 1px solid $grey;
     color: $grey;
@@ -512,7 +781,72 @@
     font-size: 19px;
     font-weight: 600;
     line-height: 1.26;
-    margin-left: auto;
     background-color: transparent;
+
+    @media screen and (min-width: 1290px) {
+      width: 212px;
+      margin-left: auto;
+    }
+  }
+}
+
+.product-card-consultation {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  @media screen and (min-width: 1290px) {
+    display: none;
+  }
+
+  &__text {
+    color: $grey;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__box-help {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__svg-bug {
+    background-color: rgba(117, 183, 59, 1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__svg-whatsapp {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__telegram {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  &__svg {
+    width: 39px;
+    height: 39px;
+    background-color: #fff;
+    border-radius: 50%;
   }
 }
