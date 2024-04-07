@@ -20,11 +20,15 @@
   &__item {
     background-color: #fff;
     display: flex;
-    width: 850px;
+    width: 100%;
     padding: 15px 10px;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
+
+    @media screen and (min-width: 1290px) {
+      width: 850px;
+    }
   }
 
   &__left-text {
