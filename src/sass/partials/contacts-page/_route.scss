@@ -5,7 +5,6 @@
         text-align: center;
         font-family: "Proxima Nova";
         font-size: 30px;
-        font-style: normal;
         font-weight: 600;
         line-height: 40px;
     }
@@ -14,12 +13,12 @@
         color: var(--Theme-Grey, #535353);
         font-family: "Proxima Nova";
         font-size: 20px;
-        font-style: normal;
         font-weight: 600;
         line-height: 28px;
+
     }
 
-    &__list-one {
+    &__list {
         display: flex;
         flex-direction: column;
 
@@ -29,6 +28,21 @@
         display: flex;
         padding-bottom: 10px;
         padding-right: 30px;
-        flex-direction: column;
+        width: 578px;
+
+
+    }
+
+    &__svg {
+        width: 32px;
+        height: 32px;
+        fill: yellow;
+
+
+
+    }
+
+    &__span {
+        float: right;
     }
 }
