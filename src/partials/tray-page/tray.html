@@ -57,6 +57,19 @@
                         <h3 class="tray__delivery-title">Самовивіз із магазину</h3>
                         <p class="tray__delivery-descr">Бесплатно</p>
                     </li>
+                    <li class="tray__delivery-adress-mobile">
+                        <svg class="delivery-svg">
+                            <use href="../../images/symbol-defs.svg#icon-adres"></use>
+                        </svg>
+                        <div>
+                        <p class="tray__adress-title">Графік роботи: щодня з 9:00 до 18:00</p>
+                        <h3 class="tray__adress-descr"> м. Київ, пров. Ізяславський 52, пов. 2</h3>
+                        </div>
+                            <a href="https://www.google.com/maps/place/Lak+Studio/@50.3958698,30.4242712,15z/data=!4m2!3m1!1s0x0:0x9d24277dcc3d5ff1?sa=X&ved=1t:2428&ictx=111" class="tray__delivery-btn-mobile">
+                        <svg>
+                            <use href="../../images/symbol-defs.svg#icon-map"></use>
+                        </svg>На мапі</a>
+                    </li>
                     <li class="tray__delivery-item">
                         <svg class="tray__delivery-np">
                             <use href="../../images/symbol-defs.svg#icon-nova-poshta"></use>
@@ -80,10 +93,10 @@
                         <p class="tray__adress-title">Графік роботи: щодня з 9:00 до 18:00</p>
                         <h3 class="tray__adress-descr"> м. Київ, пров. Ізяславський 52, пов. 2</h3>
                     </div>
-                    <button class="tray__delivery-btn">
+                    <a href="https://www.google.com/maps/place/Lak+Studio/@50.3958698,30.4242712,15z/data=!4m2!3m1!1s0x0:0x9d24277dcc3d5ff1?sa=X&ved=1t:2428&ictx=111" class="tray__delivery-btn">
                         <svg>
                             <use href="../../images/symbol-defs.svg#icon-map"></use>
-                        </svg>На мапі</button>
+                        </svg>На мапі</a>
                     </div>
                   </div>
                   <div class="tray__pay">
@@ -151,6 +164,7 @@
     </div>
 
         <div class="tray__right">
+            <div class="tray__right-beds">
             <h3 class="tray__right-text">Ваш кошик <span class="tray__right-span">4</span></h3>
             <ul class="tray__right-list">
                 <li class="tray__right-item">
@@ -185,14 +199,15 @@
                     </svg>
                 </div>
             </div>
+            <div class="tray__right-line"></div>
                 </li>
                 <li class="tray__right-item">
-                    <div class="tray__right-item-container">
+                <div class="tray__right-item-container">
                     <div>
                         <img class="tray__right-img" src="../../images/main-page/bed-sparta@1x.webp" alt="Bed Sparta">
-                        <div class="tray__right-counter">
+                        <div class="tray__right-counter2">
                             <p>–</p>
-                            <p class="tray__right-counter-text">2</p>
+                            <p class="tray__right-counter-text">1</p>
                             <p>+</p>
                     </div>
                     </div>
@@ -209,14 +224,22 @@
                           В наявності
                         </p>
                       </div>
-                    <div class="tray__right-price-box">
                         <h3 class="tray__right-price">15 400 грн.</h3>
-                    </div>
                     <svg class="tray__icon-close">
                         <use href="../../images/symbol-defs.svg#icon-circle-close"></use>
                     </svg>
                 </div>
             </div>
+            <div class="tray__shadow">
+                <div>
+                <a class="tray__hide" href="#">Показати всі</a>
+                <svg class="tray__top-svg">
+                  <use href="../../images/symbol-defs.svg#icon-two-arrows-top"></use>
+                </svg>
+            </div>
+              </div>
+            </li>
+            <div class="tray__right-line"></div>
                 </li>
                 <li class="tray__right-item">
                     <div class="tray__right-item-container">
@@ -251,6 +274,7 @@
             </div>
                 </li>
             </ul>
+        </div>
 
             <div class="tray__right-promo">
                 <div>
@@ -259,10 +283,12 @@
                 </svg>
                 <h3 class="tray__right-promo-text">Є промокод?</h3>
             </div>
+            <div>
             <form>
             <input class="tray__right-promo-input" type="text" placeholder="Введіть код">
             </form>
             <button class="tray__right-promo-btn">ОК</button>
+        </div>
             </div>
 
             <div class="tray__right-pay">
