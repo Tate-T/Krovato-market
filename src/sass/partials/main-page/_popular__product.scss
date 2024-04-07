@@ -116,7 +116,7 @@
   }
 
   &__svg {
-    border-color: #82B09D;
+    border-color: #82b09d;
     width: 20px;
     height: 20px;
     border-radius: 40px;
@@ -128,7 +128,7 @@
   }
 
   &__svg svg {
-    fill: #82B09D;
+    fill: #82b09d;
     width: 12px;
     height: 12px;
   }
@@ -172,4 +172,37 @@
   border: 2px solid #ffbc57;
   border-radius: 50%;
   padding: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .products {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__item {
+      width: 410px;
+    }
+
+    &__img {
+      width: 370px;
+      height: 220px;
+    }
+  }
+
+  .like__svg {
+    width: 35px;
+    height: 35px;
+    fill: #b1b1b1;
+    margin-right: 20px;
+  }
+
+  .tray__svg {
+    width: 35px;
+    height: 35px;
+  }
 }

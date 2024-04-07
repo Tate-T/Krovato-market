@@ -11,7 +11,8 @@
     font-weight: 600;
     line-height: 40px; /* 133.333% */
     max-width: 410px;
-
+    margin-right: auto;
+    margin-left: auto;
     @media screen and (min-width: 1200px) {
         font-size: 40px;
         line-height: 48px;
@@ -30,8 +31,8 @@
 
 .questions__item { 
     position: relative;
-    max-width: 1070px;
-    width: 100%;
+    max-width: 410px;
+    // width: 100%;
     padding: 15px;
     border-radius: 8px;
     background: #FFF;
@@ -39,6 +40,11 @@
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
     transition-property: border;
     transition-duration: 500ms;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1070px;
+        width: 100%;
+    }
 }
 
 .questions__item:hover { 
