@@ -1,4 +1,7 @@
 .route {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
 
     &__title {
         color: var(--Theme-Dark, #2B2929);
@@ -15,22 +18,25 @@
         font-size: 20px;
         font-weight: 600;
         line-height: 28px;
+        width: 578px;
 
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-
+        max-height: 400px;
+        max-width: 630px;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+        padding-top: 40px;
     }
 
     &__item {
         display: flex;
         padding-bottom: 10px;
         padding-right: 30px;
-        width: 578px;
-
-
+        max-width: 630px;
     }
 
     &__svg {
@@ -44,5 +50,46 @@
 
     &__span {
         float: right;
+    }
+
+    &__button {
+        display: flex;
+        width: 410px;
+        height: 50px;
+        padding: 8px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: var(--Theme-Yellow, #FFBC57);
+
+        color: #FFF;
+
+        text-align: center;
+        /* H5 - Headline */
+        font-family: "Proxima Nova";
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        /* 126.316% */
+        position: relative;
+    }
+
+    &__item-button{
+        padding-bottom: 70px;
+    }
+
+    &__button-svg{
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+       position: absolute;
+       left: 80px;
+       fill: #FFFFFF;
+
     }
 }

@@ -3,10 +3,12 @@
     background-color: whitesmoke;
 
 
+
     &__list {
         display: flex;
         gap: 50px;
         justify-content: space-around;
+        align-items: center;
         padding-bottom: 76px;
         padding-top: 40px;
     }
@@ -51,13 +53,28 @@
         line-height: 24px;
     }
 
-    &__svg-link {}
+    &__box-svg{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    &__box-link{
+        display: flex;
+        gap: 10px;
+        padding-left: 65px;
+        
+    }
+
+    &__box-text{
+        display: flex;
+        flex-direction: column;
+        padding-left: 65px;
+    }
 
     &__item {
-        display: flex;
-        flex-wrap: wrap;
-        width: 238px;
-        height: 85px;
+        width: 350px;
     }
 
     &__svg {

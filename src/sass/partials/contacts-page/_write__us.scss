@@ -1,16 +1,24 @@
 .write {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../../../images/contacts-page/write-bg@1x.webp);
+
     max-width: 100%;
     height: 530px;
+
+    &__container{
+            background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(../../../images/contacts-page/write-bg@1x.webp);
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     &__input {
         display: flex;
         width: 410px;
-        height: 50px;
+        height: 30px;
         padding: 10px 20px;
         align-items: flex-start;
+        
         gap: 10px;
         border-radius: 8px;
         border: 1px solid var(--Theme-Grey-light, #D1D5D5);
@@ -30,13 +38,12 @@
     &__button {
         display: flex;
         height: 50px;
+        width: 240px;
 
         justify-content: center;
         align-items: center;
         gap: 15px;
         border-radius: 8px;
-        background: var(--Theme-Yellow, #FFBC57);
-        padding: 8px 20px 8px 20px;
         color: #FFF;
         text-align: center;
 
@@ -46,15 +53,61 @@
         font-style: normal;
         font-weight: 600;
         line-height: 24px;
-
+        border-radius: 8px;
+            background: var(--Theme-Yellow, #FFBC57);
         margin-top: 20px;
     }
 
     &__coment {
         display: flex;
-        height: 150px;
-        padding: 10px 20px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 116px;
         align-items: flex-start;
         gap: 10px;
+    }
+
+    &__list{
+        display: flex;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    &__one{
+        color: var(--Theme-Dark, #2B2929);
+        font-family: "Proxima Nova";
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    &__two{
+        color: var(--Theme-Dark, #2B2929);
+            font-family: "Proxima Nova";
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 34px;
+    }
+
+    &__three{
+        color: var(--Theme-Yellow, #FFBC57);
+            font-family: "Proxima Nova";
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 40px;
+    }
+
+    &__item-text{
+        
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__list-text{
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-top: 123px;
+        width: 470px;
     }
 }

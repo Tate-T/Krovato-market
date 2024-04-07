@@ -1,6 +1,7 @@
 .article {
     padding-top: 75px;
     padding-bottom: 70px;
+    background-color: whitesmoke;
 
     &__title {
         color: var(--Theme-Dark, #2B2929);
@@ -13,7 +14,7 @@
     }
 
     &__img {
-        max-width: 100%;
+        width: 1070px;
         height: 380px;
         border-radius: 8px;
     }
@@ -25,6 +26,11 @@
 
         justify-content: center;
         flex-direction: column;
+        max-width: 100%;
+        height: 380px;
+        background-repeat: no-repeat;
+        background-image: url(../../../../images/blog-artice/hero-bg@1x.webp);
+        background-size: cover;
     }
 
     &__text {
@@ -114,7 +120,7 @@
 
         font-weight: 600;
         line-height: 24px;
-
+        position: relative;
     }
 
     &__list-button {
@@ -122,5 +128,19 @@
         display: flex;
         justify-content: space-between;
 
+    }
+
+    &__button-svg-left {
+        width: 24px;
+        height: 24px;
+        fill: #FFF;
+        position: absolute;
+        left: 35px;
+    }
+
+    &__button-svg-right {
+        width: 24px;
+        height: 24px;
+        fill: #FFF;
     }
 }
