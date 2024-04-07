@@ -4,14 +4,21 @@
   background-color: $dark;
 
   &__main-container {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: 1290px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__logo-box {
     display: flex;
     gap: 9px;
     margin-bottom: 40px;
+    justify-content: center;
+
+    @media screen and (min-width: 1290px) {
+      justify-content: start;
+    }
   }
 
   &__logo-sofa {
@@ -25,8 +32,12 @@
     height: 42px;
   }
 
-  &__box-join {
-    margin-bottom: 30px;
+  &__socials-box-desk {
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
   }
 
   &__text-join {
@@ -36,6 +47,10 @@
     font-weight: 400;
     line-height: 1.41;
     margin-bottom: 15px;
+  }
+
+  &__box-join {
+    margin-bottom: 30px;
   }
 
   &__svg {
@@ -106,8 +121,12 @@
   }
 
   &__main-list {
-    display: flex;
+    display: none;
     gap: 83px;
+
+    @media screen and (min-width: 1290px) {
+      display: flex;
+    }
   }
 
   &__informations {
@@ -150,16 +169,32 @@
 
   &__call {
     display: flex;
-    margin-bottom: 32px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1290px) {
+      margin-bottom: 32px;
+      justify-content: start;
+    }
   }
 
   &__adress {
     display: flex;
+    justify-content: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1290px) {
+      justify-content: start;
+    }
   }
 
   &__schedule {
     display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1290px) {
+      justify-content: start;
+    }
   }
 
   &__svg-phone-border,
@@ -173,6 +208,11 @@
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: flex;
+    }
   }
 
   &__svg-phone,
@@ -181,6 +221,11 @@
     fill: $grey-light;
     width: 23px;
     height: 23px;
+    display: none;
+
+    @media screen and (min-width: 1290px) {
+      display: block;
+    }
   }
 
   &__number {
@@ -201,12 +246,17 @@
   }
 
   &__adress-text {
+    text-align: center;
     color: #fff;
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
     width: 174px;
+
+    @media screen and (min-width: 1290px) {
+      text-align: left;
+    }
   }
 
   &__schedule-text {
@@ -216,6 +266,49 @@
     font-weight: 600;
     line-height: 1.4;
     width: 174px;
+    text-align: center;
+
+    @media screen and (min-width: 1290px) {
+      text-align: left;
+    }
+  }
+
+  &__socials-box-mob {
+    margin-top: 30px;
+
+    @media screen and (min-width: 1290px) {
+      display: none;
+    }
+  }
+
+  &__text-join-mob {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  &__box-join-mob {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text-help-mob {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+  }
+
+  &__box-help-mob {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__box-pay-mob {
+    display: flex;
+    justify-content: center;
   }
 
   &__copyright {
@@ -231,5 +324,110 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 1.46;
+  }
+}
+
+.footer-menu {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1290px) {
+    display: none;
+  } 
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    gap: 5px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    padding-top: 11px;
+    background: #1a1a1a;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+
+  &__arrow {
+    width: 6.247px;
+    height: 10.486px;
+    flex-shrink: 0;
+    fill: #fff;
+    transform: rotate(90deg);
+    margin-right: auto;
+  }
+
+  &__text {
+    max-width: 230px;
+    text-align: center;
+  }
+
+  &__paragraph {
+    max-width: 1289px;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+  }
+
+  &__categories, &__informations, &__customers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $dark;
+    padding-bottom: 15px;
+    padding-top: 20px;
+  }
+
+  &__categorie, &__information, &__customer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    color: $light;
+    font-family: "Proxima Nova";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.41;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  &__item &__input:checked ~ &__paragraph {
+    display: block;
+    transition: all 1.5s;
+    max-height: 520px;
+
+    @media screen and (min-width: 1200px) {
+      max-height: 1000px;
+      transition: all 0.35s;
+    }
   }
 }
