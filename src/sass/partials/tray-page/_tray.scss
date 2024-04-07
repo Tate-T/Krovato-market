@@ -229,6 +229,7 @@
     line-height: 24px;
     fill: white;
     margin-left: auto;
+    cursor: pointer;
   }
 
   &__delivery-btn svg {
@@ -316,18 +317,22 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; 
+    line-height: 30px;
   }
 
   &__right {
     margin-top: 153px;
-    padding: 30px;
+    padding-top: 30px;
     width: 490px;
-    height: 1311px;
+    height: 1371px;
     flex-shrink: 0;
     border-radius: 8px;
     background: #fff;
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  &__right-beds {
+    padding-left: 30px;
   }
 
   &__right-text {
@@ -415,6 +420,14 @@
     line-height: 24px;
   }
 
+  &__right-line {
+    margin-top: 30px;
+    width: 390px;
+    height: 2px;
+    background: #c5c5c5;
+    opacity: 0.3;
+  }
+
   &__right-price-box {
     display: flex;
     flex-direction: row;
@@ -468,7 +481,8 @@
     border-radius: 8px;
   }
 
-  &__right-counter {
+  &__right-counter,
+  &__right-counter2 {
     display: inline-flex;
     padding: 13px 32px;
     justify-content: center;
@@ -502,6 +516,9 @@
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    border-top: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
+    padding-left: 30px;
   }
 
   &__right-promo div {
@@ -565,6 +582,11 @@
   }
 
   //   pay
+
+  &__right-pay {
+    padding-top: 20px;
+    padding-left: 30px;
+  }
 
   &__right-pay-title {
     color: var(--Theme-Dark, #2b2929);
@@ -655,6 +677,10 @@
     font-weight: 400;
     line-height: 24px;
     width: 410px;
+  }
+
+  &__delivery-adress-mobile {
+    display: none;
   }
 }
 
@@ -887,4 +913,236 @@ input[type="radio"]:checked::before {
 .tray__delivery-check svg {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .tray {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__delivery {
+      height: 900px;
+      width: 364.5px;
+    }
+
+    &__information-text {
+      font-size: 20px;
+    }
+
+    &__order-information {
+      height: 480px;
+      width: 364.5px;
+    }
+
+    &__pay {
+      width: 364.5px;
+    }
+
+    &__comment {
+      width: 364.5px;
+    }
+
+    &__comment-input {
+      width: 325px;
+    }
+
+    &__delivery-list {
+      flex-direction: column;
+    }
+
+    &__delivery-item {
+      width: 360px;
+    }
+
+    &__delivery-adress {
+      display: none;
+    }
+
+    &__delivery-adress-mobile {
+      width: 360px;
+      display: block;
+      border-radius: 8px;
+      background: var(--Theme-Light, #f8f8f8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__delivery-btn-mobile {
+      display: inline-flex;
+      width: 132px;
+      height: 35px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: var(--Theme-Yellow, #ffbc57);
+      color: #fff;
+      font-family: "Proxima Nova";
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      fill: white;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    &__delivery-adress-mobile svg {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    &__delivery-adress-mobile p {
+      margin-bottom: 10px;
+    }
+
+    &__delivery-adress-mobile h3 {
+      margin-bottom: 20px;
+      width: 310px;
+    }
+
+    &__right {
+      background-color: #f8f8f8;
+      box-shadow: none;
+      margin-top: 0;
+    }
+
+    &__right-beds {
+      padding: 0;
+    }
+
+    &__right-item:nth-child(2) {
+      background: linear-gradient(
+        180deg,
+        rgba(248, 248, 248, 0) 0%,
+        rgba(248, 248, 248, 0.8) 33.85%,
+        #f8f8f8 72.4%
+      );
+    }
+
+    &__shadow {
+      width: 420px;
+      height: 145px;
+      flex-shrink: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(248, 248, 248, 0) 0%,
+        rgba(248, 248, 248, 0.8) 33.85%,
+        #f8f8f8 72.4%
+      );
+      justify-content: center;
+      display: flex;
+      align-items: end;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &__shadow div {
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__right-item:nth-child(4) {
+      display: none;
+    }
+
+    &__right-line:nth-child(3) {
+      display: none;
+    }
+
+    &__hide {
+      color: var(--Theme-Yellow, #ffbc57);
+      font-family: "Proxima Nova";
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    &__top-svg {
+      width: 12px;
+      height: 12px;
+      fill: #FFBC57;
+      transform: rotate(180deg);
+    }
+
+    &__right-counter2 {
+      display: none;
+    }
+
+    &__right-item:nth-child(3) {
+      display: none;
+    }
+
+    &__right-promo {
+      border-top: none;
+      background-color: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 398px;
+      flex-direction: column;
+      gap: 21px;
+      align-items: start;
+    }
+
+    &__right-promo-input {
+      width: 257px;
+      height: 30px;
+    }
+
+    &__right-promo-btn {
+      height: 53px;
+    }
+
+    &__right-pay {
+      background-color: white;
+      height: 432px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 395px;
+    }
+
+    &__right-pay-label {
+      width: 316px;
+    }
+
+    &__right-pay-btn {
+      width: 370px;
+    }
+
+    &__right-pay-terms {
+      width: 350px;
+    }
+  }
+
+  .tray__right-pay-item:nth-child(1) > .pay-line {
+    width: 124px;
+  }
+
+  .tray__right-pay-item:nth-child(2) > .pay-line {
+    width: 33px;
+  }
+  
+  .tray__right-pay-item:nth-child(3) > .pay-line {
+    width: 115px;
+  }
+
+  .forms-container {
+    flex-direction: column-reverse;
+  }
+
+  #surname,
+  #name,
+  #patronymic {
+    width: 320px;
+  }
 }

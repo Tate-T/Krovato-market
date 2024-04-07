@@ -1,5 +1,6 @@
 .contact {
-
+    padding-top: 75px;
+    background-color: whitesmoke;
 
 
     &__list {
@@ -7,6 +8,7 @@
         gap: 50px;
         justify-content: space-around;
         padding-bottom: 76px;
+        padding-top: 40px;
     }
 
     &__item-map {
@@ -25,5 +27,51 @@
         flex-shrink: 0;
     }
 
+    &__link {
+        color: var(--Theme-Dark, #2B2929);
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+    }
 
+    &__text {
+        color: var(--Theme-Dark, #2B2929);
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    &__name {
+        color: var(--Theme-Grey-light, #B1B1B1);
+        font-family: "Proxima Nova";
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__svg-link {}
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 238px;
+        height: 85px;
+    }
+
+    &__svg {
+        width: 50px;
+        height: 50px;
+        padding-right: 15px;
+    }
+
+    &__title {
+        color: var(--Theme-Dark, #2B2929);
+        text-align: center;
+        font-family: "Proxima Nova";
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+    }
 }

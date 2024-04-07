@@ -1,5 +1,6 @@
 .slider {
-    padding-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 70px;
 
   &__list {
     position: relative;
@@ -52,5 +53,14 @@
     width: 15px;
     height: 15px;
     padding-right: 5px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .slider {
+    &__left,
+    &__right {
+      display: none;
+    }
   }
 }
