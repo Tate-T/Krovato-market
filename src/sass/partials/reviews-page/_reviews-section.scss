@@ -47,16 +47,48 @@
         display: flex;
         gap: 30px;
         margin-top: 40px;
+        flex-direction: column;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }  
     }
 
     &__title {
         color: $dark;
         font-family: "Proxima Nova";
-        font-size: 40px;
-        font-style: normal;
+        font-size: 30px;
         font-weight: 600;
-        line-height: 48px;
-        /* 120% */
+        line-height: 40px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 40px;
+            line-height: 48px;
+            text-align: left;
+        }
+    }
+
+    &__mob-button {
+        color: #FFF;
+        text-align: center;
+        font-family: "Proxima Nova";
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 24px;
+        /* 126.316% */
+        display: block;
+        padding: 8px 20px;
+        max-width: 410px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #FFBC57;
+        margin-top: 20px;
+
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
     }
 
     &__list {
@@ -109,8 +141,12 @@
     &__reviews-list {
         display: flex;
         flex-direction: column;
-        margin-top: 40px;
+        margin-top: 60px;
         gap: 30px;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 40px;
+        }
     }
 
     &__reviews-item {
@@ -125,6 +161,8 @@
     &__reviews-box-top {
         display: flex;
         align-items: center;
+        padding-right: 0;
+        padding-left: auto;
     }
 
     &__reviews-icon-box {
@@ -135,12 +173,28 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 50px;
+        width: 100%;
     }
 
     &__reviews-icon-people {
         fill: $dark;
         width: 21px;
         height: 21px;
+    }
+
+    &__reviews-mob-box { 
+        display: flex;
+        margin-right: 0;
+        padding-left: auto;    
+        gap: auto;
+        max-width: 850px;
+        width: 100%;
+        flex-direction: column;
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
     }
 
     &__reviews-name {
@@ -152,12 +206,18 @@
         line-height: 24px;
         /* 141.176% */
         margin-left: 20px;
+        margin-right: auto;
     }
 
     &__reviews-star-list {
         display: flex;
-        margin-left: auto;
+        margin-left: 20px;
+        padding-right: 0;
         gap: 4px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: auto;
+        }
     }
 
     &__reviews-star-icon {
@@ -234,10 +294,14 @@
     }
 
     &__button-list {
-        display: flex;
+        display: none;
         gap: 10px;
         justify-content: center;
         margin-top: 30px;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     &__button {
@@ -285,10 +349,8 @@
         line-height: 24px;
         /* 126.316% */
         display: flex;
-        max-width: 300px;
-        max-height: 40px;
-        width: 100%;
-        height: 100%;
+        width: 410px;
+        height: 50px;
         padding: 8px 20px;
         gap: 15px;
         margin-right: auto;
@@ -301,20 +363,29 @@
         transform: scale(0.9);
         transition-property: transform;
         transition-duration: 250ms;
+
+        @media screen and (min-width: 1200px) {
+            width: 300px;
+            height: 40px;
+        }
     }
 
-    &__last-button:hover { 
+    &__last-button:hover {
         transform: scale(1);
     }
 
-    &__last-icon { 
+    &__last-icon {
         width: 24px;
         height: 24px;
         fill: white;
     }
 
     &__form {
-        padding-top: 88px;
+        padding-top: 60px;
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 88px;
+        }
     }
 
     &__form-top-box {
@@ -484,10 +555,8 @@
         /* 126.316% */
         margin-top: 30px;
         padding: 8px 20px;
-        max-width: 350px;
-        max-height: 50px;
-        width: 100%;
-        height: 100%;
+        width: 390px;
+        height: 50px;
         border-radius: 8px;
         background: $yellow;
         margin-right: auto;
