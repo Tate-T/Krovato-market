@@ -1,5 +1,5 @@
 .category {
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 
   &__title {
     color: var(--Theme-Dark, #2b2929);
@@ -18,12 +18,70 @@
     gap: 10px;
   }
 
+  &__svg-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    fill: #ffbc57;
+    transform: rotate(230deg);
+    opacity: 0;
+  }
+
+  &__item:hover .category__svg-arrow {
+    opacity: 1;
+  }
+
   &__item {
+    position: relative;
     border-radius: 8px;
     background-color: white;
     padding: 20px 20px;
-    width: 230px;
-    height: 270px;
+    width: 210px;
+    height: 300px;
+    flex-shrink: 0;
+    background-image: url(../../../images/main-page/beds@1x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1 ease;
+    cursor: pointer;
+  }
+
+  &__item:nth-child(2) {
+    background-image: url(../../../images/main-page/matrace@1x.webp);
+  }
+
+  &__item:nth-child(3) {
+    background-image: url(../../../images/main-page/upholstered@1x.webp);
+  }
+
+  &__item:nth-child(4) {
+    background-image: url(../../../images/main-page/wardrobe@1x.webp);
+  }
+
+  &__item:nth-child(5) {
+    background-image: url(../../../images/main-page/dresser@1x.webp);
+  }
+
+  &__item:nth-child(6) {
+    background-image: url(../../../images/main-page/stone@1x.webp);
+  }
+
+  &__item:nth-child(7) {
+    background-image: url(../../../images/main-page/table@1x.webp);
+  }
+
+  &__item:nth-child(8) {
+    background-image: url(../../../images/main-page/chair@1x.webp);
+  }
+
+  &__item:nth-child(9) {
+    background-image: url(../../../images/main-page/furniture@1x.webp);
+  }
+
+  &__item:nth-child(10) {
+    background-image: url(../../../images/main-page/kitchen@1x.webp);
   }
 
   &__item > div {
@@ -48,5 +106,25 @@
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .category {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 160px;
+      height: 230px;
+      background-size: 95%;
+      background-position: bottom;
+    }
   }
 }

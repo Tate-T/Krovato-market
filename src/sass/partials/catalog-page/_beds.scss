@@ -44,6 +44,7 @@
     gap: 10px;
     align-items: center;
     padding-bottom: 40px;
+    margin-top: 30px;
   }
 
   &__title {
@@ -53,6 +54,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 48px;
+    margin-right: 10px;
   }
 
   &__count {
@@ -77,6 +79,7 @@
     border-radius: 8px;
     background: url(../../../images/catalog/one-bed@1x.webp) white 50% / cover
       no-repeat;
+    cursor: pointer;
   }
 
   &__item:nth-child(2) {
@@ -143,8 +146,6 @@
     font-weight: 600;
     line-height: 24px;
   }
-
-
 }
 
 .line {
@@ -157,14 +158,31 @@
 }
 
 .beds__top-svg {
-    width: 12px;
-    height: 12px;
-    fill: #ffbc57;
-    margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  fill: #ffbc57;
+  margin-left: 10px;
 }
 
 .hide-container {
-    margin-left: 42%;
-    margin-top: 20px;
-    cursor: pointer;
+  margin-left: 42%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .beds {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__item {
+      width: 200px;
+      height: 180px;
+    }
+  }
+
+  .hide-container {
+    margin-left: 20%;
+  }
 }
