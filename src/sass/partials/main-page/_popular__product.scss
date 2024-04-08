@@ -132,6 +132,11 @@
     width: 12px;
     height: 12px;
   }
+
+  &__name-container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .right-svg {
@@ -140,11 +145,6 @@
   fill: #ffbc57;
   transform: rotate(320deg);
   margin-left: 10px;
-}
-
-.name-container {
-  display: flex;
-  align-items: center;
 }
 
 .tray__svg,
@@ -192,6 +192,42 @@
       width: 370px;
       height: 220px;
     }
+  }
+
+  .like__svg {
+    width: 35px;
+    height: 35px;
+    fill: #b1b1b1;
+    margin-right: 20px;
+  }
+
+  .tray__svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    &__title {
+      font-size: 40px;
+    }
+
+    &__link {
+      display: block;
+    }
+
+    &__item {
+      width: 260px;
+      height: 428px;
+    }
+
+    &__img {
+      width: 260px;
+      height: 220px;
+    }
+
+
   }
 
   .like__svg {

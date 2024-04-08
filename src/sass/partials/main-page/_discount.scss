@@ -82,7 +82,14 @@
       width: 15px;
       height: 15px;
       border: 2px solid #B1B1B1;
+      border: 2px solid #b1b1b1;
       border-radius: 100%;
+    }
+
+    &__name-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
 
     &__list2 {
@@ -103,4 +110,46 @@
   }
 
 
+}
+
+@media screen and (min-width: 1200px) {
+  .discount {
+    &__svg-cont {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item:nth-child(2),
+    &__item:nth-child(3) {
+      display: block;
+    }
+
+    &__empty > svg {
+      width: 15px;
+      height: 15px;
+      border: 2px solid #b1b1b1;
+      border-radius: 100%;
+    }
+
+    &__list2 {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    &__empty:nth-child(3) > svg {
+      border-color: white;
+    }
+
+    &__list2 {
+      display: none;
+    }
+  }
 }

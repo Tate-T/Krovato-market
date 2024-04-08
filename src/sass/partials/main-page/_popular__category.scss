@@ -128,3 +128,24 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .category {
+    &__title {
+      font-size: 40px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 210px;
+      height: 280px;
+      background-size: 95%;
+      background-position: bottom;
+
+    }
+  }
+}
