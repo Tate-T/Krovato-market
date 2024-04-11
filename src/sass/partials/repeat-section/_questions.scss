@@ -16,6 +16,9 @@
         font-size: 40px;
         line-height: 48px;
         max-width: 1070px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -133,7 +136,7 @@ max-width: 380px;
     margin-top: 10px;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.35s;
+    transition: max-height 0.9s;
 }
 
 .questions__item .questions__input:checked ~ .questions__paragraph {
@@ -142,7 +145,7 @@ max-width: 380px;
     max-height: 520px;
 
     @media screen and (min-width: 1200px) {
-        max-height: 100px;
+        max-height: 230px;
         transition: all 0.35s;
     }
 }
