@@ -9,10 +9,11 @@
     font-family: "Proxima Nova";
     font-size: 30px;
     font-weight: 600;
-    line-height: 40px; /* 133.333% */
+    line-height: 40px;
     max-width: 410px;
     margin-right: auto;
     margin-left: auto;
+    
     @media screen and (min-width: 1200px) {
         font-size: 40px;
         line-height: 48px;
@@ -32,7 +33,6 @@
 .questions__item { 
     position: relative;
     max-width: 410px;
-    // width: 100%;
     padding: 15px;
     border-radius: 8px;
     background: #FFF;
@@ -118,7 +118,7 @@ font-family: "Proxima Nova";
 font-size: 19px;
 font-style: normal;
 font-weight: 600;
-line-height: 24px; /* 126.316% */
+line-height: 24px;
 }
 
 .questions__subtext {
@@ -127,7 +127,7 @@ font-family: "Proxima Nova";
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 30px; /* 187.5% */
+line-height: 30px;
 max-width: 380px;
 
 @media screen and (min-width: 1200px) {
