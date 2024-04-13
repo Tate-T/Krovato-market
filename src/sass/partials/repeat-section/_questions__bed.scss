@@ -145,12 +145,12 @@ max-width: 380px;
 
 .questions__item .questions__input:checked ~ .questions__paragraph {
     display: block;
-    transition: all 1.5s;
+    transition: all 2s;
     max-height: 520px;
 
     @media screen and (min-width: 1200px) {
-        max-height: 100px;
-        transition: all 0.35s;
+        max-height: 230px;
+        transition: all 2s;
     }
 }
 
