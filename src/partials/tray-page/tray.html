@@ -50,7 +50,7 @@
                   <h3 class="tray__information-text">Вибір способу доставки</h3>
                 </div>
                 <ul class="tray__delivery-list">
-                    <li class="tray__delivery-item">
+                    <li class="tray__delivery-item active">
                         <svg class="tray__delivery-check">
                             <use href="../../images/symbol-defs.svg#icon-check"></use>
                         </svg>
@@ -93,7 +93,7 @@
                         <p class="tray__adress-title">Графік роботи: щодня з 9:00 до 18:00</p>
                         <h3 class="tray__adress-descr"> м. Київ, пров. Ізяславський 52, пов. 2</h3>
                     </div>
-                    <a href="https://www.google.com/maps/place/Lak+Studio/@50.3958698,30.4242712,15z/data=!4m2!3m1!1s0x0:0x9d24277dcc3d5ff1?sa=X&ved=1t:2428&ictx=111" class="tray__delivery-btn">
+                    <a target="_blank" href="https://www.google.com/maps/place/%D0%9A%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D0%BE/@50.3958002,30.4240371,20z/data=!4m14!1m7!3m6!1s0x40d4c96eaae816b9:0x9d24277dcc3d5ff1!2sLak+Studio!8m2!3d50.3958698!4d30.4242712!16s%2Fg%2F11dz242_p1!3m5!1s0x40d4c985b50a7e6d:0x3d3fa41b01332a2a!8m2!3d50.3960037!4d30.4237898!16s%2Fg%2F11h18zp7_1?entry=ttu" class="tray__delivery-btn">
                         <svg>
                             <use href="../../images/symbol-defs.svg#icon-map"></use>
                         </svg>На мапі</a>
@@ -312,10 +312,13 @@
                 </ul>
 
                 <form class="tray__right-pay-form">
-                    <input class="tray__right-pay-checkbox" id="trayRightCheckbox" type="checkbox">
+                    <div>
+                    <input class="tray__right-pay-checkbox" id="trayRightCheckbox" type="checkbox" required>
                     <label class="tray__right-pay-label" for="trayRightCheckbox">Не передзвонюйте мені для підтвердження замовлення</label>
+                </div>
+                    <button class="tray__right-pay-btn">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
                 </form>
-                <button class="tray__right-pay-btn">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+                
                 <p class="tray__right-pay-terms">Підтверджуючи замовлення, я приймаю умови <span class="terms-span">Угоди користувача</span></p>
             </div>
         </div>

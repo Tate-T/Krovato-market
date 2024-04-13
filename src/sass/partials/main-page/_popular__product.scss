@@ -30,13 +30,18 @@
 
   &__item {
     border-radius: 8px;
-    border: 1px solid #e3e2e2;
     background: #fff;
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
     width: 260px;
     height: 428px;
     padding: 20px;
     position: relative;
+    border: 3px solid transparent;
+  }
+  
+  &__item:hover {
+    border: 3px solid #ffbc57;
+    border-radius: 10px;
   }
 
   &__item > div {
@@ -218,8 +223,15 @@
     }
 
     &__item {
-      width: 260px;
+      width: 256px;
       height: 428px;
+      transition: border .3s ease-in-out;
+      cursor: pointer;
+    }
+    
+    &__item:hover {
+      border: 3px solid #ffbc57;
+      border-radius: 10px;
     }
 
     &__img {
@@ -231,14 +243,14 @@
   }
 
   .like__svg {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     fill: #b1b1b1;
-    margin-right: 20px;
+    margin-right: 5px;
   }
 
   .tray__svg {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
   }
 }

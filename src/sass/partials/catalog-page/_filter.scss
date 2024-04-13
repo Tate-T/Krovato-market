@@ -114,12 +114,6 @@
 
 .catalog {
   width: 960px;
-  & > div:nth-child(1) {
-    width: 960px;
-    height: 84px;
-    flex-shrink: 0;
-    margin-bottom: 40px;
-  }
 
   &__head-box {
     display: flex;
@@ -132,6 +126,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  &__head-svgs-mobile {
+    display: none;
   }
 
   &__head-text {
@@ -419,6 +417,15 @@
     font-weight: 400;
     line-height: 24px;
   }
+
+  &__head-title {
+    color: var(--Theme-Dark, #2b2929);
+    font-family: "Proxima Nova";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
 }
 
 .icon-arrow-right {
@@ -570,6 +577,10 @@ input[type="checkbox"]:checked::before {
   padding-bottom: 15px;
 }
 
+.prices-img-box {
+  cursor: pointer;
+}
+
 .prices-btn {
   display: inline-flex;
   height: 40px;
@@ -596,6 +607,11 @@ input[type="checkbox"]:checked::before {
   padding-bottom: 20px;
 }
 
+.like__svg,
+.tray__svg {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 480px) {
   .filter {
     aside {
@@ -612,10 +628,19 @@ input[type="checkbox"]:checked::before {
 
   .catalog {
     padding-top: 40px;
-  
+
     &__item {
       width: 375px;
     }
+
+    &__head-svgs-mobile {
+      display: flex;
+      align-items: center;
+    }
+
+    // &__head-sort {
+    //   display: none;
+    // }
 
     &__img {
       width: 370px;
@@ -637,6 +662,13 @@ input[type="checkbox"]:checked::before {
       gap: 15px;
       flex-shrink: 0;
     }
+
+    &__head-list {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 341px;
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -657,10 +689,19 @@ input[type="checkbox"]:checked::before {
   .catalog {
     padding: 0;
 
+    &__head-svgs-mobile {
+      display: none;
+    }
+
     &__item {
       width: 260px;
     }
 
+    &__head-list {
+      flex-wrap: nowrap;
+      max-width: 100%;
+    }
+    
     &__img {
       width: 260px;
     }

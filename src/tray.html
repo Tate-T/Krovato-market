@@ -10,12 +10,12 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Кошик</title>
     <link rel="stylesheet" href="./sass/tray.scss" />
     <script type="module" src="./index.js"></script>
@@ -25,5 +25,32 @@
     <load ="./partials/tray-page/tray.html" />
     <load ="./partials/repeat-section/advantages.html" />
     <load ="./partials/repeat-section/footer.html" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const deliveryItems = document.querySelectorAll(".tray__delivery-item");
+
+        deliveryItems.forEach(function (item) {
+          item.addEventListener("click", function () {
+            deliveryItems.forEach(function (item) {
+              item.classList.remove("active");
+            });
+            item.classList.add("active");
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("trayRightCheckbox");
+        var button = document.querySelector(".tray__right-pay-btn");
+
+        checkbox.addEventListener("change", function () {
+          if (checkbox.checked) {
+            button.classList.add("orange");
+          } else {
+            button.classList.remove("orange");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
