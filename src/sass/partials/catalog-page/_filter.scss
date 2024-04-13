@@ -228,13 +228,18 @@
 
   &__item {
     border-radius: 8px;
-    border: 1px solid #e3e2e2;
+    border: 3px solid #ffffff;
     background: #fff;
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
     width: 260px;
     height: 428px;
     padding: 20px;
     position: relative;
+    transition: border 0.3s ease-in-out;
+  }
+
+  &__item:hover {
+    border: 3px solid #ffbc57;
   }
 
   &__item > div {
@@ -636,11 +641,8 @@ input[type="checkbox"]:checked::before {
     &__head-svgs-mobile {
       display: flex;
       align-items: center;
+      margin-bottom: 40px;
     }
-
-    // &__head-sort {
-    //   display: none;
-    // }
 
     &__img {
       width: 370px;
@@ -694,14 +696,14 @@ input[type="checkbox"]:checked::before {
     }
 
     &__item {
-      width: 260px;
+      width: 256px;
     }
 
     &__head-list {
       flex-wrap: nowrap;
       max-width: 100%;
     }
-    
+
     &__img {
       width: 260px;
     }
