@@ -61,9 +61,21 @@
   }
 
   &__item {
-    border-radius: 8px;
-    width: 410px;
+    border-radius: 10px;
+    width: 407px;
     height: 280px;
+    border: 3px solid transparent;
+    transition: border .3s ease-in-out;
+  }
+
+  &__img {
+    width: 407px;
+    height: 280px;
+  }
+  
+  &__item:hover {
+    border: 3px solid #ffbc57;
+    border-radius: 10px;
   }
 }
 

@@ -88,6 +88,15 @@
     align-items: center;
   }
 
+  &__all-link:hover {
+    color: #ffbc57;
+    fill: #ffbc57;
+  }
+
+  &__all-link:hover svg {
+    fill: #ffbc57;
+  }
+
   &__write {
     border-radius: 8px;
     background: var(--Theme-Yellow, #ffbc57);
@@ -104,6 +113,11 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__write:hover {
+    background-color: #535353;
   }
 
   &__write-svg {
@@ -124,6 +138,7 @@
 
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in-out;
   }
 
   &__all-link svg {
@@ -131,6 +146,7 @@
     height: 24px;
     fill: #535353;
     margin-right: 15px;
+    transition: all 0.3s ease-in-out;
   }
 
   &__list {
@@ -245,14 +261,13 @@
 .container-reviews {
   display: flex;
   flex-direction: row;
-  
 }
 
 .container-reviews > div:nth-child(1) {
   width: 100%;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .reviews {
     &__title {
       font-size: 40px;
@@ -276,7 +291,7 @@
     &__empty > svg {
       width: 15px;
       height: 15px;
-      border: 2px solid #B1B1B1;
+      border: 2px solid #b1b1b1;
       border-radius: 100%;
     }
 
@@ -297,7 +312,7 @@
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .reviews {
     &__title {
       font-size: 40px;
@@ -308,7 +323,7 @@
     }
 
     &__item {
-      width: 366px;
+      width: 390px;
       margin-top: 40px;
       margin-bottom: 30px;
     }

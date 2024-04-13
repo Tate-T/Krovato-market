@@ -3,7 +3,7 @@
   &__container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     position: relative;
   }
@@ -52,6 +52,7 @@
     align-items: center;
     position: absolute;
     bottom: 10px;
+    right: -180px;
   }
 }
 

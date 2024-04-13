@@ -138,14 +138,12 @@
     cursor: pointer;
   }
 
-  &__delivery-item:hover {
-    border: 3px solid var(--Theme-Yellow, #ffbc57);
+  &__delivery-item.active {
+    border-color: var(--Theme-Yellow, #ffbc57);
   }
 
-  &__delivery-item:nth-child(1) {
-    border-radius: 8px;
+  &__delivery-item:hover {
     border: 3px solid var(--Theme-Yellow, #ffbc57);
-    background: #fff;
   }
 
   &__delivery-title {
@@ -622,10 +620,24 @@
 
   &__right-pay-form {
     display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  &__right-pay-form > div {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
+  }
+
+  &__right-pay-btn {
+    background-color: gray;
+    transition: background-color 0.3s ease;
+  }
+
+  &__right-pay-checkbox:checked + .tray__right-pay-btn {
+    background-color: orange;
   }
 
   &__right-pay-price {
@@ -663,9 +675,14 @@
     font-weight: 600;
     line-height: 24px;
     border-radius: 8px;
-    background: var(--Theme-Yellow, #ffbc57);
+    background: gray;
     margin-top: 30px;
     margin-bottom: 20px;
+    transition: all .3s ease-in-out;
+  }
+
+  &__right-pay-btn.orange {
+    background-color: orange;
   }
 
   &__right-pay-terms {
@@ -749,6 +766,13 @@
   border-radius: 8px;
   border: 1px solid var(--Theme-Grey-light, #d1d5d5);
   background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#surname:hover,
+#name:hover,
+#patronymic:hover {
+  border: 1px solid #ffa500;
 }
 
 #surname {
@@ -1071,7 +1095,7 @@ input[type="radio"]:checked::before {
     &__top-svg {
       width: 12px;
       height: 12px;
-      fill: #FFBC57;
+      fill: #ffbc57;
       transform: rotate(180deg);
     }
 
@@ -1131,7 +1155,7 @@ input[type="radio"]:checked::before {
   .tray__right-pay-item:nth-child(2) > .pay-line {
     width: 33px;
   }
-  
+
   .tray__right-pay-item:nth-child(3) > .pay-line {
     width: 115px;
   }
