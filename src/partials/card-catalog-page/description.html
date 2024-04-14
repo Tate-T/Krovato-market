@@ -7,7 +7,17 @@
                 Ламелі виконані з бука. Подібна конструкція характеризується надійністю та привабливим зовнішнім
                 виглядом.
             </p>
-            <img src="../../images/card-catalog/palette@2x.webp" alt="палітра" class="description__image">
+            <picture>
+                <source srcset="
+                    ../../images/card-catalog/palette@1x.webp 1x,
+                    ../../images/card-catalog/palette@2x.webp 2x
+                  " media="(min-width: 1290px)" />
+                <source srcset="
+                    ../../images/card-catalog/palette@1x.webp 1x,
+                    ../../images/card-catalog/palette@2x.webp 2x
+                  " media="(min-width: 480px)" />
+                <img class="description__image" src="../../images/card-catalog/palette@1x.webp" alt="bed" />
+            </picture>
         </div>
         <div class="description-form__bug"  data-aos="flip-left" data-aos-duration="1000">
             <form action="" class="description-form">
