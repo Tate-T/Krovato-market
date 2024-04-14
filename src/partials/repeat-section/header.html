@@ -48,9 +48,60 @@
     <div class="container">
       <ul class="header__list2">
         <li class="header__item">
-          <svg class="header__mobile">
-            <use href="../../images/symbol-defs.svg#icon-mobile-menu"></use>
+          <svg class="icon-mobile-header" onclick="toggleMenu()">
+            <use
+              id="menuIcon"
+              href="../../images/symbol-defs.svg#icon-mobile-menu"
+            ></use>
           </svg>
+          <ul class="mobile-menu-list" id="mobileMenu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../about-us.html">Про нас</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../pay.html">Оплата</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../delivery.html"
+                >Доставка та збірка</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../reviews.html">Відгуки</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../blog-page.html">Блог</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../contacts.html"
+                >Контакти</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-credit">
+                  <use href="../../images/symbol-defs.svg#icon-credit"></use>
+                </svg>
+                <h4>Купити в кредит</h4>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-sale">
+                  <use href="../../images/symbol-defs.svg#icon-sale"></use>
+                </svg>
+                <h4>Розпродаж</h4>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-star">
+                  <use href="../../images/symbol-defs.svg#icon-star"></use>
+                </svg>
+                <h4>Акції</h4>
+              </a>
+            </li>
+          </ul>
           <a href="../../index.html" class="header__logo-link">
             <picture>
               <source
@@ -100,9 +151,25 @@
             <p class="header__paragraph">Щодня з 9:00 до 18:00</p>
             <h4 class="header__number">067 929-45-45</h4>
           </div>
-          <svg class="icon__svg">
+          <svg class="icon__svg" onclick="toggleAdditionalNumbers()">
             <use href="../../images/symbol-defs.svg#icon-bottom"></use>
           </svg>
+          <!-- phone drop menu -->
+          <div id="additionalNumbersBox" class="additional-numbers-box hidden">
+            <svg class="icon__svg-mobile-drop">
+              <use href="../../images/symbol-defs.svg#icon-telephone"></use>
+            </svg>
+            <div>
+              <p class="header__paragraph-drop">Щодня з 9:00 до 18:00</p>
+              <h4 class="header__number-drop">067 929-45-45</h4>
+              <h4 class="header__number-drop">050 133-45-45</h4>
+              <h4 class="header__number-drop">093 170-75-45</h4>
+              <a class="header__link-drop" href="#">Передзвоніть мені</a>
+            </div>
+            <svg class="icon__svg-drop" onclick="toggleAdditionalNumbers()">
+              <use href="../../images/symbol-defs.svg#icon-cross"></use>
+            </svg>
+          </div>
           <svg class="obrane__svg">
             <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
           </svg>
@@ -140,9 +207,22 @@
           </a>
         </li>
         <li class="header__item-mobile">
-          <svg class="search__svg-mobile">
+          <svg class="search__svg-mobile" onclick="toggleDropdownMenu()">
             <use href="../../images/symbol-defs.svg#icon-search"></use>
           </svg>
+          <div id="dropdownMenu" class="dropdown-menu hidden">
+            <form class="header__form-mobile">
+              <input
+                class="header__find-mob"
+                type="text"
+                id="headerFind"
+                placeholder="Пошук товарів"
+              />
+            </form>
+            <svg class="search__svg-mob">
+              <use href="/images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </div>
           <svg class="obrane__svg">
             <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
           </svg>
