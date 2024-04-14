@@ -8,8 +8,8 @@
   }
 
   &__bc-container {
-    background-image: url(../../../images/delivery-page/ukraine-ellipse@2x.webp),
-      url(../../../images/delivery-page/ukraine-map@2x.webp);
+    background-image: url(../../../images/delivery-page/ukraine-ellipse@1x.webp),
+      url(../../../images/delivery-page/ukraine-map@1x.webp);
     background-size: 250px, contain;
     background-repeat: no-repeat;
     height: 100%;
@@ -21,6 +21,13 @@
       background-position: 550px 330px, 550px 0;
       height: auto;
     }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../../../images/delivery-page/ukraine-ellipse@2x.webp),
+      url(../../../images/delivery-page/ukraine-map@2x.webp);
+  }
   }
 
   &__container {
