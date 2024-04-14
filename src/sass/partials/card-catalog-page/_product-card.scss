@@ -111,26 +111,13 @@
     position: relative;
   }
 
-  &__img-desk {
-    width: 630px;
-    height: 538px;
-    display: none;
-
-    @media screen and (min-width: 1290px) {
-      display: block;
-    }
-  }
-
-  &__img-mob {
+  &__img {
     width: 410px;
     height: 410px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background-size: cover;
-    background-repeat: no-repeat;
 
     @media screen and (min-width: 1290px) {
-      display: none;
+      width: 630px;
+      height: 538px;
     }
   }
 
