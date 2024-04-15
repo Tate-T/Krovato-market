@@ -491,6 +491,7 @@
     border: 1px solid var(--Theme-Grey-light, #b1b1b1);
     background: var(--Theme-Light, #f8f8f8);
     margin-top: 15px;
+    cursor: pointer;
   }
 
   &__paragraph {
@@ -678,7 +679,7 @@
     background: gray;
     margin-top: 30px;
     margin-bottom: 20px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   &__right-pay-btn.orange {
@@ -767,6 +768,12 @@
   border: 1px solid var(--Theme-Grey-light, #d1d5d5);
   background: #fff;
   transition: all 0.3s ease-in-out;
+  color: var(--Theme-Grey, #535353);
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; 
 }
 
 #surname:hover,

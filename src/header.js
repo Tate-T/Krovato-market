@@ -60,10 +60,12 @@ function removeBlurOverlayFind() {
 function toggleDropdownMenu() {
   let dropdownMenu = document.getElementById("dropdownMenu");
   dropdownMenu.classList.toggle("hidden");
+  let menuIcon = document.getElementById("searchIcon");
 
   if (!dropdownMenu.classList.contains("hidden")) {
     dropdownMenu.style.opacity = "0";
     dropdownMenu.style.transform = "translateY(-20px)";
+    menuIcon.setAttribute("href", "../../images/symbol-defs.svg#icon-cross");
     setTimeout(() => {
       dropdownMenu.style.opacity = "1";
       dropdownMenu.style.transform = "translateY(0)";
@@ -73,6 +75,7 @@ function toggleDropdownMenu() {
   } else {
     dropdownMenu.style.opacity = "0";
     dropdownMenu.style.transform = "translateY(-20px)";
+    menuIcon.setAttribute("href", "../../images/symbol-defs.svg#icon-search");
     removeBlurOverlayFind();
     removeNoScroll();
   }
@@ -89,20 +92,30 @@ function removeNoScroll() {
 // number menu
 
 function toggleAdditionalNumbers() {
-    let additionalNumbersBox = document.getElementById("additionalNumbersBox");
-    if (additionalNumbersBox.classList.contains("hidden")) {
-        additionalNumbersBox.classList.remove("hidden");
-        additionalNumbersBox.style.opacity = "0";
-        additionalNumbersBox.style.transform = "translateY(-100px)";
-        setTimeout(() => {
-            additionalNumbersBox.style.opacity = "1";
-            additionalNumbersBox.style.transform = "translateY(0)";
-        }, 50);
-    } else { 
-        additionalNumbersBox.style.opacity = "0";
-        additionalNumbersBox.style.transform = "translateY(-100px)";
-        setTimeout(() => {
-            additionalNumbersBox.classList.add("hidden");
-        }, 300);
-    }
+  let additionalNumbersBox = document.getElementById("additionalNumbersBox");
+  if (additionalNumbersBox.classList.contains("hidden")) {
+    additionalNumbersBox.classList.remove("hidden");
+    additionalNumbersBox.style.opacity = "0";
+    additionalNumbersBox.style.transform = "translateY(-100px)";
+    setTimeout(() => {
+      additionalNumbersBox.style.opacity = "1";
+      additionalNumbersBox.style.transform = "translateY(0)";
+    }, 50);
+  } else {
+    additionalNumbersBox.style.opacity = "0";
+    additionalNumbersBox.style.transform = "translateY(-100px)";
+    setTimeout(() => {
+      additionalNumbersBox.classList.add("hidden");
+    }, 300);
+  }
+}
+
+function toggleLanguage() {
+  let languageBox = document.getElementById("languageDrop");
+
+  if (languageBox.classList.contains("hidden")) {
+    languageBox.classList.remove("hidden");
+  } else {
+    languageBox.classList.add("hidden");
+  }
 }

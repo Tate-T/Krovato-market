@@ -52,6 +52,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    position: relative;
   }
 
   &__lang-container svg {
@@ -88,10 +89,6 @@
 
   &__list2 > .header__item:nth-child(1) {
     position: relative;
-  }
-
-  &__list2 > .header__item:nth-child(2) {
-    margin-left: 45px;
   }
 
   &__list2 > &__item:nth-child(2) > .icon__svg:nth-child(1) {
@@ -347,7 +344,11 @@ svg {
       display: none;
     }
 
-    &__item:nth-child(3) {
+    &__item:nth-child(2) > div > p,
+    &__item:nth-child(2) > div > h4,
+    &__item:nth-child(2) > svg:nth-child(3),
+    &__item:nth-child(2) + .obrane__svg,
+    &__item:nth-child(2) + .obrane__svg + .korzina__svg {
       display: none;
     }
 
@@ -558,6 +559,10 @@ svg {
       display: none;
     }
 
+    &__list2 > &__item:nth-child(2) {
+      position: relative;
+    }
+
     &__list3 > li:nth-child(1) > a {
       display: none;
     }
@@ -578,6 +583,14 @@ svg {
       font-weight: 600;
       line-height: 24px;
     }
+
+    &__item:nth-child(2) > div > p,
+    &__item:nth-child(2) > div > h4,
+    &__item:nth-child(2) > svg:nth-child(3),
+    &__item:nth-child(2) + .obrane__svg,
+    &__item:nth-child(2) + .obrane__svg + .korzina__svg {
+      display: flex;
+    }
   }
 
   .search__svg {
@@ -586,7 +599,7 @@ svg {
 
   .icon__svg-phone {
     display: block;
-    margin-right: 15px;
+    margin-right: 20px;
   }
 
   .icon-mobile-header {
@@ -599,7 +612,7 @@ svg {
 
   .obrane__svg {
     margin-right: 20px;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
   .additional-numbers-box {
@@ -611,11 +624,9 @@ svg {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12);
     z-index: 999;
     padding: 20px;
-    top: 100px;
-    right: 470px;
+    top: 0;
     display: flex;
     gap: 20px;
-    overflow: hidden; 
     opacity: 0;
     transform: translateY(-100px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -625,6 +636,35 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .header__list {
+    position: relative;
+  }
+
+  .language-dlist {
+    display: inline-flex;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    top: 0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12);
+    position: absolute;
+  }
+
+  .language-dlist p:nth-child(1) {
+    color: #ffbc57;
+  }
+
+  .language-dlist p:nth-child(2) {
+    transition: color 0.3s ease-in-out;
+  }
+
+  .language-dlist p:nth-child(2):hover {
+    color: #ffbc57;
   }
 
   .icon__svg-drop {
