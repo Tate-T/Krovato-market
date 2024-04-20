@@ -17,26 +17,20 @@
         font-family: "Proxima Nova";
         font-size: 20px;
         font-weight: 600;
-        line-height: 28px;
-        width: 578px;
+        line-height: 1.4;
 
     }
 
     &__list {
         display: flex;
         flex-direction: column;
-        max-height: 400px;
-        max-width: 630px;
-        flex-wrap: wrap;
+        gap: 30px;
         padding-bottom: 40px;
-        padding-top: 40px;
     }
 
     &__item {
         display: flex;
-        padding-bottom: 10px;
-        padding-right: 30px;
-        max-width: 630px;
+        gap: 20px;
     }
 
     &__svg {
@@ -48,9 +42,6 @@
 
     }
 
-    &__span {
-        float: right;
-    }
 
     &__button {
         display: flex;
@@ -79,17 +70,31 @@
         position: relative;
     }
 
-    &__item-button{
+    &__item-button {
         padding-bottom: 70px;
     }
 
-    &__button-svg{
+    &__button-svg {
         width: 24px;
         height: 24px;
         flex-shrink: 0;
-       position: absolute;
-       left: 80px;
-       fill: #FFFFFF;
+        position: absolute;
+        left: 80px;
+        fill: #FFFFFF;
 
+    }
+
+    @media screen and (min-width: 1200px) {
+        .route__list {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-height: 360px;
+            row-gap: 10px;
+        }
+
+        .route__item{
+        max-width: 630px;
+        }
     }
 }

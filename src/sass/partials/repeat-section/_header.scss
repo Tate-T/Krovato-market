@@ -478,6 +478,10 @@ svg {
     background-color: #00000042;
   }
 
+  .korzina__svg:nth-child(1){
+    display: none;
+  }
+
   .no-scroll {
     overflow: hidden;
   }

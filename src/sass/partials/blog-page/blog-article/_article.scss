@@ -25,15 +25,32 @@
         padding-top: 40px;
         padding-bottom: 40px;
         display: flex;
-
+        
+        border-radius: 8px;
         justify-content: center;
         flex-direction: column;
 
-        // max-width: 100%;
-        // height: 380px;
-        // background-repeat: no-repeat;
-        // background-image: url(../../../../images/blog-artice/hero-bg@1x.webp);
-        // background-size: cover;
+        max-width: 100%;
+        height: 380px;
+        background-repeat: no-repeat;
+        background-image: url(../../../../images/blog-artice/phone/hero-bg@1x.webp);
+        background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../../../../images/blog-artice/phone/hero-bg@2x.webp);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            background-image: url(../../../../images/blog-artice/hero-bg@1x.webp);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../../../../images/blog-artice/hero-bg@2x.webp);
+            }
+        }
     }
 
     &__text {
@@ -50,6 +67,7 @@
         font-size: 20px;
         font-weight: 600;
         line-height: 28px;
+
     }
 
     &__info {
@@ -58,6 +76,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
+        width: 80%;
     }
 
     &__additionally {
@@ -71,8 +90,10 @@
     &__list {
         flex-direction: column;
         display: flex;
-        padding-top: 30px;
         padding-bottom: 40px;
+        padding-top: 40px;
+        gap: 15px;
+
     }
 
     &__list__text {
@@ -82,19 +103,19 @@
     }
 
     &__item {
-        margin-bottom: 10px;
-        width: 363px;
-
-
-
+        display: flex;
+        gap: 15px;
     }
+
 
     &__item::before {
         content: "";
         display: block;
+
         width: 32px;
         height: 32px;
-        background-image: url(/images/icon-icon-chesk-circle);
+
+        background-image: url(../../../../images/check.svg);
     }
 
     &__svg-left {
@@ -103,9 +124,6 @@
         margin-right: 15px;
     }
 
-    &__text-rigth {
-        float: right;
-    }
 
     &__svg {
         fill: yellow;

@@ -1,14 +1,21 @@
 .write {
-
+    background-color: whitesmoke;
     max-width: 100%;
     height: 530px;
+    padding-bottom: 423px;
+    padding-top: 70px;
 
-    &__container{
-            background-size: cover;
-                background-repeat: no-repeat;
-                background-image: url(../../../images/contacts-page/write-bg@1x.webp);
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 70px;
+    }
+
+    &__container {
+        padding-bottom: 423px;
+        max-width: 1290px;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
     }
 
 
@@ -18,7 +25,7 @@
         height: 30px;
         padding: 10px 20px;
         align-items: flex-start;
-        
+
         gap: 10px;
         border-radius: 8px;
         border: 1px solid var(--Theme-Grey-light, #D1D5D5);
@@ -37,9 +44,8 @@
 
     &__button {
         display: flex;
+        width: 410px;
         height: 50px;
-        width: 240px;
-
         justify-content: center;
         align-items: center;
         gap: 15px;
@@ -50,11 +56,10 @@
 
         font-family: "Proxima Nova";
         font-size: 19px;
-        font-style: normal;
         font-weight: 600;
         line-height: 24px;
         border-radius: 8px;
-            background: var(--Theme-Yellow, #FFBC57);
+        background: var(--Theme-Yellow, #FFBC57);
         margin-top: 20px;
     }
 
@@ -67,47 +72,91 @@
         gap: 10px;
     }
 
-    &__list{
-        display: flex;
-        padding-bottom: 50px;
-        padding-top: 50px;
-    }
-
-    &__one{
+    &__one {
         color: var(--Theme-Dark, #2B2929);
         font-family: "Proxima Nova";
         font-size: 40px;
         font-weight: 600;
         line-height: 48px;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
-    &__two{
+    &__two {
         color: var(--Theme-Dark, #2B2929);
-            font-family: "Proxima Nova";
-            font-size: 26px;
-            font-weight: 600;
-            line-height: 34px;
-    }
-
-    &__three{
-        color: var(--Theme-Yellow, #FFBC57);
-            font-family: "Proxima Nova";
-            font-size: 30px;
-            font-weight: 600;
-            line-height: 40px;
-    }
-
-    &__item-text{
+        font-family: "Proxima Nova";
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 34px;
         
-        display: flex;
-        margin-bottom: 30px;
     }
 
-    &__list-text{
+    &__three {
+        color: var(--Theme-Yellow, #FFBC57);
+        font-family: "Proxima Nova";
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    &__item-text {
+        align-items: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &__two-item{
+        max-width: 480px;
+    }
+
+    &__list-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 410px;
+    }
+
+    &__box {
+        width: 410px;
+        height: 740px;
+    }
+
+    &__form{
         display: flex;
         flex-direction: column;
-        padding-left: 50px;
+        gap: 10px;
+        align-items: center;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        .write__container {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../../../images/contacts-page/write-bg@1x.webp);
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-bottom: 25px;
+
+        }
+
+        .write__button {
+            height: 50px;
+            width: 240px;
+        }
+
+    .write__list-text{
         padding-top: 123px;
-        width: 470px;
+    }
+
+    .write__form{
+        align-items: start;
+    }
+
+
+
     }
 }
