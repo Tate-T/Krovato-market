@@ -46,6 +46,12 @@
     margin-right: auto;
     margin-top: 40px;
     padding: 8px 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(252, 169, 44, 0.903);
+      transform: scale(1.02);
+    }
 
     @media screen and (min-width: 1290px) {
       width: auto;
@@ -293,6 +299,13 @@
     align-items: center;
     background-color: transparent;
     gap: 8px;
+    border-radius: 5px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(166, 110, 27, 0.049);
+      transform: scale(1.02);
+    }
   }
 
   &__button-svg {
@@ -629,6 +642,13 @@
     align-items: center;
     background-color: transparent;
     gap: 8px;
+    border-radius: 5px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(166, 110, 27, 0.049);
+      transform: scale(1.02);
+    }
   }
 
   &__button-svg {
@@ -787,6 +807,12 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.26;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(252, 169, 44, 0.763);
+      transform: scale(1.02);
+    }
 
     @media screen and (min-width: 1290px) {
       width: 160px;
@@ -807,6 +833,12 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.26;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.037);
+      transform: scale(1.02);
+    }
 
     @media screen and (min-width: 1290px) {
       width: 160px;
@@ -903,6 +935,13 @@
     align-items: center;
     background-color: transparent;
     gap: 8px;
+    border-radius: 5px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(166, 110, 27, 0.049);
+      transform: scale(1.02);
+    }
   }
 
   &__button-svg {
@@ -1069,6 +1108,13 @@
     align-items: center;
     background-color: transparent;
     gap: 8px;
+    border-radius: 5px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(166, 110, 27, 0.049);
+      transform: scale(1.02);
+    }
   }
 
   &__button-svg {

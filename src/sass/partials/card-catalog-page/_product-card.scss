@@ -175,6 +175,13 @@
     align-items: center;
     justify-content: center;
     display: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: scale(1.07);
+      box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+    }
 
     @media screen and (min-width: 1290px) {
       display: flex;
@@ -200,6 +207,13 @@
     align-items: center;
     justify-content: center;
     display: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: scale(1.07);
+      box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15);
+    }
 
     @media screen and (min-width: 1290px) {
       display: flex;
@@ -634,10 +648,15 @@
     gap: 15px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: $yellow;
+    background-color: $yellow;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1290px) {
       width: 208px;
+    }
+
+    &:hover {
+      background-color: rgb(239, 179, 89);
     }
   }
 
@@ -668,6 +687,11 @@
     border-radius: 8px;
     border: 2px solid $yellow;
     background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: rgba(239, 179, 89, 0.088);
+    }
   }
 
   &__credyt-svg {
@@ -769,10 +793,16 @@
     font-weight: 600;
     line-height: 1.26;
     background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1290px) {
       width: 212px;
       margin-left: auto;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.041);
+      transform: scale(1.05);
     }
   }
 }
