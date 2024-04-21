@@ -165,10 +165,10 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 1.41;
+    transition: color 250ms ease-in-out;
 
     &:hover {
       color: $yellow;
-      transition-duration: 200ms;
     }
   }
 
@@ -241,13 +241,25 @@
     }
   }
 
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   &__number {
     color: #fff;
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
-    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+
+
+    &:hover {
+      color: $yellow;
+    }
   }
 
   &__call-me {
