@@ -278,7 +278,11 @@
     font-weight: 600;
     line-height: 1.4;
     width: 174px;
+    transition: color 250ms ease-in-out;
 
+    &:hover {
+      color: $yellow;
+    }
     @media screen and (min-width: 1290px) {
       text-align: left;
     }
