@@ -10,7 +10,11 @@
     font-size: 30px;
     font-weight: 600;
     line-height: 40px;
-    max-width: 410px;
+    max-width: 320px;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 40px;
@@ -22,7 +26,7 @@
     }
 }
 
-.questions__list {
+.questions__list { 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,9 +35,9 @@
     gap: 15px;
 }
 
-.questions__item {
+.questions__item { 
     position: relative;
-    max-width: 1070px;
+    max-width: 320px;
     padding: 15px;
     border-radius: 8px;
     background: #FFF;
@@ -41,9 +45,17 @@
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
     transition-property: border;
     transition-duration: 500ms;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1070px;
+    }
 }
 
-.questions__item:hover {
+.questions__item:hover { 
     border: 2px solid #FFBC57;
 }
 
@@ -53,7 +65,7 @@
     z-index: -1;
 }
 
-.questions__label {
+.questions__label { 
     display: flex;
     align-items: center;
 }
@@ -61,23 +73,19 @@
 .questions__label::after {
     content: '';
     background-image: url(../../../images/card-catalog/phone/arrow-bottom@1X.webp);
-
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../../../images/card-catalog/phone/arrow-bottom@2X.webp);
+    background-image: url(../../../images/card-catalog/phone/arrow-bottom@2X.webp);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../../../images/card-catalog/arrow-bottom@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../images/card-catalog/arrow-bottom@2X.webp);
     }
-
-    @media screen and (min-width: 1200px) {
-        background-image: url(../../../images/card-catalog/arrow-bottom@1X.webp);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../../../images/card-catalog/arrow-bottom@2X.webp);
-        }
-    }
-
+  }
     position: absolute;
     top: 15px;
     right: 15px;
@@ -89,15 +97,19 @@
     height: 34px;
 }
 
-.questions__icon {
+.questions__icon { 
     fill: #FFBC57;
     width: 40px;
     height: 40px;
 }
 
-.questions__text {
+.questions__text { 
     margin-left: 15px;
-    max-width: 286px;
+    max-width: 236px;
+
+    @media screen and (min-width: 480px) {
+        max-width: 286px;
+    }
 
     @media screen and (min-width: 1200px) {
         max-width: 946px;
@@ -107,32 +119,32 @@
 .questions__icon-arrow {
     width: 34px;
     height: 34px;
-    fill: #2B2929;
-    margin-right: 0;
-    margin-left: auto;
+fill: #2B2929;
+margin-right: 0;
+margin-left: auto;
 }
 
 .questions__text {
     color: var($dark);
-    font-family: "Proxima Nova";
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
+font-family: "Proxima Nova";
+font-size: 19px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
 }
 
 .questions__subtext {
     color: var($dark);
-    font-family: "Proxima Nova";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    max-width: 380px;
+font-family: "Proxima Nova";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+max-width: 380px;
 
-    @media screen and (min-width: 1200px) {
-        max-width: 1040px;
-    }
+@media screen and (min-width: 1200px) {
+    max-width: 1040px;
+}
 }
 
 .questions__paragraph {
@@ -143,10 +155,10 @@
     transition: max-height 0.9s;
 }
 
-.questions__item .questions__input:checked~.questions__paragraph {
+.questions__item .questions__input:checked ~ .questions__paragraph {
     display: block;
     transition: all 1.5s;
-    max-height: 520px;
+    max-height: 550px;
 
     @media screen and (min-width: 1200px) {
         max-height: 230px;
@@ -154,23 +166,20 @@
     }
 }
 
-.questions__input:checked+.questions__label::after {
+.questions__input:checked + .questions__label::after {
     content: '';
     background-image: url(../../../images/card-catalog/phone/arrow-top@1X.webp);
-
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../../../images/card-catalog/phone/arrow-top@2X.webp);
+    background-image: url(../../../images/card-catalog/phone/arrow-top@2X.webp);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../../../images/card-catalog/arrow-top@1X.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../images/card-catalog/arrow-top@2X.webp);
     }
-
-    @media screen and (min-width: 1200px) {
-        background-image: url(../../../images/card-catalog/arrow-top@1X.webp);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../../../images/card-catalog/arrow-top@2X.webp);
-        }
-    }
+  }
 }

@@ -15,11 +15,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    /* 187.5% */
     transition-property: color;
     transition-duration: 250ms;
 }
 
-.pay__main-link:hover {
+.pay__main-link:hover { 
     color: $yellow;
 }
 
@@ -36,9 +37,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    /* 187.5% */
 }
 
-.pay__section {
+.pay__section { 
     background-color: white;
     margin-top: 30px;
     background-repeat: no-repeat;
@@ -53,22 +55,20 @@
     }
 
     background-image: url(../../../images/pay-page/phone/hero-bg@1x.webp);
-
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../../../images/pay-page/phone/hero-bg@2x.webp);
-    }
+    background-image: url(../../../images/pay-page/phone/hero-bg@2x.webp);
+  }
 
-    @media screen and (min-width: 1200px) {
-        background-image: url(../../../images/pay-page/hero-bg@1x.webp);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../../../images/pay-page/hero-bg@2x.webp);
-        }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../../../images/pay-page/hero-bg@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../images/pay-page/hero-bg@2x.webp);
     }
+  }
 
 }
 
@@ -80,6 +80,8 @@
     font-weight: 600;
     line-height: 48px;
     text-align: center;
+    /* 120% */
+
     max-width: 410px;
     padding-top: 40px;
 
@@ -99,6 +101,7 @@
     font-size: 20px;
     line-height: 28px;
     text-align: center;
+    /* 130.769% */
     max-width: 410px;
     margin-top: 30px;
 
@@ -120,6 +123,8 @@
     font-weight: 600;
     line-height: 28px;
     text-align: center;
+    /* 140% */
+
     max-width: 410px;
     margin-top: 20px;
     padding-bottom: 0;
