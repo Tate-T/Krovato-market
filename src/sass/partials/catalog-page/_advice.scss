@@ -56,6 +56,50 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .advice {
+    &__title {
+      width: 410px;
+      font-size: 30px;
+      text-align: start;
+    }
+
+    &__shadow {
+      right: 0;
+    }
+
+    &__descr {
+      width: 410px;
+      height: 350px;
+      flex-shrink: 0;
+    }
+
+    &__descr span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .advice {
+    &__title {
+      width: 310px;
+      font-size: 30px;
+      text-align: start;
+    }
+
+    &__descr {
+      width: 310px;
+      height: 470px;
+      flex-shrink: 0;
+    }
+
+    &__descr span {
+      display: none;
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .advice {
     &__title {
@@ -93,6 +137,10 @@
 
     &__descr span {
       display: block;
+    }
+
+    &__shadow {
+      right: -180px;
     }
   }
 }

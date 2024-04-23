@@ -55,6 +55,32 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .about {
+    overflow-x: hidden;
+    &__title {
+      font-size: 30px;
+      width: 300px;
+      text-align: start;
+      margin-bottom: 40px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      width: 310px;
+      height: 370px;
+    }
+
+    &__descr span {
+      display: none;
+    }
+
+    &__shadow {
+      bottom: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .about {
     overflow-x: hidden;
@@ -73,6 +99,8 @@
     &__descr span {
       display: none;
     }
+
+
   }
 }
 
