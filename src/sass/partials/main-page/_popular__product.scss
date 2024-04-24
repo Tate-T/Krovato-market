@@ -179,6 +179,44 @@
   padding: 10px;
 }
 
+@media screen and (min-width: 320px) {
+  .products {
+    &__title {
+      font-size: 25px;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__item {
+      width: 250px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__img {
+      width: 250px;
+      height: 220px;
+    }
+  }
+
+  .like__svg {
+    width: 25px;
+    height: 25px;
+    fill: #b1b1b1;
+    margin-right: 0px;
+  }
+
+  .tray__svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .products {
     &__title {

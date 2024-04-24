@@ -110,6 +110,26 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .category {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 110px;
+      height: 190px;
+      background-size: 95%;
+      background-position: bottom;
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .category {
     &__title {
