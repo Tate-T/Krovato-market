@@ -491,8 +491,8 @@
     border: 1px solid var(--Theme-Grey-light, #b1b1b1);
     background: var(--Theme-Light, #f8f8f8);
     margin-top: 15px;
-    cursor: pointer;
   }
+
 
   &__paragraph {
     color: var(--Theme-Dark, #2b2929);
@@ -610,6 +610,8 @@
     gap: 10px;
   }
 
+
+
   &__right-pay-text {
     color: var(--Theme-Dark, #2b2929);
     font-family: "Proxima Nova";
@@ -722,7 +724,7 @@
 }
 
 .tray__right-pay-item:nth-child(3) > .pay-line {
-  width: 150px;
+  width: 160px;
 }
 
 .left-side {
@@ -1168,7 +1170,7 @@ input[type="radio"]:checked::before {
       width: 275px;
     }
   }
-  .form-first-second > .tray__form-second input  {
+  .form-first-second > .tray__form-second input {
     display: flex;
     flex-direction: column;
     width: 1px;
@@ -1423,6 +1425,24 @@ input[type="radio"]:checked::before {
       flex-direction: row;
     }
 
+    &__right-counter,
+    &__right-counter2 {
+      display: flex;
+      flex-direction: row;
+      width: 55px;
+    }
+
+
+    &__right-counter > button,
+    &__right-counter2 > button {
+      background-color: transparent;
+    }
+
+
+    &__label-people {
+      width: auto;
+    }
+
     &__title {
       font-size: 40px;
       margin-bottom: 30px;
@@ -1615,7 +1635,11 @@ input[type="radio"]:checked::before {
   }
 
   .tray__right-pay-item:nth-child(3) > .pay-line {
-    width: 150px;
+    width: 185px;
+  }
+
+  .tray__right-pay-price {
+    width: auto;
   }
 
   .forms-container {
