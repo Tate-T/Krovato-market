@@ -18,7 +18,8 @@
         font-size: 20px;
         font-weight: 600;
         line-height: 1.4;
-
+        width: 100%;
+        
     }
 
     &__list {
@@ -30,7 +31,7 @@
 
     &__item {
         display: flex;
-        gap: 20px;
+        gap: 15px;
     }
 
     &__svg {
@@ -82,6 +83,23 @@
         left: 80px;
         fill: #FFFFFF;
 
+    }
+
+    @media screen and (max-width: 320px) {
+        .route{
+
+            &__button{
+        width: 320px;
+            height: 50px;
+            }
+        &__button-svg{
+            left: 40px;
+        }
+        
+        &__text{
+            width: 100%;
+        }
+        }
     }
 
     @media screen and (min-width: 1200px) {

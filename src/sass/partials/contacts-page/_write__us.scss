@@ -1,9 +1,8 @@
 .write {
     background-color: whitesmoke;
     max-width: 100%;
-    height: 530px;
-    padding-bottom: 423px;
     padding-top: 70px;
+    padding-bottom: 60px;
 
 
     @media screen and (min-width: 1200px) {
@@ -11,7 +10,6 @@
     }
 
     &__container {
-        padding-bottom: 423px;
         max-width: 1290px;
         display: flex;
         justify-content: space-between;
@@ -21,7 +19,7 @@
 
     &__input {
         display: flex;
-        width: 410px;
+        width: 368px;
         height: 30px;
         padding: 10px 20px;
         align-items: flex-start;
@@ -130,6 +128,22 @@
 
     }
 
+    @media screen and (max-width: 320px) {
+        .write{
+            &__item-text{
+                align-items: center;
+                justify-content: center;
+                width: 420px;
+            }
+
+            &__input{
+               max-width: 100%;
+            }
+
+            
+        }
+    }
+
     @media screen and (min-width: 1200px) {
         .write__container {
             background-size: cover;
@@ -148,9 +162,6 @@
             width: 240px;
         }
 
-    .write__list-text{
-        padding-top: 123px;
-    }
 
     .write__form{
         align-items: start;

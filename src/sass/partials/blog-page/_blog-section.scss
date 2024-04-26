@@ -178,6 +178,31 @@
         flex-shrink: 0;
     }
 
+    @media screen and (max-width: 320px) {
+        
+        .blog{
+            
+         &__item{
+            max-width: 320px;
+         }
+
+         &__bth{
+            max-width: 320px;
+         }
+
+         &__bth-svg{
+            position: absolute;
+            left: 45px;
+         }
+
+         &__img{
+            height: 100%;
+         }
+        }
+
+
+    }
+
     @media screen and (min-width: 1200px) {
         .blog {
 
