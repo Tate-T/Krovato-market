@@ -10,13 +10,13 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Кошик</title>
     <link rel="stylesheet" href="./sass/tray.scss" />
     <script type="module" src="./index.js"></script>
@@ -26,6 +26,42 @@
     <load ="./partials/tray-page/tray.html" />
     <load ="./partials/repeat-section/advantages.html" />
     <load ="./partials/repeat-section/footer.html" />
+    <script>
+      let minusNumber1 = document.querySelector(".tray__right-pay-price");
+      let couponButton = document.querySelector(".tray__right-promo-btn");
+      let alreadyExecuted = false;
+      let couponActivated = false;
+      let couponeInput = document.querySelector(".tray__right-promo-input");
+
+      const allowedCoupons = ["Ruslan", "Artem", "Vika", "GoIteens", "Vyacheslav"];
+
+      couponButton.addEventListener("click", function () {
+        let promocode = couponeInput.value.trim();
+
+        if (allowedCoupons.includes(promocode) && !alreadyExecuted) {
+          anime({
+            targets: minusNumber1,
+            innerHTML: [540269, 481263],
+            easing: "linear",
+            duration: 1300,
+            round: 1,
+            loop: false,
+            update: function () {
+              minusNumber1.innerHTML =
+                numberWithSpaces(minusNumber1.innerHTML) + " грн";
+            },
+          });
+
+          function numberWithSpaces(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+          }
+
+          alreadyExecuted = true;
+        }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const deliveryItems = document.querySelectorAll(".tray__delivery-item");
@@ -50,8 +86,9 @@
           } else {
             button.classList.remove("orange");
           }
-        })});
-        </script>
+        });
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./header.js"></script>
     <script>
