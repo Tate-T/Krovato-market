@@ -9,6 +9,10 @@
     line-height: 1.2;
     margin-bottom: 40px;
 
+    @media screen and (max-width: 480px) {
+      font-size: 31px;
+    }
+
     @media screen and (min-width: 1290px) {
       font-size: 40px;
     }
@@ -34,6 +38,10 @@
     background: #fff;
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
     width: 360px;
+
+    @media screen and (max-width: 480px) {
+      width: 278px;
+    }
 
     @media screen and (min-width: 1290px) {
       width: 260px;

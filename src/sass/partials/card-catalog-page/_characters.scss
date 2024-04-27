@@ -26,6 +26,10 @@
     gap: 10px;
     border-radius: 8px;
 
+    @media screen and (max-width:480px) {
+      width: auto;
+    }
+
     @media screen and (min-width: 1290px) {
       width: 850px;
     }

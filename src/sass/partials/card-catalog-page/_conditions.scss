@@ -46,6 +46,12 @@
     }
   }
 
+  &__text-box {
+    @media screen and (max-width:480px) {
+      width: 219px;
+    }
+  }
+
   &__text {
     color: $grey;
     font-family: "Proxima Nova";
