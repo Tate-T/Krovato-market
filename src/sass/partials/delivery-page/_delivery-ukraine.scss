@@ -14,7 +14,10 @@
     background-repeat: no-repeat;
     height: 100%;
     background-position: 0 1070px, center 820px;
-    height: 1678px;
+    
+    @media screen and (max-width:420px) {
+      background-position: 0 1300px, center 1130px;
+    }
 
     @media screen and (min-width: 1290px) {
       background-size: 420px, 740px;
@@ -32,6 +35,10 @@
 
   &__container {
     width: 520px;
+
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -43,6 +50,11 @@
     line-height: 1.33;
     width: 410px;
     margin-bottom: 40px;
+
+    @media screen and (max-width:420px) {
+      width: 100%;
+      text-align-last: left;
+    }
 
     @media screen and (min-width: 1290px) {
       font-size: 40px;
@@ -89,6 +101,10 @@
     line-height: 1.4;
     width: 316px;
 
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 1290px) {
       width: auto;
     }
@@ -106,6 +122,10 @@
     & span {
       display: block;
       margin-top: 11px;
+    }
+
+    @media screen and (max-width:420px) {
+      width: 100%;
     }
 
     @media screen and (min-width: 1290px) {

@@ -3,7 +3,7 @@
   background-color: $light;
 
   @media screen and (min-width: 1290px) {
-  padding-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   &__bc-container {
@@ -12,27 +12,29 @@
     background-size: 250px, contain;
     background-repeat: no-repeat;
     height: 100%;
-    background-position: bottom left ,bottom;    
+    background-position: bottom left, bottom;
 
     @media screen and (min-width: 1290px) {
       height: auto;
       background-size: 400px, contain;
       background-position: 550px 315px, right;
-      }
+    }
 
-      @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../../../images/delivery-page/kyiv-ellipse@2x.webp),
-      url(../../../images/delivery-page/kyiv-map@2x.webp);
+        url(../../../images/delivery-page/kyiv-map@2x.webp);
     }
-
-
   }
 
   &__container {
     height: 1171px;
     width: 410px;
+
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 1290px) {
       width: 520px;
@@ -48,6 +50,11 @@
     line-height: 1.33;
     margin-bottom: 40px;
     width: 410px;
+
+    @media screen and (max-width:420px) {
+      width: 100%;
+      text-align: left;
+    }
 
     @media screen and (min-width: 1290px) {
       font-size: 40px;
@@ -94,8 +101,12 @@
     line-height: 1.4;
     width: 316px;
 
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 1290px) {
-width: auto;
+      width: auto;
     }
   }
 
@@ -107,6 +118,10 @@ width: auto;
     line-height: 1.4;
     margin-bottom: 30px;
     width: 410px;
+
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 1290px) {
       margin-bottom: 40px;

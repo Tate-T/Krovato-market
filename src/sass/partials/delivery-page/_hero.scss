@@ -59,6 +59,10 @@
       background-size: contain;
     }
 
+    @media screen and (max-width:420px) {
+      background-position: right bottom;
+    }
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -68,6 +72,10 @@
 
   &__text-box {
     width: 410px;
+
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 1290px) {
       width: 450px;
@@ -84,6 +92,10 @@
     margin-bottom: 30px;
     width: 410px;
 
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 1290px) {
       text-align: left;
       font-size: 40px;
@@ -99,6 +111,10 @@
     line-height: 1.4;
     width: 405px;
     margin-bottom: 20px;
+
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 1290px) {
       font-size: 26px;

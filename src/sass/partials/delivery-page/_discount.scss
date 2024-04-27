@@ -17,6 +17,10 @@
     line-height: 1.33;
     width: 410px;
 
+    @media screen and (max-width: 420px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 1290px) {
       width: auto;
       font-size: 40px;
@@ -65,7 +69,11 @@
     font-weight: 600;
     line-height: 1.4;
 
-    @media screen and (min-width:1290px) {
+    @media screen and (max-width: 420px) {
+      font-size: 19px;
+    }
+
+    @media screen and (min-width: 1290px) {
       text-align: center;
     }
   }
@@ -78,7 +86,11 @@
     font-weight: 400;
     line-height: 1.87;
 
-    @media screen and (min-width:1290px) {
+    @media screen and (max-width: 420px) {
+      font-size: 15px;
+    }
+
+    @media screen and (min-width: 1290px) {
       color: $dark;
       text-align: center;
       font-family: "Proxima Nova";

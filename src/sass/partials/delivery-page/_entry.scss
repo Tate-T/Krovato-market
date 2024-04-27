@@ -1,5 +1,6 @@
 .entry {
   padding-bottom: 70px;
+
   &__title {
     color: $dark;
     font-family: "Proxima Nova";
@@ -90,6 +91,10 @@
     line-height: 1.41;
     width: 390px;
 
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 1290px) {
       width: 420px;
       white-space: nowrap;
@@ -159,6 +164,10 @@
     padding: 15px 10px;
     border-radius: 8px;
     gap: 10px;
+
+    @media screen and (max-width:420px) {
+      width: 300px;
+    }
 
     &:nth-child(2n + 1) {
       background-color: $light;
@@ -250,6 +259,10 @@
     line-height: 1.41;
     width: 390px;
 
+    @media screen and (max-width:420px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 1290px) {
       width: 420px;
       white-space: nowrap;
@@ -320,6 +333,10 @@
     padding: 15px 10px;
     border-radius: 8px;
     gap: 10px;
+
+    @media screen and (max-width:420px) {
+      width: 300px;
+    }
 
     &:nth-child(2n + 1) {
       background-color: $light;
