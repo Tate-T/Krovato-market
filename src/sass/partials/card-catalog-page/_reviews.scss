@@ -46,7 +46,8 @@
     margin-right: auto;
     margin-top: 40px;
     padding: 8px 30px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background-color: rgba(252, 169, 44, 0.903);
@@ -139,8 +140,14 @@
   }
 
   &__stars-otsinka-box {
-    display: flex;
+    flex-direction: row;
     gap: 10px;
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__stars {
@@ -300,7 +307,8 @@
     background-color: transparent;
     gap: 8px;
     border-radius: 5px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background-color: rgba(166, 110, 27, 0.049);
@@ -339,6 +347,11 @@
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-between;
+
+    @media screen and (max-width: 480px) {
+      gap: 10px;
+      justify-content: start;
+    }
 
     @media screen and (min-width: 1290px) {
       gap: 20px;
@@ -380,6 +393,10 @@
     justify-content: center;
     white-space: nowrap;
 
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+
     @media screen and (min-width: 1290px) {
       font-size: 17px;
     }
@@ -391,6 +408,10 @@
     margin-left: 4px;
     margin-right: 4px;
     fill: $yellow;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
 
     @media screen and (min-width: 1290px) {
       margin-right: 0;
@@ -646,7 +667,8 @@
     background-color: transparent;
     gap: 8px;
     border-radius: 5px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background-color: rgba(166, 110, 27, 0.049);
@@ -699,6 +721,11 @@
   border-radius: 8px;
   background-color: $light;
   width: 300px;
+  display: block;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 
   @media screen and (min-width: 1290px) {
     width: 790px;
@@ -810,7 +837,8 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.26;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background-color: rgba(252, 169, 44, 0.763);
@@ -836,7 +864,8 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 1.26;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.037);
@@ -939,7 +968,8 @@
     background-color: transparent;
     gap: 8px;
     border-radius: 5px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background-color: rgba(166, 110, 27, 0.049);
@@ -983,7 +1013,7 @@
 
 .review-last {
   display: block;
-  
+
   @media screen and (min-width: 1290px) {
     display: none;
   }
@@ -1112,7 +1142,8 @@
     background-color: transparent;
     gap: 8px;
     border-radius: 5px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       background-color: rgba(166, 110, 27, 0.049);
