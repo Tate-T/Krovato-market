@@ -21,15 +21,13 @@
           <div class="prices-container">
           <div class="prices">
             <div class="prices-box">
-              <h3>1195</h3>
-            </div>
-            <div class="prices-box">
-              <h3>9566</h3>
+              <input value="1195" type="text">
+              <input value="9566" type="text">
           </div>
           <button class="prices-btn">OK</button>
           </div>
           <div class="prices-img-box">
-          <img class="prices-img" src="../../images/catalog/scroll.png" alt="scroll" draggable="false">
+         <img src="../../images/catalog/scroll.png" alt="">
         </div>
       </div>
         </li>
@@ -237,48 +235,59 @@
           </svg>
           <h4 class="catalog__head-sort">Сортування:</h4>
           <p class="catalog__head-price">За зростанням ціни</p>
-          <svg class="catalog__svg-arrow">
+          <svg class="catalog__svg-arrow" onclick="toggleFilter()">
             <use href="../../images/symbol-defs.svg#icon-arrow"></use>
           </svg>
+          <div id="filterBox" class="hidden">
+            <svg class="catalog__svg-arrow-dropdown" onclick="toggleFilter()">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+            <div>
+              <a href="#">За зростанням ціни</a>
+              <a href="#">За спаданням ціни</a>
+              <a href="#">За рейтингом</a>
+              <a href="#">Новинки</a>
+            </div>
+          </div>
         </div>
       </div>
       <ul class="catalog__head-list">
-        <li class="catalog__head-item">
+        <button class="catalog__head-item">
           <h4 class="catalog__head-title">Очистити</h4>
           <svg class="filter__svg-cross">
             <use href="../../images/symbol-defs.svg#icon-cross"></use>
           </svg>
-        </li>
-        <li class="catalog__head-item">
+        </button>
+        <button class="catalog__head-item">
           <h4 class="catalog__head-title">Ціна: 1195-9566</h4>
           <svg class="filter__svg-cross">
             <use href="../../images/symbol-defs.svg#icon-cross"></use>
           </svg>
-        </li>
-        <li class="catalog__head-item">
+        </button>
+        <button class="catalog__head-item">
           <h4 class="catalog__head-title">В наявності</h4>
           <svg class="filter__svg-cross">
             <use href="../../images/symbol-defs.svg#icon-cross"></use>
           </svg>
-        </li>
-        <li class="catalog__head-item">
+        </button>
+        <button class="catalog__head-item">
           <h4 class="catalog__head-title">Виробник: Corners</h4>
           <svg class="filter__svg-cross">
             <use href="../../images/symbol-defs.svg#icon-cross"></use>
           </svg>
-        </li>
-        <li class="catalog__head-item">
+        </button>
+        <button class="catalog__head-item">
           <h4 class="catalog__head-title">Без узголов'я</h4>
           <svg class="filter__svg-cross">
             <use href="../../images/symbol-defs.svg#icon-cross"></use>
           </svg>
-        </li>
-        <li class="catalog__head-item">
+        </button>
+        <button class="catalog__head-item">
           <h4 class="catalog__head-title">200x210 см</h4>
           <svg class="filter__svg-cross">
             <use href="../../images/symbol-defs.svg#icon-cross"></use>
           </svg>
-        </li>
+        </button  >
       </ul>
       <div class="catalog__head-svgs-mobile">
         <svg class="catalog__svg-sort">
