@@ -1,6 +1,7 @@
 .reviews {
   background-color: #e9e9e9;
   padding: 70px 0;
+  overflow: hidden;
 
   &__icon-svg {
     width: 60px;
@@ -153,13 +154,17 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+    overflow: hidden;
+    width: 1500px;
   }
-
+  
   &__item {
-    display: flex;
     width: 390px;
     padding: 30px;
     height: 310px;
+    flex-shrink: 0;
+    flex-grow: 0; 
+    flex-basis: auto;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
@@ -168,6 +173,7 @@
     background: #fff;
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
   }
+  
 
   &__avatar {
     width: 21.429px;
@@ -381,6 +387,7 @@
     }
 
     &__item {
+      display: flex;
       width: 390px;
       margin-top: 40px;
       margin-bottom: 30px;
@@ -403,4 +410,47 @@
   .container-reviews {
     flex-direction: row;
   }
+}
+
+.slider-container {
+  width: 695px;
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+}
+
+.custom-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 7px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 60px;
+  background-image: url(../../../images/main-page/arrow-scroll.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
 }
