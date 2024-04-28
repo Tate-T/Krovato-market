@@ -293,7 +293,7 @@ svg {
 .search__svg {
   position: absolute;
   top: 25%;
-  right: 5%;
+  right: 45px;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -744,6 +744,10 @@ svg {
       margin-right: 30px;
     }
 
+    &__form-box {
+      position: relative;
+    }
+
     &__item:nth-child(3) {
       display: block;
     }
@@ -896,4 +900,30 @@ svg {
     height: 12px;
     fill: #535353;
   }
+}
+
+#searchResults {
+  position: absolute; 
+  top: 60px;
+  left: 0; 
+  z-index: 1000; 
+  width: 93%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(92, 92, 92);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#searchResults > div {
+  padding: 10px; 
+  cursor: pointer;
+}
+
+#searchResults > div:hover {
+  background-color: #f0f0f0; 
+  border-radius: 10px;
+}
+
+#searchResults.hidden {
+  display: none;
 }
