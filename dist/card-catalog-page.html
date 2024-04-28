@@ -9,132 +9,289 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <title>Карточка товару</title>
     
     
-    <script type="module" crossorigin src="/krovato-market/assets/index-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/krovato-market/assets/card-catalog-page-142c3e46.css">
+    <script type="module" crossorigin src="/krovato-market/assets/index-ed910c9f.js"></script>
+    <link rel="stylesheet" href="/krovato-market/assets/card-catalog-page-c60e45fa.css">
   </head>
   <body>
     <header class="header">
+  <section class="header__section1">
     <div class="container">
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="./about-us.html" class="header__link">Про нас</a>
-                    <a href="./pay.html" class="header__link">Оплата</a>
-                    <a href="./delivery.html" class="header__link">Доставка та збірка</a>
-                    <a href="./reviews.html" class="header__link">Відгуки</a>
-                    <a href="./blog-page.html" class="header__link">Блог</a>
-                    <a href="./contacts.html" class="header__link">Контакти</a>
-                </li>
-                <li class="header__item">
-                    <p>Допомога і консультація:
-                    <div class="bug-icon">
-                        <svg class="icon__svg-whatsapp">
-                            <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-whatsapp"></use>
-                        </svg>
-                    </div>
-                    <svg class="icon__svg">
-                        <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-telegram"></use>
-                    </svg><svg class="icon__svg">
-                        <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-viber"></use>
-                    </svg></p>
-                </li>
-            </ul>
-            <ul class="header__list2">
-                <li class="header__item">
-                    <a href="./index.html" class="header__link">
-                        <picture>
-                            <source
-                                srcset="data:image/webp;base64,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 1x, /krovato-market/assets/logo-header@2x-f83feaba.webp 2x"
-                                media="(min-width: 1200px)">
-                            <!-- <source srcset=""> -->
-                            <img class="header__logo" src="data:image/webp;base64,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" alt="Krovato">
-                        </picture>
-                    </a>
-                    <button>
-                        <svg class="catalog__svg">
-                            <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-menu-catalog"></use>
-                        </svg>
-                        Каталог
-                    </button>
-
-                    <form>
-                        <input type="text" id="name" placeholder="Пошук товарів">
-                    </form>
-                    <svg class="search__svg">
-                        <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-search"></use>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="../../about-us.html" class="header__link">Про нас</a>
+            <a href="../../pay.html" class="header__link">Оплата</a>
+            <a href="../../delivery.html" class="header__link"
+              >Доставка та збірка</a
+            >
+            <a href="../../reviews.html" class="header__link">Відгуки</a>
+            <a href="../../blog-page.html" class="header__link">Блог</a>
+            <a href="../../contacts.html" class="header__link">Контакти</a>
+          </li>
+          <li class="header__item">
+            <p class="header__help">Допомога і консультація:</p>
+            <ul class="header__svg">
+              <li class="header__list-svg">
+                <div class="bug-icon">
+                  <svg class="icon__svg-whatsapp">
+                    <use
+                      href="../../images/symbol-defs.svg#icon-whatsapp"
+                    ></use>
+                  </svg>
+                </div>
+                <svg class="icon__svg">
+                  <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+                <svg class="icon__svg">
+                  <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                </svg>
+                <div class="header__lang-container">
+                  <p class="header__lang-text">UA</p>
+                  <svg class="icon__svg" onclick="toggleLanguage()">
+                    <use href="../../images/symbol-defs.svg#icon-bottom"></use>
+                  </svg>
+                  <ul id="languageDrop" class="language-dlist hidden">
+                      <div>
+                    <p id="UaPrgrph" class="header__lang-text">UA</p>
+                    <p id="EnPrgrph" class="header__lang-text">EN</p>
+                  </div>
+                    <svg class="icon__svg" onclick="toggleLanguage()">
+                      <use href="../../images/symbol-defs.svg#icon-bottom"></use>
                     </svg>
-                </li>
-
-                <li class="header__item">
-                    <div class="icon-container">
-                        <svg class="icon__svg">
-                            <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-telephone"></use>
-                        </svg>
-                        <div>
-                            <p class="header__paragraph">Щодня з 9:00 до 18:00</p>
-                            <h4 class="header__number">067 929-45-45</h4>
-                        </div>
-                        <svg class="icon__svg">
-                            <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-bottom"></use>
-                        </svg>
-                    </div>
-                    <svg class="obrane__svg">
-                        <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-obrane-heard"></use>
-                    </svg>
-                    <svg class="korzina__svg">
-                        <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-korzina"></use>
-                    </svg>
-
-                </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-            <ul class="header__list3">
-                <li class="header__item">
-                    <a href="#">
-                        <svg class="icon-star">
-                            <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-star"></use>
-                        </svg>
-                        <h4>Акції</h4>
-                    </a>
-                    <a href="#">
-                        <svg class="icon-sale">
-                            <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-sale"></use>
-                        </svg>
-                        <h4>Розпродаж</h4>
-                    </a>
-                    <a href="#">
-                        <svg class="icon-credit">
-                            <use href="/krovato-market/assets/symbol-defs-bb9d324b.svg#icon-credit"></use>
-                        </svg>
-                        <h4>Купити в кредит</h4>
-                    </a>
-                </li>                
-                <li class="header__item">
-                    <a href="#" class="header__link">Дитяча</a>
-                    <a href="#" class="header__link">Кухня</a>
-                    <a href="#" class="header__link">Ванна</a>
-                    <a href="#" class="header__link">Спальня</a>
-                    <a href="#" class="header__link">Передпокій</a>
-                    <a href="#" class="header__link">Вітальня</a>
-                    <a href="#" class="header__link">Офіс</a>
-                </li>
-            </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </section>
+
+  <section class="header__section2">
+    <div class="container">
+      <ul class="header__list2">
+        <li class="header__item">
+          <svg class="icon-mobile-header" onclick="toggleMenu()">
+            <use
+              id="menuIcon"
+              href="../../images/symbol-defs.svg#icon-mobile-menu"
+            ></use>
+          </svg>
+          <ul class="mobile-menu-list" id="mobileMenu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../about-us.html">Про нас</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../pay.html">Оплата</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../delivery.html"
+                >Доставка та збірка</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../reviews.html">Відгуки</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../blog-page.html">Блог</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="../../contacts.html"
+                >Контакти</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-credit">
+                  <use href="../../images/symbol-defs.svg#icon-credit"></use>
+                </svg>
+                <h4>Купити в кредит</h4>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-sale">
+                  <use href="../../images/symbol-defs.svg#icon-sale"></use>
+                </svg>
+                <h4>Розпродаж</h4>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-star">
+                  <use href="../../images/symbol-defs.svg#icon-star"></use>
+                </svg>
+                <h4>Акції</h4>
+              </a>
+            </li>
+          </ul>
+          <a href="../../index.html" class="header__logo-link">
+            <picture>
+              <source
+                srcset="
+                  ../../images/main-page/logo-header@1x.webp 1x,
+                  ../../images/main-page/logo-header@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <!-- <source srcset=""> -->
+              <img
+                class="header__logo"
+                src="../../images/main-page/logo-header@1x.webp"
+                alt="Krovato"
+              />
+            </picture>
+          </a>
+          <a class="header__button" href="../../catalog.html">
+            <svg class="catalog__svg-btn">
+              <use href="../../images/symbol-defs.svg#icon-menu-catalog"></use>
+            </svg>
+            Каталог
+          </a>
+
+          <form class="header__form">
+            <input
+              class="header__find"
+              type="text"
+              id="headerFind"
+              placeholder="Пошук товарів"
+            />
+          </form>
+          <a href="">
+          <svg class="search__svg">
+            <use href="../../images/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </a>
+        </li>
+
+
+
+        <li class="header__item">
+          <svg class="icon__svg-phone">
+            <use href="../../images/symbol-defs.svg#icon-telephone"></use>
+          </svg>
+          <div>
+            <p class="header__paragraph">Щодня з 9:00 до 18:00</p>
+            <h4 class="header__number">067 929-45-45</h4>
+          </div>
+          <svg class="icon__svg" onclick="toggleAdditionalNumbers()">
+            <use href="../../images/symbol-defs.svg#icon-bottom"></use>
+          </svg>
+          <!-- phone drop menu -->
+          <div id="additionalNumbersBox" class="additional-numbers-box hidden">
+            <svg class="icon__svg-mobile-drop">
+              <use href="../../images/symbol-defs.svg#icon-telephone"></use>
+            </svg>
+            <div>
+              <p class="header__paragraph-drop">Щодня з 9:00 до 18:00</p>
+              <a href="tel:+380679294545" class="header__number-drop">067 929-45-45</a>
+              <a href="tel:+380501334545" class="header__number-drop">050 133-45-45</a>
+              <a href="tel:+380931707545" class="header__number-drop">093 170-75-45</a>
+              <a class="header__link-drop" href="#">Передзвоніть мені</a>
+            </div>
+            <svg class="icon__svg-drop" onclick="toggleAdditionalNumbers()">
+              <use href="../../images/symbol-defs.svg#icon-cross"></use>
+            </svg>
+          </div>
+        </li>
+        <svg class="obrane__svg">
+          <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+        </svg>
+        <a href="../../tray.html">
+        <svg class="korzina__svg">
+          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+        </svg>
+      </a>
+      </ul>
+      <ul class="header__list3">
+        <li class="header__item">
+          <a class="header__button" href="../../catalog.html">
+            <svg class="catalog__svg-btn">
+              <use href="../../images/symbol-defs.svg#icon-menu-catalog"></use>
+            </svg>
+            Каталог
+          </a>
+
+          <a class="header__link" href="#">
+            <svg class="icon-star">
+              <use href="../../images/symbol-defs.svg#icon-star"></use>
+            </svg>
+            <h4>Акції</h4>
+          </a>
+          <a class="header__link" href="#">
+            <svg class="icon-sale">
+              <use href="../../images/symbol-defs.svg#icon-sale"></use>
+            </svg>
+            <h4>Розпродаж</h4>
+          </a>
+          <a class="header__link" href="#">
+            <svg class="icon-credit">
+              <use href="../../images/symbol-defs.svg#icon-credit"></use>
+            </svg>
+            <h4>Купити в кредит</h4>
+          </a>
+        </li>
+        <li class="header__item-mobile">
+          <svg class="search__svg-mobile" onclick="toggleDropdownMenu()">
+            <use id="searchIcon" href="../../images/symbol-defs.svg#icon-search"></use>
+          </svg>
+          <div id="dropdownMenu" class="dropdown-menu hidden">
+            <form class="header__form-mobile">
+              <input
+                class="header__find-mob"
+                type="text"
+                id="headerFind"
+                placeholder="Пошук товарів"
+              />
+            </form>
+            <svg class="search__svg-mob">
+              <use href="/krovato-market/assets/symbol-defs-58da56dc.svg#icon-search"></use>
+            </svg>
+          </div>
+          <svg class="obrane__svg">
+            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+          </svg>
+          <svg class="korzina__svg">
+            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+          </svg>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Дитяча</a>
+          <a href="#" class="header__link">Кухня</a>
+          <a href="#" class="header__link">Ванна</a>
+          <a href="#" class="header__link">Спальня</a>
+          <a href="#" class="header__link">Передпокій</a>
+          <a href="#" class="header__link">Вітальня</a>
+          <a href="#" class="header__link">Офіс</a>
+        </li>
+      </ul>
+    </div>
+  </section>
 </header>
+
     <section class="product-card">
     <div class="container">
-        <nav class="product-card__nav">
-            <a href="../../index.html" class="product-card__link">Головна</a>
-            <div class="product-card__arrow-box">
+        <nav class="product-card__nav" data-aos="fade-down" data-aos-duration="500">
+            <a href="../../index.html" class="product-card__link product-card__link-mob-bug">Головна</a>
+            <div class="product-card__arrow-box product-card__arrow-mob-bug">
                 <svg class="product-card__arrow">
                     <use href="../../images/symbol-defs.svg#icon-arrow"></use>
                 </svg>
             </div>
-            <a href="../../catalog.html" class="product-card__link">Ліжка</a>
-            <div class="product-card__arrow-box">
+            <a href="../../catalog.html" class="product-card__link product-card__link-mob-bug">Ліжка</a>
+            <div class="product-card__arrow-box product-card__arrow-mob-bug">
                 <svg class="product-card__arrow">
                     <use href="../../images/symbol-defs.svg#icon-arrow"></use>
                 </svg>
@@ -145,11 +302,92 @@
                     <use href="../../images/symbol-defs.svg#icon-arrow"></use>
                 </svg>
             </div>
-            <a href="" class="product-card__active-link">Двоспальне ліжко з підйомним механізмом Сіті</a>
+            <a href="#" class="product-card__active-link-desk">Двоспальне ліжко з підйомним механізмом Сіті</a>
+            <a href="#" class="product-card__active-link-mob">Двоспальне ліжко з підйомним механі ...</a>
         </nav>
-        <div class="product-card__container">
+        <div class="product-card__container" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="product-card__title-mob">Ліжко двоспальне МК-1 з підйомним механізмом</h2>
+            <div class="product-card__frame-mob">
+                <div class="product-card__active-box-mob">
+                    <svg class="product-card__check-svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
+                    </svg>
+                    <p class="product-card__active">В наявності</p>
+                </div>
+                <div class="product-card__star-box">
+                    <svg class="product-card__star">
+                        <use href="../../images/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-card__star">
+                        <use href="../../images/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-card__star">
+                        <use href="../../images/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-card__star">
+                        <use href="../../images/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <svg class="product-card__star">
+                        <use href="../../images/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                    <div class="product-card__comment-box">
+                        <svg class="product-card__comment">
+                            <use href="../../images/symbol-defs.svg#icon-chat"></use>
+                        </svg>
+                    </div>
+                    <p class="product-card__rewievs">93 отзыва</p>
+                </div>
+                <p class="product-card__model product-card__model-mob">Модель: 62003836</p>
+            </div>
             <div class="product-card__container1">
-                <img src="../../images/card-catalog/main-bed@2x.webp" alt="bed" class="product-card__img">
+                <picture>
+                    <source srcset="
+                        ../../images/card-catalog/main-bed@1x.webp 1x,
+                        ../../images/card-catalog/main-bed@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/card-catalog/main-bed@1x.webp 1x,
+                        ../../images/card-catalog/main-bed@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="product-card__img" src="../../images/card-catalog/main-bed@1x.webp" alt="bed" />
+                </picture>
+                <ul class="product-card__buttons-mob">
+                    <li class="product-card__button-item-mob">
+                        <button class="product-card__button-mob">
+                            <div class="product-card__button-border-mob">
+                                <div class="product-card__button-bc-mob"></div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="product-card__button-item-mob">
+                        <button class="product-card__button-mob">
+                            <div class="product-card__button-border-mob">
+                                <div class="product-card__button-bc-mob"></div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="product-card__button-item-mob">
+                        <button class="product-card__button-mob">
+                            <div class="product-card__button-border-mob product-card__button-active-border-mob">
+                                <div class="product-card__button-bc-mob product-card__button-active-bc-mob"></div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="product-card__button-item-mob">
+                        <button class="product-card__button-mob">
+                            <div class="product-card__button-border-mob">
+                                <div class="product-card__button-bc-mob"></div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="product-card__button-item-mob">
+                        <button class="product-card__button-mob">
+                            <div class="product-card__button-border-mob">
+                                <div class="product-card__button-bc-mob"></div>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
                 <button class="product-card__button-left">
                     <svg class="product-card__svg-left">
                         <use href="../../images/symbol-defs.svg#icon-arrow"></use>
@@ -160,40 +398,92 @@
                         <use href="../../images/symbol-defs.svg#icon-arrow"></use>
                     </svg>
                 </button>
-                <ul class="product-card__list">
-                    <li class="product-card__item">
+                <ul class="product-card__images">
+                    <li class="product-card__image">
                         <a href="#" class="product-card__item-link">
-                            <img src="../../images/card-catalog/active-bed@2x.webp" alt="bed"
-                                class="product-card__image">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/active-bed@1x.webp 1x,
+                                    ../../images/card-catalog/active-bed@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card__image-img">
+                                <source srcset="
+                                    ../../images/card-catalog/active-bed@1x.webp 1x,
+                                    ../../images/card-catalog/active-bed@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card__image-img">
+                                <img class="product-card__image-img" src="../../images/card-catalog/active-bed@1x.webp"
+                                    alt="bed" class="product-card__image-img">
+                            </picture>
                         </a>
                     </li>
                     <li class="product-card__item">
                         <a href="#" class="product-card__item-link">
-                            <img src="../../images/card-catalog/second-bed@2x.webp" alt="bed"
-                                class="product-card__image">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/second-bed@1x.webp 1x,
+                                    ../../images/card-catalog/second-bed@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card__image">
+                                <source srcset="
+                                    ../../images/card-catalog/second-bed@1x.webp 1x,
+                                    ../../images/card-catalog/second-bed@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card__image">
+                                <img class="product-card__image" src="../../images/card-catalog/second-bed@1x.webp"
+                                    alt="bed" class="product-card__image">
+                            </picture>
                         </a>
                     </li>
                     <li class="product-card__item">
                         <a href="#" class="product-card__item-link">
-                            <img src="../../images/card-catalog/third-bed@2x.webp" alt="bed"
-                                class="product-card__image">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/third-bed@1x.webp 1x,
+                                    ../../images/card-catalog/third-bed@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card__image">
+                                <source srcset="
+                                    ../../images/card-catalog/third-bed@1x.webp 1x,
+                                    ../../images/card-catalog/third-bed@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card__image">
+                                <img class="product-card__image" src="../../images/card-catalog/third-bed@1x.webp"
+                                    alt="bed" class="product-card__image">
+                            </picture>
                         </a>
                     </li>
                     <li class="product-card__item">
                         <a href="#" class="product-card__item-link">
-                            <img src="../../images/card-catalog/four-bed@2x.webp" alt="bed" class="product-card__image">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/four-bed@1x.webp 1x,
+                                    ../../images/card-catalog/four-bed@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card__image">
+                                <source srcset="
+                                    ../../images/card-catalog/four-bed@1x.webp 1x,
+                                    ../../images/card-catalog/four-bed@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card__image">
+                                <img class="product-card__image" src="../../images/card-catalog/four-bed@1x.webp"
+                                    alt="bed" class="product-card__image">
+                            </picture>
                         </a>
                     </li>
                     <li class="product-card__item">
                         <a href="#" class="product-card__item-link">
-                            <img src="../../images/card-catalog/five-bed@2x.webp" alt="bed" class="product-card__image">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/five-bed@1x.webp 1x,
+                                    ../../images/card-catalog/five-bed@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card__image">
+                                <source srcset="
+                                    ../../images/card-catalog/five-bed@1x.webp 1x,
+                                    ../../images/card-catalog/five-bed@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card__image">
+                                <img class="product-card__image" src="../../images/card-catalog/five-bed@1x.webp"
+                                    alt="bed" class="product-card__image">
+                            </picture>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="product-card__container2">
-                <h2 class="product-card__title">Ліжко двоспальне МК-1 з підйомним механізмом</h2>
-                <div class="product-card__frame">
+                <h2 class="product-card__title-desk">Ліжко двоспальне МК-1 з підйомним механізмом</h2>
+                <div class="product-card__frame-desk">
                     <div class="product-card__active-box">
                         <svg class="product-card__check-svg">
                             <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
@@ -279,28 +569,104 @@
                     </div>
                     <ul class="product-card-box__cloths">
                         <li class="product-card-box__cloth">
-                            <img src="../../images/card-catalog/white-color@2x.webp" alt="тканина"
-                                class="product-card-box__cloth-img">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/white-color@1x.webp 1x,
+                                    ../../images/card-catalog/white-color@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card-box__cloth-img">
+                                <source srcset="
+                                    ../../images/card-catalog/white-color@1x.webp 1x,
+                                    ../../images/card-catalog/white-color@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card-box__cloth-img">
+                                <img class="product-card-box__cloth-img"
+                                    src="../../images/card-catalog/white-color@1x.webp" alt="тканина"
+                                    class="product-card-box__cloth-img">
+                            </picture>
                         </li>
                         <li class="product-card-box__cloth">
-                            <img src="../../images/card-catalog/bodily-color@2x.webp" alt="тканина"
-                                class="product-card-box__cloth-img">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/bodily-color@1x.webp 1x,
+                                    ../../images/card-catalog/bodily-color@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card-box__cloth-img">
+                                <source srcset="
+                                    ../../images/card-catalog/bodily-color@1x.webp 1x,
+                                    ../../images/card-catalog/bodily-color@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card-box__cloth-img">
+                                <img class="product-card-box__cloth-img"
+                                    src="../../images/card-catalog/bodily-color@1x.webp" alt="тканина"
+                                    class="product-card-box__cloth-img">
+                            </picture>
+                            <!-- <img src="../../images/card-catalog/bodily-color@2x.webp" alt="тканина"
+                                class="product-card-box__cloth-img"> -->
                         </li>
                         <li class="product-card-box__cloth">
-                            <img src="../../images/card-catalog/active-color@2x.webp" alt="тканина"
-                                class="product-card-box__cloth-img">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/active-color@1x.webp 1x,
+                                    ../../images/card-catalog/active-color@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card-box__cloth-img">
+                                <source srcset="
+                                    ../../images/card-catalog/active-color@1x.webp 1x,
+                                    ../../images/card-catalog/active-color@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card-box__cloth-img">
+                                <img class="product-card-box__cloth-img"
+                                    src="../../images/card-catalog/active-color@1x.webp" alt="тканина"
+                                    class="product-card-box__cloth-img">
+                            </picture>
+                            <!-- <img src="../../images/card-catalog/active-color@2x.webp" alt="тканина"
+                                class="product-card-box__cloth-img"> -->
                         </li>
                         <li class="product-card-box__cloth">
-                            <img src="../../images/card-catalog/blue-color@2x.webp" alt="тканина"
-                                class="product-card-box__cloth-img">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/blue-color@1x.webp 1x,
+                                    ../../images/card-catalog/blue-color@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card-box__cloth-img">
+                                <source srcset="
+                                    ../../images/card-catalog/blue-color@1x.webp 1x,
+                                    ../../images/card-catalog/blue-color@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card-box__cloth-img">
+                                <img class="product-card-box__cloth-img"
+                                    src="../../images/card-catalog/blue-color@1x.webp" alt="тканина"
+                                    class="product-card-box__cloth-img">
+                            </picture>
+                            <!-- <img src="../../images/card-catalog/blue-color@2x.webp" alt="тканина"
+                                class="product-card-box__cloth-img"> -->
                         </li>
                         <li class="product-card-box__cloth">
-                            <img src="../../images/card-catalog/brown-color@2x.webp" alt="тканина"
-                                class="product-card-box__cloth-img">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/brown-color@1x.webp 1x,
+                                    ../../images/card-catalog/brown-color@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card-box__cloth-img">
+                                <source srcset="
+                                    ../../images/card-catalog/brown-color@1x.webp 1x,
+                                    ../../images/card-catalog/brown-color@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card-box__cloth-img">
+                                <img class="product-card-box__cloth-img"
+                                    src="../../images/card-catalog/brown-color@1x.webp" alt="тканина"
+                                    class="product-card-box__cloth-img">
+                            </picture>
+                            <!-- <img src="../../images/card-catalog/brown-color@2x.webp" alt="тканина"
+                                class="product-card-box__cloth-img"> -->
                         </li>
-                        <li class="product-card-box__cloth">
-                            <img src="../../images/card-catalog/green-color@2x.webp" alt="тканина"
-                                class="product-card-box__cloth-img">
+                        <li class="product-card-box__cloth product-card-box__cloth-green">
+                            <picture>
+                                <source srcset="
+                                    ../../images/card-catalog/green-color@1x.webp 1x,
+                                    ../../images/card-catalog/green-color@2x.webp 2x
+                                  " media="(min-width: 1290px)" class="product-card-box__cloth-img">
+                                <source srcset="
+                                    ../../images/card-catalog/green-color@1x.webp 1x,
+                                    ../../images/card-catalog/green-color@2x.webp 2x
+                                  " media="(min-width: 480px)" class="product-card-box__cloth-img">
+                                <img class="product-card-box__cloth-img"
+                                    src="../../images/card-catalog/green-color@1x.webp" alt="тканина"
+                                    class="product-card-box__cloth-img">
+                            </picture>
+                            <!-- <img src="../../images/card-catalog/green-color@2x.webp" alt="тканина"
+                                class="product-card-box__cloth-img"> -->
                         </li>
                     </ul>
                     <a href="#" class="product-card-box__more-link">
@@ -336,6 +702,14 @@
                             <span>Купити в кредит</span>
                         </button>
                     </div>
+                    <div class="product-card-box__mob-obrane-box">
+                        <div class="product-card-box__mob-heard-svg-border">
+                            <svg class="product-card-box__mob-heard-svg">
+                                <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                            </svg>
+                        </div>
+                        <p class="product-card-box__mob-obrane">В обране</p>
+                    </div>
                 </div>
                 <div class="product-card-box__footer">
                     <svg class="product-card-box__call-svg">
@@ -344,6 +718,28 @@
                     <p class="product-card-box__call-number">+380 -- --- -- -- </p>
                     <button class="product-card-box__btn-click">Купити в 1 клік</button>
                 </div>
+                <div class="product-card-consultation">
+                    <p class="product-card-consultation__text">Або напишіть нам:</p>
+                    <div class="product-card-consultation__flex">
+                        <a href="#" class="product-card-consultation__icon-link">
+                            <div class="product-card-consultation__svg-bug">
+                                <svg class="product-card-consultation__svg-whatsapp">
+                                    <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="product-card-consultation__icon-link">
+                            <svg class="product-card-consultation__svg product-card-consultation__telegram">
+                                <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="product-card-consultation__icon-link">
+                            <svg class="product-card-consultation__svg product-card-consultation__viber">
+                                <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -351,7 +747,7 @@
     <section class="conditions">
     <div class="container">
         <ul class="conditions__list">
-            <li class="conditions__item">
+            <li class="conditions__item" data-aos="fade-right" data-aos-duration="2000">
                 <div class="conditions__icon-bc">
                     <svg class="conditions__svg">
                         <use href="../../images/symbol-defs.svg#icon-adres"></use>
@@ -369,7 +765,7 @@
                     </a>
                 </div>
             </li>
-            <li class="conditions__item">
+            <li class="conditions__item" data-aos="fade-right" data-aos-duration="1000">
                 <div class="conditions__icon-bc">
                     <svg class="conditions__svg">
                         <use href="../../images/symbol-defs.svg#icon-oplata"></use>
@@ -387,7 +783,7 @@
                     </a>
                 </div>
             </li>
-            <li class="conditions__item">
+            <li class="conditions__item" data-aos="fade-left" data-aos-duration="1000">
                 <div class="conditions__icon-bc">
                     <svg class="conditions__svg">
                         <use href="../../images/symbol-defs.svg#icon-garantia"></use>
@@ -405,7 +801,7 @@
                     </a>
                 </div>
             </li>
-            <li class="conditions__item">
+            <li class="conditions__item" data-aos="fade-left" data-aos-duration="2000">
                 <div class="conditions__icon-bc">
                     <svg class="conditions__svg">
                         <use href="../../images/symbol-defs.svg#icon-sms-check"></use>
@@ -435,10 +831,20 @@
                 Ламелі виконані з бука. Подібна конструкція характеризується надійністю та привабливим зовнішнім
                 виглядом.
             </p>
-            <img src="../../images/card-catalog/palette@2x.webp" alt="палітра" class="description__image">
+            <picture>
+                <source srcset="
+                    ../../images/card-catalog/palette@1x.webp 1x,
+                    ../../images/card-catalog/palette@2x.webp 2x
+                  " media="(min-width: 1290px)" />
+                <source srcset="
+                    ../../images/card-catalog/palette@1x.webp 1x,
+                    ../../images/card-catalog/palette@2x.webp 2x
+                  " media="(min-width: 480px)" />
+                <img class="description__image" src="../../images/card-catalog/palette@1x.webp" alt="bed" />
+            </picture>
         </div>
         <div class="description-form__bug">
-            <!-- <form action="" class="description-form"> -->
+            <form action="" class="description-form">
                 <h2 class="description-form__title">Залишіть свій відгук</h2>
                 <input type="text" class="description-form__input description-form__input-name"
                     placeholder="Ваше ім'я прізвище">
@@ -481,52 +887,52 @@
     <div class="container">
         <h2 class="characters__title">Характеристики</h2>
         <ul class="characters__list">
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Довжина (см)</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">210, 200</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Ширина (см)</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">132</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Висота (см)</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">105</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Ширина спального місця (см)</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">120</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Довжина спального місця (см)</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">200, 190</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Розмір спального місця</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">120x200, 120x190</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Колір</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">Під замовлення</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Форма</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">Прямокутний</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Кількість ламелей</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">36</p>
             </li>
-            <li class="characters__item">
+            <li class="characters__item" data-aos="fade-right" data-aos-duration="800">
                 <p class="characters__left-text">Основа під матрац</p>
                 <div class="characters__dots"></div>
                 <p class="characters__right-text">ламіль</p>
@@ -534,80 +940,88 @@
         </ul>
     </div>
 </section>
-    <section class="reviews-section">
+    <section class="reviews-section" data-aos="fade-left" data-aos-duration="500">
     <div class="container">
         <div class="reviews">
             <div class="reviews-header">
                 <h2 class="reviews-header__title">Відгуки про Ліжко двоспальне МК-1 з підйомним механізмом</h2>
                 <div class="reviews-header__flex">
-                    <p class="reviews-header__reviews">Всього відгуків:</p>
-                    <p class="reviews-header__reviews-number">93</p>
-                    <ul class="reviews-header__stars">
-                        <li class="reviews-header__star">
-                            <svg class="reviews-header__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="reviews-header__star">
-                            <svg class="reviews-header__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="reviews-header__star">
-                            <svg class="reviews-header__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="reviews-header__star">
-                            <svg class="reviews-header__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="reviews-header__star">
-                            <svg class="reviews-header__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                    <p class="reviews-header__otsinka">Середня оцінка 4,5</p>
+                    <div class="reviews-header__reviews-flex">
+                        <p class="reviews-header__reviews">Всього відгуків:</p>
+                        <p class="reviews-header__reviews-number">93</p>
+                    </div>
+                    <div class="reviews-header__stars-otsinka-box">
+                        <ul class="reviews-header__stars">
+                            <li class="reviews-header__star">
+                                <svg class="reviews-header__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="reviews-header__star">
+                                <svg class="reviews-header__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="reviews-header__star">
+                                <svg class="reviews-header__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="reviews-header__star">
+                                <svg class="reviews-header__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="reviews-header__star">
+                                <svg class="reviews-header__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="reviews-header__otsinka">Середня оцінка 4,5</p>
+                    </div>
                 </div>
             </div>
             <div class="review1">
                 <div class="review1__header">
-                    <div class="review1__icon-border">
-                        <svg class="review1__user">
-                            <use href="../../images/symbol-defs.svg#icon-avatar"></use>
-                        </svg>
+                    <div class="review1__name-icon-flex">
+                        <div class="review1__icon-border">
+                            <svg class="review1__user">
+                                <use href="../../images/symbol-defs.svg#icon-avatar"></use>
+                            </svg>
+                        </div>
+                        <p class="review1__name">Іван Стедниця</p>
                     </div>
-                    <p class="review1__name">Іван Стедниця</p>
-                    <ul class="review1__stars">
-                        <li class="review1__star">
-                            <svg class="review1__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review1__star">
-                            <svg class="review1__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review1__star">
-                            <svg class="review1__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review1__star">
-                            <svg class="review1__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review1__star">
-                            <svg class="review1__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                    <p class="review1__date">25.01.2022</p>
+                    <div class="review1__stars-date-box">
+                        <ul class="review1__stars">
+                            <li class="review1__star">
+                                <svg class="review1__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review1__star">
+                                <svg class="review1__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review1__star">
+                                <svg class="review1__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review1__star">
+                                <svg class="review1__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review1__star">
+                                <svg class="review1__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="review1__date">25.01.2022</p>
+                    </div>
                 </div>
                 <p class="review1__text">Вчора привезли ліжко, і воно дуже класне, краще ніж очікували. Велика, м'яка,
                     зручна. Брали разом із матрацом, тому одразу випробували. Є велика ніша для зберігання, поміститься
@@ -640,7 +1054,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="reviews__line"></div>
+            <div class="reviews__line-yellow"></div>
             <div class="answer1">
                 <div class="answer1__header">
                     <div class="answer1__icon-border">
@@ -648,7 +1062,7 @@
                             <use href="../../images/symbol-defs.svg#icon-avatar"></use>
                         </svg>
                     </div>
-                    <p class="answer1__name">Іван Стедниця</p>
+                    <p class="answer1__name">Андрій Іванович</p>
                     <svg class="answer1__arrow">
                         <use href="../../images/symbol-defs.svg#icon-long-arrow"></use>
                     </svg>
@@ -675,42 +1089,47 @@
                 </div>
                 <p class="answer2__text">Дякуємо за відгуки! будемо раді бачити Вас знову!</p>
             </div>
+            <div class="reviews__line-grey"></div>
             <div class="review2">
                 <div class="review2__header">
-                    <div class="review2__icon-border">
-                        <svg class="review2__user">
-                            <use href="../../images/symbol-defs.svg#icon-avatar"></use>
-                        </svg>
+                    <div class="review2__name-icon-flex">
+                        <div class="review2__icon-border">
+                            <svg class="review2__user">
+                                <use href="../../images/symbol-defs.svg#icon-avatar"></use>
+                            </svg>
+                        </div>
+                        <p class="review2__name">Іван Стедниця</p>
                     </div>
-                    <p class="review2__name">Іван Стедниця</p>
-                    <ul class="review2__stars">
-                        <li class="review2__star">
-                            <svg class="review2__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review2__star">
-                            <svg class="review2__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review2__star">
-                            <svg class="review2__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review2__star">
-                            <svg class="review2__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                        <li class="review2__star">
-                            <svg class="review2__star-svg">
-                                <use href="../../images/symbol-defs.svg#icon-star"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                    <p class="review2__date">25.01.2022</p>
+                    <div class="review2__stars-date-box">
+                        <ul class="review2__stars">
+                            <li class="review2__star">
+                                <svg class="review2__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review2__star">
+                                <svg class="review2__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review2__star">
+                                <svg class="review2__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review2__star">
+                                <svg class="review2__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review2__star">
+                                <svg class="review2__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="review2__date">25.01.2022</p>
+                    </div>
                 </div>
                 <p class="review2__text">Вчора привезли ліжко, і воно дуже класне, краще ніж очікували. Велика, м'яка,
                     зручна. Брали разом із матрацом, тому одразу випробували. Є велика ніша для зберігання, поміститься
@@ -743,7 +1162,7 @@
                     </li>
                 </ul>
             </div>
-            <form class="reviews-form">
+            <div class="reviews-form">
                 <div class="reviews-form__header">
                     <svg class="reviews-form__arrow">
                         <use href="../../images/symbol-defs.svg#icon-arrow-from-top-to-right"></use>
@@ -758,14 +1177,15 @@
                         <input type="text" class="reviews-form__input" placeholder="E-mail">
                     </li>
                     <li class="reviews-form__item">
-                        <input type="text" class="reviews-form__input" placeholder="Відгук">
+                        <input type="text" class="reviews-form__input reviews-form__input-review" placeholder="Відгук">
                     </li>
                 </ul>
                 <div class="reviews-form__buttons">
                     <button class="reviews-form__btn-submit">Відправити</button>
                     <button class="reviews-form__btn-cancel">Відмінити</button>
                 </div>
-            </form>
+            </div>
+            <div class="reviews__line-grey"></div>
             <ul class="reviews__list">
                 <li class="reviews__item">
                     <div class="review-features">
@@ -838,6 +1258,7 @@
                         </ul>
                     </div>
                 </li>
+                <div class="reviews__line-grey"></div>
                 <li class="reviews__item">
                     <div class="review-features">
                         <div class="review-features__header">
@@ -909,6 +1330,7 @@
                         </ul>
                     </div>
                 </li>
+                <div class="reviews__line-grey"></div>
                 <li class="reviews__item">
                     <div class="review-features">
                         <div class="review-features__header">
@@ -981,6 +1403,78 @@
                     </div>
                 </li>
             </ul>
+            <div class="review-last">
+                <div class="review-last__header">
+                    <div class="review-last__name-icon-flex">
+                        <div class="review-last__icon-border">
+                            <svg class="review-last__user">
+                                <use href="../../images/symbol-defs.svg#icon-avatar"></use>
+                            </svg>
+                        </div>
+                        <p class="review-last__name">Іван Стедниця</p>
+                    </div>
+                    <div class="review-last__stars-date-box">
+                        <ul class="review-last__stars">
+                            <li class="review-last__star">
+                                <svg class="review-last__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review-last__star">
+                                <svg class="review-last__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review-last__star">
+                                <svg class="review-last__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review-last__star">
+                                <svg class="review-last__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                            <li class="review-last__star">
+                                <svg class="review-last__star-svg">
+                                    <use href="../../images/symbol-defs.svg#icon-star"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="review-last__date">25.01.2022</p>
+                    </div>
+                </div>
+                <p class="review-last__text">Вчора привезли ліжко, і воно дуже класне, краще ніж очікували. Велика, м'яка,
+                    зручна. Брали разом із матрацом, тому одразу випробували. Є велика ніша для зберігання, поміститься
+                    не
+                    тільки постіль.</p>
+                <ul class="review-last__buttons">
+                    <li class="review-last__buttons-item">
+                        <button class="review-last__button">
+                            <svg class="review-last__button-svg">
+                                <use href="../../images/symbol-defs.svg#icon-two-chats"></use>
+                            </svg>
+                            <span>Відповісти</span>
+                        </button>
+                    </li>
+                    <li class="review-last__buttons-item">
+                        <button class="review-last__button">
+                            <svg class="review-last__button-svg">
+                                <use href="../../images/symbol-defs.svg#icon-circle-close"></use>
+                            </svg>
+                            <span>Приховати відповіді</span>
+                        </button>
+                    </li>
+                    <li class="review-last__buttons-item">
+                        <button class="review-last__button">
+                            <svg class="review-last__button-svg">
+                                <use href="../../images/symbol-defs.svg#icon-like"></use>
+                            </svg>
+                            <span>Корисний відгук: 24</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
             <button class="reviews__button">
                 <svg class="reviews__button-svg">
                     <use href="../../images/symbol-defs.svg#icon-reload"></use>
@@ -994,85 +1488,143 @@
     <div class="container">
         <h2 class="addition__title">Відмінно дополняють спальню тумба або комод</h2>
         <ul class="addition__list">
-            <li class="addition__item">
-                <img src="" alt="" class="addition__img">
+            <li class="addition__item" data-aos="fade-left" data-aos-duration="500">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/bed-sparta@1x.webp 1x,
+                        ../../images/main-page/bed-sparta@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/bed-sparta@1x.webp 1x,
+                        ../../images/main-page/bed-sparta@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="addition__img" src="../../images/main-page/bed-sparta@1x.webp" alt="bed" />
+                </picture>
                 <p class="addition__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="addition__text">Ліжко Спарта / Sparta з підйомним механізмом</p>
-                <svg class="addition__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="addition__active">В наявності</p>
-                <p class="addition__npn-cost">25 400 грн.</p>
-                <p class="addition__cost">15 400 грн.</p>
-                <div class="addition__obrane-border">
-                    <svg class="addition__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="addition__active-flex">
+                    <svg class="addition__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="addition__active">В наявності</p>
                 </div>
-                <div class="addition__koshyk-border">
-                    <svg class="addition__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="addition__item-footer">
+                    <div class="addition__cost-flex">
+                        <p class="addition__non-cost">25 400 грн.</p>
+                        <p class="addition__cost">15 400 грн.</p>
+                    </div>
+                    <div class="addition__obrane-bc">
+                        <svg class="addition__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="addition__koshyk-bc">
+                        <svg class="addition__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
-            <li class="addition__item">
-                <img src="" alt="" class="addition__img">
+            <li class="addition__item" data-aos="fade-left" data-aos-duration="800">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/bed-argon@1x.webp 1x,
+                        ../../images/main-page/bed-argon@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/bed-argon@1x.webp 1x,
+                        ../../images/main-page/bed-argon@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="addition__img" src="../../images/main-page/bed-argon@1x.webp" alt="bed" />
+                </picture>
                 <p class="addition__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="addition__text">Ліжко Аргон з підйомним механізмом</p>
-                <svg class="addition__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="addition__active">В наявності</p>
-                <p class="addition__cost">16 400 грн.</p>
-                <div class="addition__obrane-border">
-                    <svg class="addition__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="addition__active-flex">
+                    <svg class="addition__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="addition__active">В наявності</p>
                 </div>
-                <div class="addition__koshyk-border">
-                    <svg class="addition__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="addition__item-footer">
+                    <p class="addition__cost">16 400 грн.</p>
+                    <div class="addition__obrane-bc">
+                        <svg class="addition__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="addition__koshyk-bc">
+                        <svg class="addition__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
-            <li class="addition__item">
-                <img src="" alt="" class="addition__img">
+            <li class="addition__item" data-aos="fade-left" data-aos-duration="1100">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/bed-prestige@1x.webp 1x,
+                        ../../images/main-page/bed-prestige@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/bed-prestige@1x.webp 1x,
+                        ../../images/main-page/bed-prestige@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="addition__img" src="../../images/main-page/bed-prestige@1x.webp" alt="bed" />
+                </picture>
                 <p class="addition__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="addition__text">Ліжко Престиж з підйомним механізмом</p>
-                <svg class="addition__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="addition__active">В наявності</p>
-                <p class="addition__cost">14 969 грн.</p>
-                <div class="addition__obrane-border">
-                    <svg class="addition__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="addition__active-flex">
+                    <svg class="addition__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="addition__active">В наявності</p>
                 </div>
-                <div class="addition__koshyk-border">
-                    <svg class="addition__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="addition__item-footer">
+                    <p class="addition__cost">14 969 грн.</p>
+                    <div class="addition__obrane-bc">
+                        <svg class="addition__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="addition__koshyk-bc">
+                        <svg class="addition__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
-            <li class="addition__item">
-                <img src="" alt="" class="addition__img">
+            <li class="addition__item" data-aos="fade-left" data-aos-duration="1400">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/sofa-tokio@1x.webp 1x,
+                        ../../images/main-page/sofa-tokio@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/sofa-tokio@1x.webp 1x,
+                        ../../images/main-page/sofa-tokio@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="addition__img" src="../../images/main-page/sofa-tokio@1x.webp" alt="bed" />
+                </picture>
                 <p class="addition__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="addition__text">Диван Токіо-2</p>
-                <svg class="addition__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="addition__active">В наявності</p>
-                <p class="addition__cost">13 211 грн.</p>
-                <div class="addition__obrane-border">
-                    <svg class="addition__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="addition__active-flex">
+                    <svg class="addition__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="addition__active">В наявності</p>
                 </div>
-                <div class="addition__koshyk-border">
-                    <svg class="addition__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="addition__item-footer">
+                    <p class="addition__cost">13 211 грн.</p>
+                    <div class="addition__obrane-bc">
+                        <svg class="addition__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="addition__koshyk-bc">
+                        <svg class="addition__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -1082,91 +1634,149 @@
     <div class="container">
         <h2 class="recommended-products__title">Рекомендовані товари</h2>
         <ul class="recommended-products__list">
-            <li class="recommended-products__item">
-                <img src="" alt="" class="recommended-products__img">
+            <li class="recommended-products__item" data-aos="fade-left" data-aos-duration="500">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/bed-sparta@1x.webp 1x,
+                        ../../images/main-page/bed-sparta@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/bed-sparta@1x.webp 1x,
+                        ../../images/main-page/bed-sparta@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="recommended-products__img" src="../../images/main-page/bed-sparta@1x.webp" alt="bed" />
+                </picture>
                 <p class="recommended-products__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="recommended-products__text">Ліжко Спарта / Sparta з підйомним механізмом</p>
-                <svg class="recommended-products__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="recommended-products__active">В наявності</p>
-                <p class="recommended-products__npn-cost">25 400 грн.</p>
-                <p class="recommended-products__cost">15 400 грн.</p>
-                <div class="recommended-products__obrane-border">
-                    <svg class="recommended-products__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="recommended-products__active-flex">
+                    <svg class="recommended-products__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="recommended-products__active">В наявності</p>
                 </div>
-                <div class="recommended-products__koshyk-border">
-                    <svg class="recommended-products__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="recommended-products__item-footer">
+                    <div class="recommended-products__cost-flex">
+                        <p class="recommended-products__non-cost">25 400 грн.</p>
+                        <p class="recommended-products__cost">15 400 грн.</p>
+                    </div>
+                    <div class="recommended-products__obrane-bc">
+                        <svg class="recommended-products__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="recommended-products__koshyk-bc">
+                        <svg class="recommended-products__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
-            <li class="recommended-products__item">
-                <img src="" alt="" class="recommended-products__img">
+            <li class="recommended-products__item" data-aos="fade-left" data-aos-duration="800">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/bed-argon@1x.webp 1x,
+                        ../../images/main-page/bed-argon@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/bed-argon@1x.webp 1x,
+                        ../../images/main-page/bed-argon@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="recommended-products__img" src="../../images/main-page/bed-argon@1x.webp" alt="bed" />
+                </picture>
                 <p class="recommended-products__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="recommended-products__text">Ліжко Аргон з підйомним механізмом</p>
-                <svg class="recommended-products__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="recommended-products__active">В наявності</p>
-                <p class="recommended-products__cost">16 400 грн.</p>
-                <div class="recommended-products__obrane-border">
-                    <svg class="recommended-products__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="recommended-products__active-flex">
+                    <svg class="recommended-products__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="recommended-products__active">В наявності</p>
                 </div>
-                <div class="recommended-products__koshyk-border">
-                    <svg class="recommended-products__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="recommended-products__item-footer">
+                    <p class="recommended-products__cost">16 400 грн.</p>
+                    <div class="recommended-products__obrane-bc">
+                        <svg class="recommended-products__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="recommended-products__koshyk-bc">
+                        <svg class="recommended-products__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
-            <li class="recommended-products__item">
-                <img src="" alt="" class="recommended-products__img">
+            <li class="recommended-products__item" data-aos="fade-left" data-aos-duration="1100">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/bed-prestige@1x.webp 1x,
+                        ../../images/main-page/bed-prestige@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/bed-prestige@1x.webp 1x,
+                        ../../images/main-page/bed-prestige@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="recommended-products__img" src="../../images/main-page/bed-prestige@1x.webp" alt="bed" />
+                </picture>
                 <p class="recommended-products__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="recommended-products__text">Ліжко Престиж з підйомним механізмом</p>
-                <svg class="recommended-products__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="recommended-products__active">В наявності</p>
-                <p class="recommended-products__cost">14 969 грн.</p>
-                <div class="recommended-products__obrane-border">
-                    <svg class="recommended-products__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="recommended-products__active-flex">
+                    <svg class="recommended-products__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="recommended-products__active">В наявності</p>
                 </div>
-                <div class="recommended-products__koshyk-border">
-                    <svg class="recommended-products__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="recommended-products__item-footer">
+                    <p class="recommended-products__cost">14 969 грн.</p>
+                    <div class="recommended-products__obrane-bc">
+                        <svg class="recommended-products__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="recommended-products__koshyk-bc">
+                        <svg class="recommended-products__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
-            <li class="recommended-products__item">
-                <img src="" alt="" class="recommended-products__img">
+            <li class="recommended-products__item" data-aos="fade-left" data-aos-duration="1400">
+                <picture>
+                    <source srcset="
+                        ../../images/main-page/sofa-tokio@1x.webp 1x,
+                        ../../images/main-page/sofa-tokio@2x.webp 2x
+                      " media="(min-width: 1290px)" />
+                    <source srcset="
+                        ../../images/main-page/sofa-tokio@1x.webp 1x,
+                        ../../images/main-page/sofa-tokio@2x.webp 2x
+                      " media="(min-width: 480px)" />
+                    <img class="recommended-products__img" src="../../images/main-page/sofa-tokio@1x.webp" alt="bed" />
+                </picture>
                 <p class="recommended-products__size">Розмір: 61 x 184 x 2130 мм</p>
                 <p class="recommended-products__text">Диван Токіо-2</p>
-                <svg class="recommended-products__svg">
-                    <use href="../../images/symbol-defs.svg#icon-check"></use>
-                </svg>
-                <p class="recommended-products__active">В наявності</p>
-                <p class="recommended-products__cost">13 211 грн.</p>
-                <div class="recommended-products__obrane-border">
-                    <svg class="recommended-products__obrane-svg">
-                        <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                <div class="recommended-products__active-flex">
+                    <svg class="recommended-products__svg">
+                        <use href="../../images/symbol-defs.svg#icon-in-stock"></use>
                     </svg>
+                    <p class="recommended-products__active">В наявності</p>
                 </div>
-                <div class="recommended-products__koshyk-border">
-                    <svg class="recommended-products__koshyk-svg">
-                        <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-                    </svg>
+                <div class="recommended-products__item-footer">
+                    <p class="recommended-products__cost">13 211 грн.</p>
+                    <div class="recommended-products__obrane-bc">
+                        <svg class="recommended-products__obrane-svg">
+                            <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
+                        </svg>
+                    </div>
+                    <div class="recommended-products__koshyk-bc">
+                        <svg class="recommended-products__koshyk-svg">
+                            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+                        </svg>
+                    </div>
                 </div>
             </li>
         </ul>
     </div>
 </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
     <div class="container">
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -1198,140 +1808,529 @@
   </section>
   
     <section class="footer">
-    <div class="container">
-        <div class="footer__main-container">
-            <div class="footer__container1">
-                <div class="footer__logo-box">
-                    <svg class="footer__logo-sofa">
-                        <use href="../../images/symbol-defs.svg#icon-logo-sofa"></use>
-                    </svg>
-                    <svg class="footer__logo-text">
-                        <use href="../../images/symbol-defs.svg#icon-footer-logo-text"></use>
-                    </svg>
-                </div>
-                <p class="footer__text-join">Приєднуйтесь:</p>
-                <div class="footer__box-join">
-                    <a href="#" class="footer__icon-link">
-                        <svg class="footer__svg footer__facebook">
-                            <use href="../../images/symbol-defs.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="footer__icon-link">
-                        <svg class="footer__svg footer__instagram">
-                            <use href="../../images/symbol-defs.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </div>
-                <p class="footer__text-help">Допомога і консультація:</p>
-                <div class="footer__box-help">
-                    <a href="#" class="footer__icon-link">
-                    <div class="footer__svg-bug">
-                        <svg class="footer__svg-whatsapp">
-                            <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
-                        </svg>
-                    </div>
-                    </a>
-                    <a href="#" class="footer__icon-link">
-                    <svg class="footer__svg footer__telegram">
-                        <use href="../../images/symbol-defs.svg#icon-telegram"></use>
-                    </svg>
-                    </a>
-                    <a href="#" class="footer__icon-link">
-                    <svg class="footer__svg footer__viber">
-                        <use href="../../images/symbol-defs.svg#icon-viber"></use>
-                    </svg>
-                    </a>
-                </div>
-                <div class="footer__box-pay">
-                    <a href="#" class="footer__icon-link">
-                    <svg class="footer__pay-svg footer__pay-svg-visa">
-                        <use href="../../images/symbol-defs.svg#icon-visa"></use>
-                    </svg>
-                    </a>
-                    <a href="#" class="footer__icon-link">
-                    <svg class="footer__pay-svg footer__pay-svg-mastercard">
-                        <use href="../../images/symbol-defs.svg#icon-mastercard"></use>
-                    </svg>
-                    </a>
-                </div>
-            </div>
-            <ul class="footer__main-list">
-                <li class="footer__main-item">
-                    <ul class="footer__informations">
-                        <li class="footer__informations"><a href="#" class="footer__link">Інформація</a></li>
-                        <li class="footer__informations"><a href="#" class="footer__link">Про нас</a></li>
-                        <li class="footer__informations"><a href="#" class="footer__link">Оплата</a></li>
-                        <li class="footer__informations"><a href="#" class="footer__link">Доставка та збірка</a></li>
-                        <li class="footer__informations"><a href="#" class="footer__link">Відгуки</a></li>
-                        <li class="footer__informations"><a href="#" class="footer__link">Блог</a></li>
-                        <li class="footer__informations"><a href="#" class="footer__link">Контакти</a></li>
-                        <li class="footer__informations"><a href="#" class="footer__link">Мапа сайту</a></li>
-                    </ul>
-                </li>
-                <li class="footer__main-item">
-                    <ul class="footer__categories">
-                        <li class="footer__categorie"><a href="#" class="footer__link">Категорії</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Ліжка</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Матраци</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">М’які меблі</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Шафи</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Комоди</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Тумби</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Столи</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Стільці</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Меблеві стіни</a></li>
-                        <li class="footer__categorie"><a href="#" class="footer__link">Кухні</a></li>
-                    </ul>
-                </li>
-                <li class="footer__main-item">
-                    <ul class="footer__customers">
-                        <li class="footer__customer"><a href="#" class="footer__link">Клієнтам</a></li>
-                        <li class="footer__customer"><a href="#" class="footer__link">Акції</a></li>
-                        <li class="footer__customer"><a href="#" class="footer__link">Розпродаж</a></li>
-                        <li class="footer__customer"><a href="#" class="footer__link">Купити в кредит</a></li>
-                        <li class="footer__customer"><a href="#" class="footer__link">Обмін і повернення товару</a></li>
-                        <li class="footer__customer"><a href="#" class="footer__link">Часто задавані питання</a></li>
-                        <li class="footer__customer"><a href="#" class="footer__link">Умови покупки</a></li>
-                        <li class="footer__customer"><a href="#" class="footer__link">Політика конфіденційності</a></li>
-                    </ul>
-                </li>
+  <div class="footer-mob-sec">
+    <div class="footer__logo-box footer__logo-box-mob">
+      <svg class="footer__logo-sofa">
+        <use href="../../images/symbol-defs.svg#icon-logo-sofa"></use>
+      </svg>
+      <svg class="footer__logo-text">
+        <use href="../../images/symbol-defs.svg#icon-footer-logo-text"></use>
+      </svg>
+    </div>
+    <div class="footer-menu">
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item">
+          <input
+            class="footer-menu__input"
+            type="checkbox"
+            name="footer__input-name"
+            id="fimput1"
+          />
+          <label class="footer-menu__label" for="fimput1">
+            <h3 class="footer-menu__title">Категорії</h3>
+            <svg class="footer-menu__arrow">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </label>
+          <div class="footer-menu__paragraph">
+            <ul class="footer-menu__categories">
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Ліжка</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Матраци</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">М’які меблі</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Шафи</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Комоди</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Тумби</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Столи</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Стільці</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Меблеві стіни</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Кухні</a>
+              </li>
             </ul>
-            <div class="footer__box3">
-                <div class="footer__call">
-                    <div class="footer__svg-phone-border">
-                        <svg class="footer__svg-phone">
-                            <use href="../../images/symbol-defs.svg#icon-telephone"></use>
-                        </svg>
-                    </div>
-                    <div class="footer__numbers">
-                        <p class="footer__number">+38 067 929-45-45</p>
-                        <p class="footer__number"> +38 050 133-45-45</p>
-                        <p class="footer__number"> +38 093 170-75-45</p>
-                        <p class="footer__call-me">Передзвоніть мені</p>
-                    </div>
-                </div>
-                <div class="footer__adress">
-                    <div class="footer__adress-svg-border">
-                        <svg class="footer__adress-svg">
-                            <use href="../../images/symbol-defs.svg#icon-adres"></use>
-                        </svg>
-                    </div>
-                    <p class="footer__adress-text">м. Київ, провулок Ізяславський 52, поверх 2</p>
-                </div>
-                <div class="footer__schedule">
-                    <div class="footer__calendar-border">
-                        <svg class="footer__calendar">
-                            <use href="../../images/symbol-defs.svg#icon-calendar"></use>
-                        </svg>
-                    </div>
-                    <p class="footer__schedule-text">Працюємо щодня з 9:00 до 18:00</p>
-                </div>
-            </div>
+          </div>
+        </li>
+        <li class="footer-menu__item">
+          <input
+            class="footer-menu__input"
+            type="checkbox"
+            name="footer__input-name"
+            id="fimput2"
+          />
+          <label class="footer-menu__label" for="fimput2">
+            <h3 class="footer-menu__title">Інформація</h3>
+            <svg class="footer-menu__arrow">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </label>
+          <div class="footer-menu__paragraph">
+            <ul class="footer-menu__informations">
+              <li class="footer-menu__information">
+                <a href="../../about-us.html" class="footer-menu__link"
+                  >Про нас</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="../../pay.html" class="footer-menu__link">Оплата</a>
+              </li>
+              <li class="footer-menu__information">
+                <a href="../../delivery.html" class="footer-menu__link"
+                  >Доставка та збірка</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="../../reviews.html" class="footer-menu__link"
+                  >Відгуки</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="../../blog-page.html" class="footer-menu__link"
+                  >Блог</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="../../contacts.html" class="footer-menu__link"
+                  >Контакти</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="../../contacts.html" class="footer-menu__link"
+                  >Мапа сайту</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="footer-menu__item">
+          <input
+            class="footer-menu__input"
+            type="checkbox"
+            name="footer__input-name"
+            id="fimput3"
+          />
+          <label class="footer-menu__label" for="fimput3">
+            <h3 class="footer-menu__title">Клієнтам</h3>
+            <svg class="footer-menu__arrow">
+              <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </label>
+          <div class="footer-menu__paragraph">
+            <ul class="footer-menu__customers">
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Акції</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Розпродаж</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Купити в кредит</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link"
+                  >Обмін і повернення товару</a
+                >
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Часто задавані питання</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Умови покупки</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link"
+                  >Політика конфіденційності</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer__main-container">
+      <div class="footer__container1">
+        <div class="footer__logo-box">
+          <svg class="footer__logo-sofa">
+            <use href="../../images/symbol-defs.svg#icon-logo-sofa"></use>
+          </svg>
+          <svg class="footer__logo-text">
+            <use
+              href="../../images/symbol-defs.svg#icon-footer-logo-text"
+            ></use>
+          </svg>
         </div>
+        <!-- <div class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <input class="footer-menu__input" type="checkbox" name="footer__input-name" id="fimput1" />
+                            <label class="footer-menu__label" for="fimput1">
+                                <h3 class="footer-menu__title">Категорії</h3>
+                                <svg class="footer-menu__arrow">
+                                    <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                            </label>
+                            <div class="footer-menu__paragraph">
+                                <ul class="footer-menu__categories">
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Ліжка</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Матраци</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">М’які меблі</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Шафи</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Комоди</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Тумби</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Столи</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Стільці</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Меблеві стіни</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Кухні</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer-menu__item">
+                            <input class="footer-menu__input" type="checkbox" name="footer__input-name" id="fimput2" />
+                            <label class="footer-menu__label" for="fimput2">
+                                <h3 class="footer-menu__title">Інформація</h3>
+                                <svg class="footer-menu__arrow">
+                                    <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                            </label>
+                            <div class="footer-menu__paragraph">
+                                <ul class="footer-menu__informations">
+                                    <li class="footer-menu__information"><a href="../../about-us.html" class="footer-menu__link">Про
+                                            нас</a></li>
+                                    <li class="footer-menu__information"><a href="../../pay.html"
+                                            class="footer-menu__link">Оплата</a></li>
+                                    <li class="footer-menu__information"><a href="../../delivery.html"
+                                            class="footer-menu__link">Доставка та збірка</a></li>
+                                    <li class="footer-menu__information"><a href="../../reviews.html"
+                                            class="footer-menu__link">Відгуки</a></li>
+                                    <li class="footer-menu__information"><a href="../../blog-page.html"
+                                            class="footer-menu__link">Блог</a></li>
+                                    <li class="footer-menu__information"><a href="../../contacts.html"
+                                            class="footer-menu__link">Контакти</a></li>
+                                    <li class="footer-menu__information"><a href="../../contacts.html"
+                                            class="footer-menu__link">Мапа сайту</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer-menu__item">
+                            <input class="footer-menu__input" type="checkbox" name="footer__input-name" id="fimput3" />
+                            <label class="footer-menu__label" for="fimput3">
+                                <h3 class="footer-menu__title">Клієнтам</h3>
+                                <svg class="footer-menu__arrow">
+                                    <use href="../../images/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                            </label>
+                            <div class="footer-menu__paragraph">
+                                <ul class="footer-menu__customers">
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Акції</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Розпродаж</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Купити в кредит</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Обмін і повернення
+                                            товару</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Часто задавані
+                                            питання</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Умови покупки</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Політика
+                                            конфіденційності</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+        <div class="footer__socials-box-desk">
+          <p class="footer__text-join">Приєднуйтесь:</p>
+          <div class="footer__box-join">
+            <a href="https://www.facebook.com" class="footer__icon-link">
+              <svg class="footer__svg footer__facebook">
+                <use href="../../images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com" class="footer__icon-link">
+              <svg class="footer__svg footer__instagram">
+                <use href="../../images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__text-help">Допомога і консультація:</p>
+          <div class="footer__box-help">
+            <a href="https://web.whatsapp.com" class="footer__icon-link">
+              <div class="footer__svg-bug">
+                <svg class="footer__svg-whatsapp">
+                  <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="https://web.telegram.org" class="footer__icon-link">
+              <svg class="footer__svg footer__telegram">
+                <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </a>
+            <a href="https://account.viber.com" class="footer__icon-link">
+              <svg class="footer__svg footer__viber">
+                <use href="../../images/symbol-defs.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__box-pay">
+            <a href="#" class="footer__icon-link">
+              <svg class="footer__pay-svg footer__pay-svg-visa">
+                <use href="../../images/symbol-defs.svg#icon-visa"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__icon-link">
+              <svg class="footer__pay-svg footer__pay-svg-mastercard">
+                <use href="../../images/symbol-defs.svg#icon-mastercard"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="footer__main-list">
+        <li class="footer__main-item">
+          <ul class="footer__informations">
+            <li class="footer__informations">
+              <p class="footer__link-active">Інформація</p>
+            </li>
+            <li class="footer__informations">
+              <a href="../../about-us.html" class="footer__link">Про нас</a>
+            </li>
+            <li class="footer__informations">
+              <a href="../../pay.html" class="footer__link">Оплата</a>
+            </li>
+            <li class="footer__informations">
+              <a href="../../delivery.html" class="footer__link"
+                >Доставка та збірка</a
+              >
+            </li>
+            <li class="footer__informations">
+              <a href="../../reviews.html" class="footer__link">Відгуки</a>
+            </li>
+            <li class="footer__informations">
+              <a href="../../blog-page.html" class="footer__link">Блог</a>
+            </li>
+            <li class="footer__informations">
+              <a href="../../contacts.html" class="footer__link">Контакти</a>
+            </li>
+            <li class="footer__informations">
+              <a href="../../contacts.html" class="footer__link">Мапа сайту</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__main-item">
+          <ul class="footer__categories">
+            <li class="footer__categorie">
+              <p class="footer__link-active">Категорії</p>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Ліжка</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Матраци</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">М’які меблі</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Шафи</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Комоди</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Тумби</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Столи</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Стільці</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Меблеві стіни</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Кухні</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__main-item">
+          <ul class="footer__customers">
+            <li class="footer__customer">
+              <p class="footer__link-active">Клієнтам</p>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Акції</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Розпродаж</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Купити в кредит</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Обмін і повернення товару</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Часто задавані питання</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Умови покупки</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Політика конфіденційності</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer__box3">
+        <div class="footer__call">
+          <div class="footer__svg-phone-border">
+            <svg class="footer__svg-phone">
+              <use href="../../images/symbol-defs.svg#icon-telephone"></use>
+            </svg>
+          </div>
+          <div class="footer__numbers">
+            <a href="tel:+380679294545" class="footer__number"
+              >+38 067 929-45-45</a
+            >
+            <a href="tel:+380501334545" class="footer__number">
+              +38 050 133-45-45</a
+            >
+            <a href="tel:+380931707545" class="footer__number">
+              +38 093 170-75-45</a
+            >
+            <a href="#" class="footer__call-me">Передзвоніть мені</a>
+          </div>
+        </div>
+        <div class="footer__adress">
+          <div class="footer__adress-svg-border">
+            <svg class="footer__adress-svg">
+              <use href="../../images/symbol-defs.svg#icon-adres"></use>
+            </svg>
+          </div>
+          <a href="../../contacts.html" class="footer__adress-text"
+            >м. Київ, провулок Ізяславський 52, поверх 2</a
+          >
+        </div>
+        <div class="footer__schedule">
+          <div class="footer__calendar-border">
+            <svg class="footer__calendar">
+              <use href="../../images/symbol-defs.svg#icon-calendar"></use>
+            </svg>
+          </div>
+          <p class="footer__schedule-text">Працюємо щодня з 9:00 до 18:00</p>
+        </div>
+      </div>
+      <div class="footer__socials-box-mob">
+        <p class="footer__text-join footer__text-join-mob">Приєднуйтесь:</p>
+        <div class="footer__box-join footer__box-join-mob">
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__facebook">
+              <use href="../../images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__instagram">
+              <use href="../../images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__text-help footer__text-help-mob">
+          Допомога і консультація:
+        </p>
+        <div class="footer__box-help-mob">
+          <a href="#" class="footer__icon-link">
+            <div class="footer__svg-bug">
+              <svg class="footer__svg-whatsapp">
+                <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__telegram">
+              <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__viber">
+              <use href="../../images/symbol-defs.svg#icon-viber"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__box-pay footer__box-pay-mob">
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__pay-svg footer__pay-svg-visa">
+              <use href="../../images/symbol-defs.svg#icon-visa"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__pay-svg footer__pay-svg-mastercard">
+              <use href="../../images/symbol-defs.svg#icon-mastercard"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="footer__copyright">
-        <p class="footer__copyright-text">© KROVATO - Технології сну - 2022. Всі права захищені.</p>
-    </div>
+    <button id="back-to-top-btn" onclick="backToTop()">
+      <svg class="footer__pay-svg footer__pay-svg-mastercard">
+        <use href="../../images/symbol-defs.svg#icon-big-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="footer__copyright">
+    <p class="footer__copyright-text">
+      © KROVATO - Технології сну - 2022. Всі права захищені.
+    </p>
+  </div>
 </section>
+
+<script>
+  function backToTop() {
+    if (
+      document.body.scrollTop !== 0 ||
+      document.documentElement.scrollTop !== 0
+    ) {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      document.getElementById("back-to-top-btn").style.display = "block";
+    } else {
+      document.getElementById("back-to-top-btn").style.display = "none";
+    }
+  }
+</script>
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="./header.js"></script>
+    <!-- <script>
+      AOS.init();
+    </script> -->
   </body>
 </html>
