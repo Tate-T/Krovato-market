@@ -36,12 +36,14 @@
                     <use href="../../images/symbol-defs.svg#icon-bottom"></use>
                   </svg>
                   <ul id="languageDrop" class="language-dlist hidden">
-                      <div>
-                    <p id="UaPrgrph" class="header__lang-text">UA</p>
-                    <p id="EnPrgrph" class="header__lang-text">EN</p>
-                  </div>
+                    <div>
+                      <p id="UaPrgrph" class="header__lang-text">UA</p>
+                      <p id="EnPrgrph" class="header__lang-text">EN</p>
+                    </div>
                     <svg class="icon__svg" onclick="toggleLanguage()">
-                      <use href="../../images/symbol-defs.svg#icon-bottom"></use>
+                      <use
+                        href="../../images/symbol-defs.svg#icon-bottom"
+                      ></use>
                     </svg>
                   </ul>
                 </div>
@@ -134,23 +136,24 @@
             </svg>
             Каталог
           </a>
-
+          <div class="header__form-box">
           <form class="header__form">
             <input
               class="header__find"
               type="text"
               id="headerFind"
               placeholder="Пошук товарів"
+              autocomplete="off"
             />
           </form>
+          <div id="searchResults" class="hidden"></div>
           <a href="">
-          <svg class="search__svg">
-            <use href="../../images/symbol-defs.svg#icon-search"></use>
-          </svg>
-        </a>
+            <svg class="search__svg">
+              <use href="../../images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </a>
+        </div>
         </li>
-
-
 
         <li class="header__item">
           <svg class="icon__svg-phone">
@@ -170,9 +173,15 @@
             </svg>
             <div>
               <p class="header__paragraph-drop">Щодня з 9:00 до 18:00</p>
-              <a href="tel:+380679294545" class="header__number-drop">067 929-45-45</a>
-              <a href="tel:+380501334545" class="header__number-drop">050 133-45-45</a>
-              <a href="tel:+380931707545" class="header__number-drop">093 170-75-45</a>
+              <a href="tel:+380679294545" class="header__number-drop"
+                >067 929-45-45</a
+              >
+              <a href="tel:+380501334545" class="header__number-drop"
+                >050 133-45-45</a
+              >
+              <a href="tel:+380931707545" class="header__number-drop"
+                >093 170-75-45</a
+              >
               <a class="header__link-drop" href="#">Передзвоніть мені</a>
             </div>
             <svg class="icon__svg-drop" onclick="toggleAdditionalNumbers()">
@@ -184,10 +193,10 @@
           <use href="../../images/symbol-defs.svg#icon-obrane-heard"></use>
         </svg>
         <a href="../../tray.html">
-        <svg class="korzina__svg">
-          <use href="../../images/symbol-defs.svg#icon-korzina"></use>
-        </svg>
-      </a>
+          <svg class="korzina__svg">
+            <use href="../../images/symbol-defs.svg#icon-korzina"></use>
+          </svg>
+        </a>
       </ul>
       <ul class="header__list3">
         <li class="header__item">
@@ -219,7 +228,10 @@
         </li>
         <li class="header__item-mobile">
           <svg class="search__svg-mobile" onclick="toggleDropdownMenu()">
-            <use id="searchIcon" href="../../images/symbol-defs.svg#icon-search"></use>
+            <use
+              id="searchIcon"
+              href="../../images/symbol-defs.svg#icon-search"
+            ></use>
           </svg>
           <div id="dropdownMenu" class="dropdown-menu hidden">
             <form class="header__form-mobile">

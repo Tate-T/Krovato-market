@@ -67,6 +67,10 @@
       display: none;
     }
 
+    &__pagination {
+      display: none;
+    }
+
     &__img {
       width: 300px;
     }
@@ -77,6 +81,9 @@
   .slider {
     &__img {
       width: 480px;
+    }
+    &__pagination {
+      display: none;
     }
     &__left,
     &__right {
@@ -92,6 +99,9 @@
     }
     &__left,
     &__right {
+      display: block;
+    }
+    &__pagination {
       display: block;
     }
 

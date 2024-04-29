@@ -120,28 +120,24 @@ function toggleLanguage() {
   }
 }
 
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const slider = document.getElementById("myRange");
   const reviewsList = document.querySelector(".reviews__list");
   const reviewsItems = document.querySelectorAll(".reviews__item");
-  const reviewsWidth = reviewsItems[0].offsetWidth; 
-  const reviewsCount = reviewsItems.length; 
-  const sliderMaxValue = reviewsWidth * (reviewsCount - 1); 
+  const reviewsWidth = reviewsItems[0].offsetWidth;
+  const reviewsCount = reviewsItems.length;
+  const sliderMaxValue = reviewsWidth * (reviewsCount - 1);
 
-  slider.max = sliderMaxValue; 
+  slider.max = sliderMaxValue;
 
-  slider.addEventListener("input", function() {
-    const value = parseInt(slider.value); 
+  slider.addEventListener("input", function () {
+    const value = parseInt(slider.value);
 
     reviewsItems.forEach((item, index) => {
-      // Вычисляем новую позицию элемента на основе значения слайдера
       let newPosition = -(value / reviewsWidth) * 100;
 
-      // Проверяем, чтобы новая позиция не превышала -160.398%
       newPosition = Math.max(newPosition, -160.398);
 
-      // Устанавливаем новое положение элемента
       item.style.transform = `translateX(${newPosition}%)`;
     });
   });

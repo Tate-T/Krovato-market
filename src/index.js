@@ -32,6 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
       nextSlide();
     });
   
-    // Show the initial slide
     showSlide(currentSlide);
   });
