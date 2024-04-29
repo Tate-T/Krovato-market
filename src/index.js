@@ -34,3 +34,67 @@ document.addEventListener('DOMContentLoaded', function() {
   
     showSlide(currentSlide);
   });
+
+  const likeElements = document.querySelectorAll('.like__svg');
+  let isLiked = false;
+  let messageTimeout;
+  const messageHeight = 60;
+  
+  likeElements.forEach(function(like) {
+      like.addEventListener("click", function(event) {
+          const defaultBottomPosition = 10;
+  
+          if (!isLiked) {
+              like.style.backgroundColor = "red";
+              like.style.fill = "white"
+              isLiked = true;
+  
+              if (!document.querySelector('.message')) {
+                  createMessage(defaultBottomPosition);
+              }
+              
+              clearTimeout(messageTimeout);
+              messageTimeout = setTimeout(() => {
+                  removeMessage();
+              }, 4000);
+          } else {
+              like.style.backgroundColor = "";
+              like.style.fill = ""
+              isLiked = false;
+              clearTimeout(messageTimeout);
+              removeMessage();
+          }
+      });
+  });
+  
+  function createMessage(bottomPosition) {
+    const message = document.createElement('div');
+    message.textContent = "Товар доданий в обране";
+    message.classList.add('message');
+    message.classList.add('like__price');
+    message.style.bottom = `${bottomPosition}px`;
+    document.body.appendChild(message);
+
+
+    setTimeout(() => {
+        message.classList.add('slideIn');
+    }, 100);
+
+    setTimeout(() => {
+        message.classList.remove('slideIn'); 
+        message.classList.add('slideOut'); 
+        setTimeout(() => {
+            message.remove();
+        }, 500);
+    }, 3000);
+}
+
+
+  
+  function removeMessage() {
+      const message = document.querySelector('.message');
+      if (message) {
+          message.remove();
+      }
+  }
+  

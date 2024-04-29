@@ -223,6 +223,10 @@
       font-size: 30px;
     }
 
+    &__item:hover {
+      border: none;
+    }
+
     &__link {
       display: none;
     }
@@ -290,5 +294,55 @@
   .tray__svg {
     width: 25px;
     height: 25px;
+  }
+}
+
+.like__price {
+  color: var(--Theme-Dark, #2b2929);
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  background-color: rgb(213, 255, 150);
+}
+
+.message {
+  position: fixed;
+  padding: 15px;
+  border: 1px solid rgba(213, 255, 150, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.message.slideIn {
+  animation: slideInRight 0.5s ease forwards;
+}
+
+.message.slideOut {
+  animation: slideOutRight 0.5s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+      right: -100px;
+      opacity: 0;
+  }
+  to {
+      right: 250px;
+      opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+      right: 250px;
+      opacity: 1;
+  }
+  to {
+      right: -100px;
+      opacity: 0;
   }
 }
