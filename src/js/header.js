@@ -13,7 +13,7 @@ function toggleMenu() {
     }, 300);
     menuIcon.setAttribute(
       "href",
-      "../../images/symbol-defs.svg#icon-mobile-menu"
+      "./images/symbol-defs.svg#icon-mobile-menu"
     );
     body.classList.remove("no-scroll");
     removeBlurOverlay();
@@ -23,7 +23,7 @@ function toggleMenu() {
       menu.style.transform = "translateY(0)";
       menu.style.opacity = "1";
     }, 10);
-    menuIcon.setAttribute("href", "../../images/symbol-defs.svg#icon-cross");
+    menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-cross");
     body.classList.add("no-scroll");
     createBlurOverlay();
   }
@@ -65,7 +65,7 @@ function toggleDropdownMenu() {
   if (!dropdownMenu.classList.contains("hidden")) {
     dropdownMenu.style.opacity = "0";
     dropdownMenu.style.transform = "translateY(-20px)";
-    menuIcon.setAttribute("href", "../../images/symbol-defs.svg#icon-cross");
+    menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-cross");
     setTimeout(() => {
       dropdownMenu.style.opacity = "1";
       dropdownMenu.style.transform = "translateY(0)";
@@ -75,7 +75,7 @@ function toggleDropdownMenu() {
   } else {
     dropdownMenu.style.opacity = "0";
     dropdownMenu.style.transform = "translateY(-20px)";
-    menuIcon.setAttribute("href", "../../images/symbol-defs.svg#icon-search");
+    menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-search");
     removeBlurOverlayFind();
     removeNoScroll();
   }
