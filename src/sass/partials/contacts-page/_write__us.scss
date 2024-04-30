@@ -5,6 +5,7 @@
     padding-bottom: 60px;
 
 
+
     @media screen and (min-width: 1200px) {
         padding-bottom: 70px;
     }
@@ -172,13 +173,18 @@
         .write__container {
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url(./images/contacts-page/write-bg@1x.webp);
+            background-image: url(/images/contacts-page/write-bg@1x.webp);
             flex-direction: row;
             justify-content: space-between;
             padding-left: 50px;
             padding-top: 50px;
             padding-bottom: 25px;
 
+                        @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: url(/images/contacts-page/write-bg@2x.webp);
+                        }
         }
 
         .write__button {
