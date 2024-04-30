@@ -7,8 +7,8 @@
   }
 
   &__bc-container {
-    background-image: url(../../../images/delivery-page/kyiv-ellipse@1x.webp),
-      url(../../../images/delivery-page/kyiv-map@1x.webp);
+    background-image: url(./images/delivery-page/kyiv-ellipse@1x.webp),
+      url(./images/delivery-page/kyiv-map@1x.webp);
     background-size: 250px, contain;
     background-repeat: no-repeat;
     height: 100%;
@@ -23,8 +23,8 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../../images/delivery-page/kyiv-ellipse@2x.webp),
-        url(../../../images/delivery-page/kyiv-map@2x.webp);
+      background-image: url(./images/delivery-page/kyiv-ellipse@2x.webp),
+        url(./images/delivery-page/kyiv-map@2x.webp);
     }
   }
 
