@@ -34,7 +34,7 @@
     </main>
     <load ="partials/repeat-section/footer.html" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="/header.js"></script>
+    <script type="module" src="./header.js"></script>
     <script>
       function prevSlide(className) {
         const list = document.querySelector(className);
@@ -48,8 +48,8 @@
         list.insertBefore(lastItem, list.firstElementChild);
       }
     </script>
-    <script src="/index.js"></script>
-    <script src="/find.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./find.js"></script>
     <script>
       AOS.init();
     </script>
