@@ -54,21 +54,21 @@
         background-position: right;
     }
 
-    background-image: url(./././images/about-us/hero-bg@1x.webp);
+    background-image: url(../images/about-us/hero-bg@1x.webp);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(./././images/about-us/phone/hero-bg@2x.webp);
+        background-image: url(../images/about-us/phone/hero-bg@2x.webp);
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: url(./././images/about-us/hero-bg@1x.webp);
+        background-image: url(../images/about-us/hero-bg@1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(./././images/about-us/hero-bg@1x.webp);
+            background-image: url(../images/about-us/hero-bg@1x.webp);
         }
     }
 

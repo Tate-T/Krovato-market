@@ -33,22 +33,22 @@
         max-width: 100%;
         height: 380px;
         background-repeat: no-repeat;
-        background-image: url(/images/blog-artice/phone/hero-bg@1x.webp);
+        background-image: url(../images/blog-artice/phone/hero-bg@1x.webp);
         background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(/images/blog-artice/phone/hero-bg@2x.webp);
+            background-image: url(../images/blog-artice/phone/hero-bg@2x.webp);
         }
     
         @media screen and (min-width: 1200px) {
-            background-image: url(/images/blog-artice/hero-bg@1x.webp);
+            background-image: url(../images/blog-artice/hero-bg@1x.webp);
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(/images/blog-artice/hero-bg@2x.webp);
+                background-image: url(../images/blog-artice/hero-bg@2x.webp);
             }
         }
     }
@@ -115,7 +115,7 @@
         width: 32px;
         height: 32px;
 
-        background-image: url(/images/check.svg);
+        background-image: url(../images/check.svg);
     }
 
     &__svg-left {
