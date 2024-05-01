@@ -23,7 +23,7 @@ function toggleMenu() {
       menu.style.transform = "translateY(0)";
       menu.style.opacity = "1";
     }, 10);
-    menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-cross");
+    menuIcon.setAttribute("href", "../images/symbol-defs.svg#icon-cross");
     body.classList.add("no-scroll");
     createBlurOverlay();
   }
@@ -101,12 +101,16 @@ function toggleAdditionalNumbers() {
       additionalNumbersBox.style.opacity = "1";
       additionalNumbersBox.style.transform = "translateY(0)";
     }, 50);
+    createBlurOverlay();
+    addNoScroll();
   } else {
     additionalNumbersBox.style.opacity = "0";
     additionalNumbersBox.style.transform = "translateY(-100px)";
     setTimeout(() => {
       additionalNumbersBox.classList.add("hidden");
     }, 300);
+    removeBlurOverlay();
+    removeNoScroll();
   }
 }
 
@@ -143,7 +147,35 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 document.getElementById("menuIcon").addEventListener("click", toggleMenu);
 document.getElementById("searchIcon").addEventListener("click", toggleDropdownMenu);
 document.getElementById("additionalNumbersBox").addEventListener("click", toggleAdditionalNumbers);
 document.getElementById("languageDrop").addEventListener("click", toggleLanguage);
+
+
+document.addEventListener("click", function(event) {
+  if (!event.target.closest("#menuIcon")) {
+    document.getElementById("mobileMenu").style.display = "none";
+    removeBlurOverlay();
+    document.body.classList.remove("no-scroll");
+  }
+  
+  if (!event.target.closest("#searchIcon")) {
+    let dropdownMenu = document.getElementById("dropdownMenu");
+    dropdownMenu.classList.add("hidden");
+    removeBlurOverlayFind();
+    removeNoScroll();
+  }
+  
+  if (!event.target.closest("#additionalNumbersBox") && !event.target.closest("#additionalNumbersButton")) {
+    document.getElementById("additionalNumbersBox").classList.add("hidden");
+    removeBlurOverlay();
+    removeNoScroll();
+  }
+  
+  if (!event.target.closest("#languageDrop")) {
+    let languageBox = document.getElementById("languageDrop");
+    languageBox.classList.add("hidden");
+  }
+});
