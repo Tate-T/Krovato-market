@@ -52,7 +52,7 @@
           }, 300);
           menuIcon.setAttribute(
             "href",
-            "./images/symbol-defs.svg#icon-mobile-menu"
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-mobile-menu"
           );
           body.classList.remove("no-scroll");
           removeBlurOverlay();
@@ -62,7 +62,7 @@
             menu.style.transform = "translateY(0)";
             menu.style.opacity = "1";
           }, 10);
-          menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-cross");
+          menuIcon.setAttribute("href", "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross");
           body.classList.add("no-scroll");
           createBlurOverlay();
         }
@@ -104,7 +104,7 @@
         if (!dropdownMenu.classList.contains("hidden")) {
           dropdownMenu.style.opacity = "0";
           dropdownMenu.style.transform = "translateY(-20px)";
-          menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-cross");
+          menuIcon.setAttribute("href", "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross");
           setTimeout(() => {
             dropdownMenu.style.opacity = "1";
             dropdownMenu.style.transform = "translateY(0)";
@@ -114,7 +114,7 @@
         } else {
           dropdownMenu.style.opacity = "0";
           dropdownMenu.style.transform = "translateY(-20px)";
-          menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-search");
+          menuIcon.setAttribute("href", "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search");
           removeBlurOverlayFind();
           removeNoScroll();
         }
