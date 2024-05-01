@@ -72,18 +72,18 @@
 
 .questions__label::after {
     content: '';
-    background-image: url(./images/card-catalog/phone/arrow-bottom@1X.webp);
+    background-image: url(../images/card-catalog/phone/arrow-bottom@1X.webp);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(./images/card-catalog/phone/arrow-bottom@2X.webp);
+    background-image: url(../images/card-catalog/phone/arrow-bottom@2X.webp);
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(./images/card-catalog/arrow-bottom@1X.webp);
+    background-image: url(../images/card-catalog/arrow-bottom@1X.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(./images/card-catalog/arrow-bottom@2X.webp);
+      background-image: url(../images/card-catalog/arrow-bottom@2X.webp);
     }
   }
     position: absolute;
@@ -168,18 +168,18 @@ max-width: 380px;
 
 .questions__input:checked + .questions__label::after {
     content: '';
-    background-image: url(./images/card-catalog/phone/arrow-top@1X.webp);
+    background-image: url(../images/card-catalog/phone/arrow-top@1X.webp);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(./images/card-catalog/phone/arrow-top@2X.webp);
+    background-image: url(../images/card-catalog/phone/arrow-top@2X.webp);
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(./images/card-catalog/arrow-top@1X.webp);
+    background-image: url(../images/card-catalog/arrow-top@1X.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(./images/card-catalog/arrow-top@2X.webp);
+      background-image: url(../images/card-catalog/arrow-top@2X.webp);
     }
   }
 }

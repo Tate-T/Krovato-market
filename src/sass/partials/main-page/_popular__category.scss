@@ -42,7 +42,7 @@
     width: 210px;
     height: 300px;
     flex-shrink: 0;
-    background-image: url(././images/main-page/beds@1x.webp);
+    background-image: url(../images/main-page/beds@1x.webp);
     background-repeat: no-repeat;
     background-position: center;
     transition: all .3s ease;
@@ -50,39 +50,39 @@
   }
 
   &__item:nth-child(2) {
-    background-image: url(././images/main-page/matrace@1x.webp);
+    background-image: url(../images/main-page/matrace@1x.webp);
   }
 
   &__item:nth-child(3) {
-    background-image: url(././images/main-page/upholstered@1x.webp);
+    background-image: url(../images/main-page/upholstered@1x.webp);
   }
 
   &__item:nth-child(4) {
-    background-image: url(././images/main-page/wardrobe@1x.webp);
+    background-image: url(../images/main-page/wardrobe@1x.webp);
   }
 
   &__item:nth-child(5) {
-    background-image: url(././images/main-page/dresser@1x.webp);
+    background-image: url(../images/main-page/dresser@1x.webp);
   }
 
   &__item:nth-child(6) {
-    background-image: url(././images/main-page/stone@1x.webp);
+    background-image: url(../images/main-page/stone@1x.webp);
   }
 
   &__item:nth-child(7) {
-    background-image: url(././images/main-page/table@1x.webp);
+    background-image: url(../images/main-page/table@1x.webp);
   }
 
   &__item:nth-child(8) {
-    background-image: url(././images/main-page/chair@1x.webp);
+    background-image: url(../images/main-page/chair@1x.webp);
   }
 
   &__item:nth-child(9) {
-    background-image: url(././images/main-page/furniture@1x.webp);
+    background-image: url(../images/main-page/furniture@1x.webp);
   }
 
   &__item:nth-child(10) {
-    background-image: url(././images/main-page/kitchen@1x.webp);
+    background-image: url(../images/main-page/kitchen@1x.webp);
   }
 
   &__item > div {
