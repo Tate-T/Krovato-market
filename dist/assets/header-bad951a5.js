@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("myRange");document.querySelector(".reviews__list");const t=document.querySelectorAll(".reviews__item"),s=t[0].offsetWidth,o=t.length,i=s*(o-1);e.max=i,e.addEventListener("input",function(){const r=parseInt(e.value);t.forEach((a,d)=>{let n=-(r/s)*100;n=Math.max(n,-160.398),a.style.transform=`translateX(${n}%)`})})});
+//# sourceMappingURL=header-bad951a5.js.map
