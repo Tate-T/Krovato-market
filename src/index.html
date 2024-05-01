@@ -36,7 +36,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="/js/index.js"></script>
     <script type="module" src="/js/find.js"></script>
-    <script type="module" src="./js/header.js"></script>
+    <script>
+      import('/js/header.js');
+    </script>
     <script>
       AOS.init();
     </script>
