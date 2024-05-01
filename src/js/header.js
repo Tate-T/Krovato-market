@@ -142,3 +142,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.getElementById("menuIcon").addEventListener("click", toggleMenu);
+document.getElementById("searchIcon").addEventListener("click", toggleDropdownMenu);
+document.getElementById("additionalNumbersBox").addEventListener("click", toggleAdditionalNumbers);
+document.getElementById("languageDrop").addEventListener("click", toggleLanguage);
