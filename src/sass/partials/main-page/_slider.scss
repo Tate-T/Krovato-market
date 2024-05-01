@@ -77,10 +77,10 @@
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:410px) {
   .slider {
     &__img {
-      width: 480px;
+      width: 410px;
     }
     &__pagination {
       display: none;
@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1290px) {
   .slider {
     &__img {
       width: 100%;
