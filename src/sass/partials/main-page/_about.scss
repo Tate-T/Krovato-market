@@ -106,6 +106,7 @@
 
 @media screen and (min-width: 1290px) {
   .about {
+    overflow: hidden;
     &__title {
       font-size: 40px;
       width: 1070px;
@@ -115,7 +116,7 @@
 
     &__descr {
       width: 1070px;
-      height: 360px;
+      height: 305px;
       flex-shrink: 0;
     }
 
@@ -123,4 +124,31 @@
       display: block;
     }
   }
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about__descr.new-text {
+  animation: fade-in 0.5s ease forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.rotate {
+  animation: rotate 0.5s ease forwards;
 }
