@@ -453,6 +453,49 @@
   margin-right: 10px;
 }
 
+// mobFilter
+
+.catalog__head-svgs-mobile {
+  position: relative;
+}
+
+#filterBoxMob {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  background-color: rgb(255, 255, 255);
+  width: 303px;
+  height: 150px;
+  z-index: 999;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: -1px 0px 7px 1px rgba(0, 0, 0, 0.54);
+}
+
+#filterBoxMob > svg {
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  transform: rotate(90deg);
+  width: 14px;
+  height: 14px;
+}
+
+#filterBoxMob > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#filterBoxMob > div > a {
+  color: var(--Theme-Grey, #535353);
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-right: 10px;
+}
+
 .icon-arrow-right {
   width: 12px;
   height: 12px;
