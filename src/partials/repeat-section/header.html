@@ -233,19 +233,24 @@
               href="./images/symbol-defs.svg#icon-search"
             ></use>
           </svg>
+          <div class="dropdown-menu-box">
           <div id="dropdownMenu" class="dropdown-menu hidden">
             <form class="header__form-mobile">
               <input
                 class="header__find-mob"
+                id="headerFindMob"
                 type="text"
                 id="headerFind"
                 placeholder="Пошук товарів"
+                autocomplete="off"
               />
               <svg class="search__svg-mob">
                 <use href="/images/symbol-defs.svg#icon-search"></use>
               </svg>
             </form>
+            <div id="searchResultsMob" class="hidden"></div>
           </div>
+        </div>
           <svg class="obrane__svg">
             <use href="./images/symbol-defs.svg#icon-obrane-heard"></use>
           </svg>

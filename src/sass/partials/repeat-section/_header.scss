@@ -369,7 +369,6 @@ svg {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 15px;
     }
 
     .korzina__svg {
@@ -422,6 +421,10 @@ svg {
     opacity: 0;
     transform: translateY(-100px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .dropdown-menu-box {
+    position: relative;
   }
 
   .header__find-mob {
@@ -523,6 +526,8 @@ svg {
 
   .obrane__svg {
     margin: 0;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -581,7 +586,6 @@ svg {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 20px;
     }
   }
 
@@ -731,6 +735,8 @@ svg {
 
   .obrane__svg {
     margin: 0;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -936,5 +942,34 @@ svg {
 }
 
 #searchResults.hidden {
+  display: none;
+}
+
+#searchResultsMob {
+  position: absolute; 
+  top: 155px;
+  left: 20px; 
+  z-index: 10000; 
+  width: 88.5%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(92, 92, 92);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border-top: 3px solid #919191;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#searchResultsMob > div {
+  padding: 10px; 
+  cursor: pointer;
+}
+
+#searchResultsMob > div:hover {
+  background-color: #f0f0f0; 
+  border-radius: 10px;
+}
+
+#searchResultsMob.hidden {
   display: none;
 }
