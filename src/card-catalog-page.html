@@ -10,13 +10,13 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <title>Карточка товару</title>
     <link rel="stylesheet" href="./sass/card-catalog-page.scss" />
     <script type="module" src="./js/index.js"></script>
@@ -34,9 +34,9 @@
     <load ="./partials/repeat-section/footer.html" />
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script>
-            // link menu
+      // link menu
 
-            function toggleMenu() {
+      function toggleMenu() {
         let menu = document.getElementById("mobileMenu");
         let menuIcon = document.getElementById("menuIcon");
         let body = document.body;
@@ -49,7 +49,7 @@
           }, 300);
           menuIcon.setAttribute(
             "href",
-            "./images/symbol-defs.svg#icon-mobile-menu"
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-mobile-menu"
           );
           body.classList.remove("no-scroll");
           removeBlurOverlay();
@@ -59,22 +59,12 @@
             menu.style.transform = "translateY(0)";
             menu.style.opacity = "1";
           }, 10);
-          menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-cross");
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"
+          );
           body.classList.add("no-scroll");
           createBlurOverlay();
-        }
-      }
-
-      function createBlurOverlay() {
-        let overlay = document.createElement("div");
-        overlay.classList.add("blur-overlay");
-        document.body.appendChild(overlay);
-      }
-
-      function removeBlurOverlay() {
-        let overlay = document.querySelector(".blur-overlay");
-        if (overlay) {
-          overlay.remove();
         }
       }
 
@@ -101,7 +91,10 @@
         if (!dropdownMenu.classList.contains("hidden")) {
           dropdownMenu.style.opacity = "0";
           dropdownMenu.style.transform = "translateY(-20px)";
-          menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-cross");
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"
+          );
           setTimeout(() => {
             dropdownMenu.style.opacity = "1";
             dropdownMenu.style.transform = "translateY(0)";
@@ -111,7 +104,10 @@
         } else {
           dropdownMenu.style.opacity = "0";
           dropdownMenu.style.transform = "translateY(-20px)";
-          menuIcon.setAttribute("href", "./images/symbol-defs.svg#icon-search");
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search"
+          );
           removeBlurOverlayFind();
           removeNoScroll();
         }
