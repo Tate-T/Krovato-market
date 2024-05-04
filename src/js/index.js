@@ -97,16 +97,3 @@ document.addEventListener('DOMContentLoaded', function() {
           message.remove();
       }
   }
-  
-
-  function prevSlide(className) {
-    const list = document.querySelector(className);
-    const firstItem = list.firstElementChild;
-    list.appendChild(firstItem);
-  }
-
-  function nextSlide(className) {
-    const list = document.querySelector(className);
-    const lastItem = list.lastElementChild;
-    list.insertBefore(lastItem, list.firstElementChild);
-  }
