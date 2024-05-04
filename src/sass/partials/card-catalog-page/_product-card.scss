@@ -443,12 +443,16 @@
 
     @media screen and (max-width: 420px) {
       flex-direction: column;
-      align-items: center;
+      align-items: start;
     }
   }
 
   &__item {
     width: 190px;
+
+    @media screen and (max-width: 420px) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 1290px) {
       width: auto;
