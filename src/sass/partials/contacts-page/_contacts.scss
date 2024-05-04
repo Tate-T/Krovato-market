@@ -24,14 +24,15 @@
     }
 
     &__map {
-    max-width: 410px;
-    max-height: 410px;
+        width: 100%;
+    width: 410px;
+    height: 410px;
     flex-shrink: 0;
     }
 
     &__img {
-        max-width: 410px;
-        max-height: 410px;
+        width: 410px;
+        height: 410px;
     }
 
     &__link {
@@ -102,7 +103,7 @@
         line-height: 48px;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (min-width: 320px) {
         .contact {
 
             &__item-map{
@@ -123,13 +124,12 @@
             }
 
 
-
             &__img {
-                max-width: 300px;
+                width: 300px;
             }
 
             &__map {
-                max-width: 300px;
+                width: 300px;
 
             }
 
