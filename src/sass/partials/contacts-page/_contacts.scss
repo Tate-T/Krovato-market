@@ -4,8 +4,8 @@
     max-height: 1660px;
 
 
-    &__container{
-        overflow:   visible ;
+    &__container {
+        overflow: visible;
     }
 
     &__list {
@@ -24,17 +24,14 @@
     }
 
     &__map {
-
-
-        width: 410px;
-        height: 410px;
-        flex-shrink: 0;
+    width: 410px;
+    height: 410px;
+    flex-shrink: 0;
     }
 
     &__img {
         max-width: 410px;
-        width: 100%;
-        flex-shrink: 0;
+        height: 410px;
     }
 
     &__link {
@@ -67,7 +64,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        
+
     }
 
     &__box-link {
@@ -106,29 +103,29 @@
     }
 
     @media screen and (max-width: 320px) {
-        .contact{
+        .contact {
 
-        &__box-svg {
-            max-width: 300px;
-        }
-
-        &__item{
-            width: 100%;
-        }
-
-        &__item-map{
-            display: flex;
-
-        }
-          
-
-
-            &__img{
-                width: 320px;
+            &__box-svg {
+                max-width: 300px;
             }
 
-            &__map{
-                max-width: 310px;
+            &__item {
+                width: 100%;
+            }
+
+            &__item-map {
+                display: flex;
+
+            }
+
+
+
+            &__img {
+                max-width: 300px;
+            }
+
+            &__map {
+                max-width: 300px;
 
             }
 
@@ -155,11 +152,12 @@
 
 
         .contact__img {
-            max-width: 630px;
+            width: 100%;
+            max-width: 650px;
             height: 650px;
             flex-shrink: 0;
         }
 
-        
+
     }
 }
