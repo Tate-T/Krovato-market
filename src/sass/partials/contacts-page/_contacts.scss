@@ -5,7 +5,7 @@
 
 
     &__container{
-        overflow:visible ;
+        overflow:   visible ;
     }
 
     &__list {
@@ -32,10 +32,8 @@
     }
 
     &__img {
-
-
-        width: 410px;
-        height: 410px;
+        max-width: 410px;
+        width: 100%;
         flex-shrink: 0;
     }
 
@@ -68,7 +66,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        width: 100%;
+        
     }
 
     &__box-link {
@@ -108,17 +107,29 @@
 
     @media screen and (max-width: 320px) {
         .contact{
+
+        &__box-svg {
+            max-width: 300px;
+        }
+
+        &__item{
+            width: 100%;
+        }
+
+        &__item-map{
+            display: flex;
+
+        }
           
-            &__list{
-                padding-left: 35px;
-            }
+
 
             &__img{
-                max-width: 331px;
+                width: 320px;
             }
 
             &__map{
-                max-width: 320px;
+                max-width: 310px;
+
             }
 
         }
@@ -144,7 +155,7 @@
 
 
         .contact__img {
-            width: 630px;
+            max-width: 630px;
             height: 650px;
             flex-shrink: 0;
         }
