@@ -26,15 +26,17 @@
     }
 
     &__map {
+    display: block;
     width: 100%;
-    width: 410px;
-    max-height: 410px;
+    max-width: 410px;
+    height: auto;
     }
 
     &__img {
+        display: block;
         width: 100%;
-        width: 410px;
-        max-height: 410px;
+        max-width: 410px;
+        height: auto;
     }
 
     &__link {
@@ -105,7 +107,7 @@
         line-height: 48px;
     }
 
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 320px) {
         .contact {
 
 
@@ -122,7 +124,7 @@
 
 
             &__img {
-                width: 320px;
+                max-width: 320px;
             }
 
             &__map {
