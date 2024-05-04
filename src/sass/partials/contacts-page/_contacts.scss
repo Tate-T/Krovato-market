@@ -26,15 +26,15 @@
     }
 
     &__map {
-        width: 100%;
+    width: 100%;
     width: 410px;
-    height: 410px;
-    flex-shrink: 0;
+    max-height: 410px;
     }
 
     &__img {
+        width: 100%;
         width: 410px;
-        height: 410px;
+        max-height: 410px;
     }
 
     &__link {
@@ -122,11 +122,12 @@
 
 
             &__img {
-                width: 300px;
+                width: 320px;
             }
 
             &__map {
-                width: 300px;
+                height: 410px;
+                width: 320px;
 
             }
 
