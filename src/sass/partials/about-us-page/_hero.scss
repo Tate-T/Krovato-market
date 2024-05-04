@@ -12,10 +12,8 @@
     color: $dark;
     font-family: "Proxima Nova";
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    /* 187.5% */
     transition-property: color;
     transition-duration: 250ms;
 }
@@ -34,17 +32,15 @@
     color: $yellow;
     font-family: "Proxima Nova";
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    /* 187.5% */
 }
 
 .pay__section {
     background-color: white;
     margin-top: 30px;
-    background-repeat: no-repeat;
     height: 525px;
+    background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
 
@@ -54,7 +50,7 @@
         background-position: right;
     }
 
-    background-image: url(../images/about-us/hero-bg@1x.webp);
+    background-image: url(../images/about-us/phone/hero-bg@1x.webp);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -78,11 +74,9 @@
     color: $dark;
     font-family: "Proxima Nova";
     font-size: 30px;
-    font-style: normal;
     font-weight: 600;
     line-height: 48px;
     text-align: center;
-    /* 120% */
 
     max-width: 410px;
     padding-top: 40px;
@@ -103,7 +97,6 @@
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    /* 130.769% */
     max-width: 410px;
     margin-top: 30px;
 
@@ -121,11 +114,9 @@
     color: $dark;
     font-family: "Proxima Nova";
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
     line-height: 28px;
     text-align: center;
-    /* 140% */
 
     max-width: 410px;
     margin-top: 20px;

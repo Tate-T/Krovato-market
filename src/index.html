@@ -62,7 +62,10 @@
             menu.style.transform = "translateY(0)";
             menu.style.opacity = "1";
           }, 10);
-          menuIcon.setAttribute("href", "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross");
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"
+          );
           body.classList.add("no-scroll");
           createBlurOverlay();
         }
@@ -104,7 +107,10 @@
         if (!dropdownMenu.classList.contains("hidden")) {
           dropdownMenu.style.opacity = "0";
           dropdownMenu.style.transform = "translateY(-20px)";
-          menuIcon.setAttribute("href", "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross");
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"
+          );
           setTimeout(() => {
             dropdownMenu.style.opacity = "1";
             dropdownMenu.style.transform = "translateY(0)";
@@ -114,7 +120,10 @@
         } else {
           dropdownMenu.style.opacity = "0";
           dropdownMenu.style.transform = "translateY(-20px)";
-          menuIcon.setAttribute("href", "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search");
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search"
+          );
           removeBlurOverlayFind();
           removeNoScroll();
         }
@@ -182,6 +191,61 @@
             item.style.transform = `translateX(${newPosition}%)`;
           });
         });
+      });
+
+      // about us
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const sliderDown = document.querySelector(".slider__down");
+        const aboutContainer = document.querySelector(".about__container");
+        const aboutShadow = document.querySelector(".about__shadow");
+        let isOpen = false;
+        let newText = null;
+
+        sliderDown.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          if (!isOpen) {
+            openAboutSection();
+          } else {
+            closeAboutSection();
+          }
+        });
+
+        function openAboutSection() {
+          aboutShadow.style.height = "0";
+          aboutContainer.style.height = "auto";
+          newText = document.createElement("p");
+          newText.classList.add("about__descr", "new-text");
+          newText.textContent =
+            "Наша компанія прагне задовольнити потреби найвимогливіших клієнтів, тому ми постійно розширюємо асортимент наших товарів і пропонуємо індивідуальний підхід до кожного покупця. Ми розуміємо, що кожен має свої унікальні уподобання і потреби, тому ми старанно вивчаємо ринок та впроваджуємо нові тенденції в дизайні та технологіях виробництва меблів. Наші спеціалісти завжди готові надати професійну консультацію щодо вибору меблів, підбору кольору та матеріалів, а також допомогти з плануванням інтер'єру. Ми пропонуємо індивідуальне замовлення меблів за вашими індивідуальними параметрами, щоб кожен клієнт міг отримати саме те, що відповідає його потребам і бажанням. Нехай ваш дім стане втіленням вашої уяви про комфорт та стиль, а меблі від нашої компанії допоможуть створити неповторну атмосферу затишку та гармонії. Обирайте якість та надійність разом з нами!";
+          aboutContainer.appendChild(newText);
+          const newHeight = aboutContainer.offsetHeight;
+          aboutContainer.style.height = newHeight + "px";
+          sliderDown.classList.add("rotate");
+          sliderDown.style.margin = "0 0 110px 0";
+          isOpen = true;
+          newText.style.opacity = "0";
+          newText.style.transition = "opacity 0.5s ease";
+          setTimeout(() => {
+            newText.style.opacity = "1";
+          }, 10);
+
+          newText.addEventListener("animationend", function () {
+            newText.classList.remove("new-text");
+          });
+        }
+
+        function closeAboutSection() {
+          aboutShadow.style.height = "";
+          aboutContainer.style.height = "";
+          if (newText) {
+            newText.remove();
+          }
+          sliderDown.classList.remove("rotate");
+          sliderDown.style.margin = "0 0 0px 0";
+          isOpen = false;
+        }
       });
     </script>
     <script>

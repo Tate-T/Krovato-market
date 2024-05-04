@@ -349,9 +349,23 @@
             </svg>
             <h4 class="catalog__head-sort">Сортування:</h4>
             <p class="catalog__head-price">За зростанням ціни</p>
-            <svg class="catalog__svg-arrow">
+            <svg class="catalog__svg-arrow" onclick="toggleFilterMob()">
               <use href="./images/symbol-defs.svg#icon-arrow"></use>
             </svg>
+            <div id="filterBoxMob" class="hidden">
+              <svg
+                class="catalog__svg-arrow-dropdown"
+                onclick="toggleFilterMob()"
+              >
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+              <div>
+                <a href="#">За зростанням ціни</a>
+                <a href="#">За спаданням ціни</a>
+                <a href="#">За рейтингом</a>
+                <a href="#">Новинки</a>
+              </div>
+            </div>
           </div>
         </div>
         <ul class="catalog__list" id="catalog">
