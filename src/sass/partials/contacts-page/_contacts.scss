@@ -1,8 +1,12 @@
 .contact {
     padding-top: 75px;
     background-color: whitesmoke;
+    max-height: 1660px;
 
 
+    &__container{
+        overflow:visible ;
+    }
 
     &__list {
         display: flex;
@@ -57,6 +61,7 @@
         font-size: 17px;
         font-weight: 400;
         line-height: 24px;
+        height: 24px;
     }
 
     &__box-svg {
@@ -70,6 +75,7 @@
         display: flex;
         gap: 10px;
         padding-left: 65px;
+        padding-top: 20px;
 
     }
 
