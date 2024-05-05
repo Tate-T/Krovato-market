@@ -1,0 +1,2 @@
+import"./assets/index-650d9fec.js";document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("myRange");document.querySelector(".reviews__list");const t=document.querySelectorAll(".reviews__item"),o=t[0].offsetWidth,s=t.length,a=o*(s-1);e.max=a,e.addEventListener("input",function(){const i=parseInt(e.value);t.forEach((r,c)=>{let n=-(i/o)*100;n=Math.max(n,-160.398),r.style.transform=`translateX(${n}%)`})})});
+//# sourceMappingURL=commonHelpers4.js.map

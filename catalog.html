@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Каталог</title>
+    
+    
+    <script type="module" crossorigin src="/krovato-market/assets/index-650d9fec.js"></script>
+    <script type="module" crossorigin src="/krovato-market/assets/find-01ffe06b.js"></script>
+    <link rel="stylesheet" href="/krovato-market/assets/catalog-4c9de581.css">
+  </head>
+  <body>
+    <header class="header">
+  <section class="header__section1">
+    <div class="container">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./about-us.html" class="header__link">Про нас</a>
+            <a href="./pay.html" class="header__link">Оплата</a>
+            <a href="./delivery.html" class="header__link"
+              >Доставка та збірка</a
+            >
+            <a href="./reviews.html" class="header__link">Відгуки</a>
+            <a href="./blog-page.html" class="header__link">Блог</a>
+            <a href="./contacts.html" class="header__link">Контакти</a>
+          </li>
+          <li class="header__item">
+            <p class="header__help">Допомога і консультація:</p>
+            <ul class="header__svg">
+              <li class="header__list-svg">
+                <div class="bug-icon">
+                  <svg class="icon__svg-whatsapp">
+                    <use
+                      href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-whatsapp"
+                    ></use>
+                  </svg>
+                </div>
+                <svg class="icon__svg">
+                  <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-telegram"></use>
+                </svg>
+                <svg class="icon__svg">
+                  <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-viber"></use>
+                </svg>
+                <div class="header__lang-container">
+                  <p class="header__lang-text">UA</p>
+                  <svg class="icon__svg" onclick="toggleLanguage()">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-bottom"></use>
+                  </svg>
+                  <ul id="languageDrop" class="language-dlist hidden">
+                    <div>
+                      <p id="UaPrgrph" class="header__lang-text">UA</p>
+                      <p id="EnPrgrph" class="header__lang-text">EN</p>
+                    </div>
+                    <svg class="icon__svg" onclick="toggleLanguage()">
+                      <use
+                        href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-bottom"
+                      ></use>
+                    </svg>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="header__section2">
+    <div class="container">
+      <ul class="header__list2">
+        <li class="header__item">
+          <svg class="icon-mobile-header" onclick="toggleMenu()">
+            <use
+              id="menuIcon"
+              href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-mobile-menu"
+            ></use>
+          </svg>
+          <ul class="mobile-menu-list" id="mobileMenu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./about-us.html">Про нас</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./pay.html">Оплата</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./delivery.html"
+                >Доставка та збірка</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./reviews.html">Відгуки</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./blog-page.html">Блог</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./contacts.html"
+                >Контакти</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-credit">
+                  <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-credit"></use>
+                </svg>
+                <h4>Купити в кредит</h4>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-sale">
+                  <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-sale"></use>
+                </svg>
+                <h4>Розпродаж</h4>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">
+                <svg class="icon-star">
+                  <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+                </svg>
+                <h4>Акції</h4>
+              </a>
+            </li>
+          </ul>
+          <a href="./index.html" class="header__logo-link">
+            <picture>
+              <source
+                srcset="data:image/webp;base64,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 1x, /krovato-market/assets/logo-header@2x-f83feaba.webp 2x"
+                media="(min-width: 1200px)"
+              />
+              <!-- <source srcset=""> -->
+              <img
+                class="header__logo"
+                src="data:image/webp;base64,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"
+                alt="Krovato"
+              />
+            </picture>
+          </a>
+          <a class="header__button" href="./catalog.html">
+            <svg class="catalog__svg-btn">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-menu-catalog"></use>
+            </svg>
+            Каталог
+          </a>
+          <div class="header__form-box">
+          <form class="header__form">
+            <input
+              class="header__find"
+              type="text"
+              id="headerFind"
+              placeholder="Пошук товарів"
+              autocomplete="off"
+            />
+          </form>
+          <div id="searchResults" class="hidden"></div>
+          <a href="">
+            <svg class="search__svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search"></use>
+            </svg>
+          </a>
+        </div>
+        </li>
+
+        <li class="header__item">
+          <svg class="icon__svg-phone">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-telephone"></use>
+          </svg>
+          <div>
+            <p class="header__paragraph">Щодня з 9:00 до 18:00</p>
+            <h4 class="header__number">067 929-45-45</h4>
+          </div>
+          <svg class="icon__svg" onclick="toggleAdditionalNumbers()">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-bottom"></use>
+          </svg>
+          <!-- phone drop menu -->
+          <div id="additionalNumbersBox" class="additional-numbers-box hidden">
+            <svg class="icon__svg-mobile-drop">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-telephone"></use>
+            </svg>
+            <div>
+              <p class="header__paragraph-drop">Щодня з 9:00 до 18:00</p>
+              <a href="tel:+380679294545" class="header__number-drop"
+                >067 929-45-45</a
+              >
+              <a href="tel:+380501334545" class="header__number-drop"
+                >050 133-45-45</a
+              >
+              <a href="tel:+380931707545" class="header__number-drop"
+                >093 170-75-45</a
+              >
+              <a class="header__link-drop" href="#">Передзвоніть мені</a>
+            </div>
+            <svg class="icon__svg-drop" onclick="toggleAdditionalNumbers()">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+            </svg>
+          </div>
+        </li>
+        <svg class="obrane__svg">
+          <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"></use>
+        </svg>
+        <a href="./tray.html">
+          <svg class="korzina__svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+          </svg>
+        </a>
+      </ul>
+      <ul class="header__list3">
+        <li class="header__item">
+          <a class="header__button" href="./catalog.html">
+            <svg class="catalog__svg-btn">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-menu-catalog"></use>
+            </svg>
+            Каталог
+          </a>
+
+          <a class="header__link" href="#">
+            <svg class="icon-star">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+            <h4>Акції</h4>
+          </a>
+          <a class="header__link" href="#">
+            <svg class="icon-sale">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-sale"></use>
+            </svg>
+            <h4>Розпродаж</h4>
+          </a>
+          <a class="header__link" href="#">
+            <svg class="icon-credit">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-credit"></use>
+            </svg>
+            <h4>Купити в кредит</h4>
+          </a>
+        </li>
+        <li class="header__item-mobile">
+          <svg class="search__svg-mobile" onclick="toggleDropdownMenu()">
+            <use
+              id="searchIcon"
+              href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search"
+            ></use>
+          </svg>
+          <div class="dropdown-menu-box">
+          <div id="dropdownMenu" class="dropdown-menu hidden">
+            <form class="header__form-mobile">
+              <input
+                class="header__find-mob"
+                id="headerFindMob"
+                type="text"
+                id="headerFind"
+                placeholder="Пошук товарів"
+                autocomplete="off"
+              />
+              <svg class="search__svg-mob">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search"></use>
+              </svg>
+            </form>
+            <div id="searchResultsMob" class="hidden"></div>
+          </div>
+        </div>
+          <svg class="obrane__svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"></use>
+          </svg>
+          <a href="./tray.html">
+          <svg class="korzina__svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+          </svg>
+        </a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Дитяча</a>
+          <a href="#" class="header__link">Кухня</a>
+          <a href="#" class="header__link">Ванна</a>
+          <a href="#" class="header__link">Спальня</a>
+          <a href="#" class="header__link">Передпокій</a>
+          <a href="#" class="header__link">Вітальня</a>
+          <a href="#" class="header__link">Офіс</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</header>
+
+    <section class="beds">
+  <div class="container">
+      <nav class="beds__navigation">
+        <a class="beds__main-link" href="#">Головна</a>
+        <svg class="beds__icon">
+          <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+        </svg>
+        <a class="beds__beds-link" href="../">Ліжка</a>
+      </nav>
+
+    <div class="beds__content-text">
+      <h3 class="beds__title">Ліжка</h3>
+      <p class="beds__count">1 147 товарів</p>
+    </div>
+
+    <ul class="beds__list">
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Односпальні ліжка</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Двоспальні ліжка</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Диван-ліжко</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Дерев'яні ліжка</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Металеві ліжка</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">М'які ліжка</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Ліжка подіуми</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Дитячі ліжка</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Ліжка з підйомним механізмом</h4>
+      </li>
+      <li class="beds__item">
+        <div class="line"></div>
+        <h4 class="beds__name">Акційні ліжка</h4>
+      </li>
+    </ul>
+    <div class="hide-container">
+        <a class="beds__hide" href="#">Приховати підкатегорії</a>
+        <svg class="beds__top-svg">
+          <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-two-arrows-top"></use>
+        </svg>
+    </div>
+
+  </div>
+</section>
+
+    <section class="filter">
+  <div class="container">
+    <div class="filter__container">
+      <aside class="filter__aside">
+        <ul class="filter__list">
+          <li class="filter__title-box">
+            <svg class="filter__svg-filter">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search-filter"></use>
+            </svg>
+            <h3 class="filter__title">Фільтр пошуку</h3>
+          </li>
+        </ul>
+        <ul class="filter__list">
+          <div>
+            <h3 class="filter__text">Ціна, грн</h3>
+            <svg class="filter__svg-cross">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+            </svg>
+          </div>
+          <li class="filter__item">
+            <div class="prices-container">
+              <div class="prices">
+                <div class="prices-box">
+                  <input value="1195" type="text" />
+                  <input value="9566" type="text" />
+                </div>
+                <button class="prices-btn">OK</button>
+              </div>
+              <div class="prices-img-box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAARCAYAAAAos5JiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG1SURBVHgB7dwxTgJBFAbg/y0FiTYeAW5AYw8qiVbSiMRGvYGFiSV4AzwB2qEWUitk1xtwhL2AiY0mYuA5a0isjO5usszO/l8CQ8huweTPy2NmQJAzOm63zHAMkRoUleW7UwgCeN6VNIYhiCzhWl4FOaH+UQ2L+cPPpP92oVxKc9gD0Qq5mtdcFIzvKi0yMJO/8c87pijNGtIYvYIoYy7n1YPl1O9U4k1+xLR/i3IXRBlzPa/WFwzMNebkLynO9KlTB1GWHM+r1QVD/YOaGepISpRdBmWmCHm1u8NYyD5S0Zr6rfjVniiJAuRVdHyocNj53Rzhi9MfkSxxsVvCZjU3G4+J2L+GkdJ6GUSZWCtA1pwvGG8fIMrEewGyZnX/pJN2Fyo9pCA7t273iGSNIuTV8kVP7xmp6AhEWSlAXq0uGNIcBmYIkJSnfRBlpAh5tX8N41NOzXP8I7Oifdm6T1nxiWJyPK/5+C3JpHMC1UGMWwLzXbABohVwOa+52CWR7eG1qdxV8zL8+2JTqVksaIVczmvudhD00VRvT6MTdXXziE7FRe1faCZ+hJl3I3v8Pwyyh2t5/QJ4HML5nOwl/wAAAABJRU5ErkJggg==" alt="" />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="filter__list">
+          <div>
+            <h3 class="filter__text">Наявність</h3>
+            <svg class="filter__svg-cross">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+            </svg>
+          </div>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" checked />
+            <label for="Avalible">В наявності</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">Під замовлення</label>
+          </li>
+        </ul>
+        <ul class="filter__list">
+          <div>
+            <h3 class="filter__text">Виробник</h3>
+            <svg class="filter__svg-cross">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+            </svg>
+          </div>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners"
+              class="custom-checkbox"
+              checked
+            />
+            <label for="avalible-corners">Corners</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners2"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Estella</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners3"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Green Line</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners4"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Legko</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners5"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">MiroMark</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners6"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Novelty</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners7"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Soft-line</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners8"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Venger</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners9"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Арбор Древ</label>
+          </li>
+          <li class="filter__item">
+            <input
+              type="checkbox"
+              name="Avalible"
+              id="avalible-corners10"
+              class="custom-checkbox"
+            />
+            <label for="avalible-corners">Городок мебель</label>
+          </li>
+        </ul>
+        <div class="see-container">
+          <a class="see-all" href="#">Показати всі</a>
+          <div class="see-line"></div>
+        </div>
+
+        <ul class="filter__list">
+          <div>
+            <h3 class="filter__text">Тип ліжка</h3>
+            <svg class="filter__svg-cross">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+            </svg>
+          </div>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" checked />
+            <label for="Avalible">Без узголов'я</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">З узголів'ям</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">Двоярусні</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">Розкладачки</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">Шафи</label>
+          </li>
+        </ul>
+        <ul class="filter__list">
+          <div>
+            <h3 class="filter__text">Розмір спального місця</h3>
+            <svg class="filter__svg-cross">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+            </svg>
+          </div>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" checked />
+            <label for="Avalible">200x210 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">200x200 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">180x200 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">160x200 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">110x190 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">160x190 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">150x200 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">140x200 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">140x190 см</label>
+          </li>
+          <li class="filter__item">
+            <input type="checkbox" name="Avalible" id="Avalible" />
+            <label for="Avalible">120x200 см</label>
+          </li>
+          <li class="see-container">
+            <a class="see-all" href="#">Показати всі</a>
+            <div class="see-line"></div>
+          </li>
+        </ul>
+        <ul>
+          <li class="filter__item-closed">
+            <div>
+              <h3 class="filter__text">Ширина спального місця</h3>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="filter__item-closed">
+            <div>
+              <h3 class="filter__text">Довжина спального місця</h3>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="filter__item-closed">
+            <div>
+              <h3 class="filter__text">Форма</h3>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="filter__item-closed">
+            <div>
+              <h3 class="filter__text">Основа для матраца</h3>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="filter__item-closed">
+            <div>
+              <h3 class="filter__text">Розмір спального місця</h3>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="catalog">
+        <div>
+          <div class="catalog__head-box">
+            <h4 class="catalog__head-text">Ви вибрали:</h4>
+            <div class="catalog__head-svgs">
+              <svg class="catalog__svg-sort">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-sortirovka"></use>
+              </svg>
+              <h4 class="catalog__head-sort">Сортування:</h4>
+              <p class="catalog__head-price">За зростанням ціни</p>
+              <svg class="catalog__svg-arrow" onclick="toggleFilter()">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+              </svg>
+              <div id="filterBox" class="hidden">
+                <svg
+                  class="catalog__svg-arrow-dropdown"
+                  onclick="toggleFilter()"
+                >
+                  <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+                </svg>
+                <div>
+                  <a href="#">За зростанням ціни</a>
+                  <a href="#">За спаданням ціни</a>
+                  <a href="#">За рейтингом</a>
+                  <a href="#">Новинки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="catalog__head-list">
+            <button class="catalog__head-item">
+              <h4 class="catalog__head-title">Очистити</h4>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <button class="catalog__head-item">
+              <h4 class="catalog__head-title">Ціна: 1195-9566</h4>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <button class="catalog__head-item">
+              <h4 class="catalog__head-title">В наявності</h4>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <button class="catalog__head-item">
+              <h4 class="catalog__head-title">Виробник: Corners</h4>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <button class="catalog__head-item">
+              <h4 class="catalog__head-title">Без узголов'я</h4>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <button class="catalog__head-item">
+              <h4 class="catalog__head-title">200x210 см</h4>
+              <svg class="filter__svg-cross">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </ul>
+          <div class="catalog__head-svgs-mobile">
+            <svg class="catalog__svg-sort">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-sortirovka"></use>
+            </svg>
+            <h4 class="catalog__head-sort">Сортування:</h4>
+            <p class="catalog__head-price">За зростанням ціни</p>
+            <svg class="catalog__svg-arrow" onclick="toggleFilterMob()">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+            </svg>
+            <div id="filterBoxMob" class="hidden">
+              <svg
+                class="catalog__svg-arrow-dropdown"
+                onclick="toggleFilterMob()"
+              >
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+              </svg>
+              <div>
+                <a href="#">За зростанням ціни</a>
+                <a href="#">За спаданням ціни</a>
+                <a href="#">За рейтингом</a>
+                <a href="#">Новинки</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="catalog__list" id="catalog">
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-sparta@1x-bf827624.webp 1x, /krovato-market/assets/bed-sparta@2x-52a1e5c9.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-sparta@1x-bf827624.webp 1x, /krovato-market/assets/bed-sparta@2x-52a1e5c9.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-sparta@1x-bf827624.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">
+                Ліжко Спарта / Sparta з підйомним механізмом
+              </h4>
+              <div class="avalible-box1">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__discount">25 400 грн.</p>
+              <p class="catalog__price">15 400 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-argon@1x-47ce2918.webp 1x, /krovato-market/assets/bed-argon@2x-5d5e15fb.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-argon@1x-47ce2918.webp 1x, /krovato-market/assets/bed-argon@2x-5d5e15fb.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-argon@1x-47ce2918.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Ліжко Аргон з підйомним механізмом</h4>
+              <div class="avalible-box2">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">16 400 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-prestige@1x-1c52dc1d.webp 1x, /krovato-market/assets/bed-prestige@2x-8a7ed47a.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-prestige@1x-1c52dc1d.webp 1x, /krovato-market/assets/bed-prestige@2x-8a7ed47a.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-prestige@1x-1c52dc1d.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">
+                Ліжко Престиж з підйомним механізмом
+              </h4>
+              <div class="avalible-box3">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">14 969 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/sofa-tokio@1x-6fa37b4c.webp 1x, /krovato-market/assets/sofa-tokio@2x-3d1d6048.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/sofa-tokio@1x-6fa37b4c.webp 1x, /krovato-market/assets/sofa-tokio@2x-3d1d6048.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/sofa-tokio@1x-6fa37b4c.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Диван Токіо-2</h4>
+              <div class="avalible-box4">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">13 211 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="data:image/webp;base64,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 1x, /krovato-market/assets/matrace-largo@2x-0685e023.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="data:image/webp;base64,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 1x, /krovato-market/assets/matrace-largo@2x-0685e023.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="data:image/webp;base64,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"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Матрац Largo SLIM / Ларго Слім</h4>
+              <div class="avalible-box5">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__discount">3 122 грн.</p>
+              <p class="catalog__price">2 810 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="data:image/webp;base64,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 1x, /krovato-market/assets/matrace-argentum@2x-3824dfec.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="data:image/webp;base64,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 1x, /krovato-market/assets/matrace-argentum@2x-3824dfec.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="data:image/webp;base64,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"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">
+                Матрац ARGENTUM AMALTEA / Аргентум Амалті
+              </h4>
+              <div class="avalible-box6">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__discount">5 966 грн.</p>
+              <p class="catalog__price">5 071 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/sofa-bravo@1x-4e8ed48f.webp 1x, /krovato-market/assets/sofa-bravo@2x-e1e8d599.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/sofa-bravo@1x-4e8ed48f.webp 1x, /krovato-market/assets/sofa-bravo@2x-e1e8d599.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/sofa-bravo@1x-4e8ed48f.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Диван Браво</h4>
+              <div class="avalible-box7">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">10 008 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Ліжко МК-5</h4>
+              <div class="avalible-box8">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">8 775 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Ліжко МК-5</h4>
+              <div class="avalible-box8">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">8 775 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Ліжко МК-5</h4>
+              <div class="avalible-box8">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">8 775 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Ліжко МК-5</h4>
+              <div class="avalible-box8">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">8 775 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+          <a href="./card-catalog-page.html">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+                />
+                <img
+                  class="catalog__img"
+                  src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+                  alt="catalog"
+                />
+              </picture>
+              <p class="catalog__size">Розмір: 61 x 184 x 2130 мм</p>
+              <h4 class="catalog__name">Ліжко МК-5</h4>
+              <div class="avalible-box8">
+                <div class="catalog__svg">
+                  <svg class="catalog_svg-buy">
+                    <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-check"></use>
+                  </svg>
+                </div>
+                <p class="catalog__paragraph">В наявності</p>
+              </div>
+              <p class="catalog__price">8 775 грн.</p>
+              <svg class="like__svg">
+                <use
+                  href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-obrane-heard"
+                ></use>
+              </svg>
+              <svg class="tray__svg">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korzina"></use>
+              </svg>
+            </li>
+          </a>
+        </ul>
+        <button class="catalog__button">
+          <svg class="repeat-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-repeat"></use>
+          </svg>
+          Показати ще товари
+        </button>
+        <ul class="catalog__number-list">
+          <li class="catalog__number-item">
+            <svg class="icon-arrow-left">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+            </svg>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number1">1</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">2</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">3</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">4</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">5</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">6</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">7</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">...</p>
+          </li>
+          <li class="catalog__number-item">
+            <p class="catalog__number">18</p>
+          </li>
+          <li class="catalog__number-item">
+            <svg class="icon-arrow-right">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="advice">
+  <div class="container advice__container">
+    <h3 class="advice__title">Як правильно обрати ліжко?</h3>
+    <p class="advice__descr">
+      При виборі ліжка в інтернет магазині Вам в першу чергу потрібно вибрати
+      матеріал. Найбільшою популярністю користуються дерев'яні ліжка,
+      виготовлені з вільхи, ясена чи дуба. Такі моделі чудово прикрасять Вашу
+      спальню у квартирі чи приватному будинку. Для орендованих квартир, під
+      здачу, більше підійде ліжко з металу, так як воно просто «не вбивається»,
+      а також має дуже демократичну ціну. Для Вашої зручності ліжко може
+      комплектуватись висувними ящиками або підйомним механізмом. Ящики можуть
+      бути з одного боку ліжка або з двох. Також є<span> моделі, з висувними ящиками
+      спереду. Ліжка з підйомним механізмом, це відмінне рішення, для невеликих
+      кімнат, вони дозволяють заощадити простір і мають велику нішу для
+      зберігання постільної білизни. Всі дерев'яні ліжка комплектуються буковими
+      ламелями. Спальне місце з ламельною основою може витримувати навантаження
+      до 150 кг на одне спальне місце. Відстань між ламелями, у своїй має бути
+      2,5-3 див. Кожне ліжко може бути забарвлене у різні кольори: чорні, білі,
+      сірі, венге, у кольорі горіх. Завдяки цьому ліжко можна підібрати під
+      будь-який інтер'єр.</span>
+    </p>
+    <div class="advice__shadow">
+      <a href="#" class="slider__down">
+          <svg class="advice__down-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-big-arrow"></use>
+          </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <section class="reviews">
+  <div class="container">
+    <div class="container-reviews">
+      <div>
+    <h3 class="reviews__title">Останні відгуки</h3>
+    <div class="logo-sofa">
+      <svg class="reviews__icon-svg">
+        <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-logo-sofa"></use>
+      </svg>
+    </div>
+    <div class="reviews__info">
+      <h3 class="reviews__shop">Магазин меблів для дому<br>«KROVATO»</h3>
+      <div class="stars-container">
+
+      <ul class="reviews__stars">
+        <p class="reviews__rate">5.0</p>
+        <li class="reviews__star">
+          <svg class="reviews__star-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="reviews__star">
+          <svg class="reviews__star-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="reviews__star">
+          <svg class="reviews__star-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="reviews__star">
+          <svg class="reviews__star-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="reviews__star">
+          <svg class="reviews__star-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+      <p class="reviews__reviews">Базовано на відгуках: 269</p>
+    </div>
+      <div class="button-container">
+      <button class="reviews__write">
+        <svg class="reviews__write-svg">
+          <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-write-review"></use></svg>Написати відгук</button>
+      <a class="reviews__all-link" href="#">
+        <svg class="reviews__star-svg">
+          <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-chat"></use></svg>Всі відгуки</a>
+        </div>
+      </div>
+    
+
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <div>
+          <div>
+          <svg class="reviews__avatar">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-avatar"></use>
+          </svg>
+        </div>
+        <div>
+        <p class="reviews__name">Іван Стедниця</p>
+        <ul class="reviews__stars-list">
+          <li class="reviews__star-list">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+        <p class="reviews__date">25.01.2022</p>
+      </div>
+      <!-- <svg class="reviews__scroll">
+        <use href="./images/symbol-defs.svg#icon-scroll"></use>
+      </svg> 
+    FIX!!!-->
+        <p class="reviews__text">
+          Хочу отметить слаженную и четкую работу всех сотрудников , с кем
+          пришлось контактировать при выборе и покупке дивана Orange-Line Родео
+          SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+          продажам Ульяна ...
+        </p>
+        <div class="img-container">
+        <picture>
+          <source
+            srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/krovato-market/assets/bed-sparta@1x-da239988.webp 1x, /krovato-market/assets/bed-sparta@2x-b79fbb7b.webp 2x"
+            media="(min-width: 480px)"
+          />
+          <img
+            class="reviews__img"
+            src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+            alt="bed"
+          />
+        </picture>
+        <p class="reviews__bed-name">Диван Orange-Line Родео SF ...</p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div>
+          <div>
+          <svg class="reviews__avatar">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-avatar"></use>
+          </svg>
+        </div>
+        <div>
+        <p class="reviews__name">Іван Стедниця</p>
+        <ul class="reviews__stars-list">
+          <li class="reviews__star-list">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+        <p class="reviews__date">25.01.2022</p>
+      </div>
+      <!-- <svg class="reviews__scroll">
+        <use href="./images/symbol-defs.svg#icon-scroll"></use>
+      </svg> 
+    FIX!!!-->
+        <p class="reviews__text">
+          Хочу отметить слаженную и четкую работу всех сотрудников , с кем
+          пришлось контактировать при выборе и покупке дивана Orange-Line Родео
+          SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+          продажам Ульяна ...
+        </p>
+        <div class="img-container">
+          <picture>
+            <source
+              srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/krovato-market/assets/bed-sparta@1x-da239988.webp 1x, /krovato-market/assets/bed-sparta@2x-b79fbb7b.webp 2x"
+              media="(min-width: 480px)"
+            />
+            <img
+              class="reviews__img"
+              src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+              alt="bed"
+            />
+          </picture>
+        <p class="reviews__bed-name">Диван Orange-Line Родео SF ...</p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div>
+          <div>
+          <svg class="reviews__avatar">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-avatar"></use>
+          </svg>
+        </div>
+        <div>
+        <p class="reviews__name">Іван Стедниця</p>
+        <ul class="reviews__stars-list">
+          <li class="reviews__star-list">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+          <li class="reviews__star">
+            <svg class="reviews__star-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-star"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+        <p class="reviews__date">25.01.2022</p>
+      </div>
+      <!-- <svg class="reviews__scroll">
+        <use href="./images/symbol-defs.svg#icon-scroll"></use>
+      </svg> 
+    FIX!!!-->
+        <p class="reviews__text">
+          Хочу отметить слаженную и четкую работу всех сотрудников , с кем
+          пришлось контактировать при выборе и покупке дивана Orange-Line Родео
+          SF17-LX6-PLNGR. Огромную помощь при выборе оказала специалист по
+          продажам Ульяна ...
+        </p>
+        <div class="img-container">
+          <picture>
+            <source
+              srcset="/krovato-market/assets/bed-mk5@1x-14038806.webp 1x, /krovato-market/assets/bed-mk5@2x-5ba46b15.webp 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/krovato-market/assets/bed-sparta@1x-da239988.webp 1x, /krovato-market/assets/bed-sparta@2x-b79fbb7b.webp 2x"
+              media="(min-width: 480px)"
+            />
+            <img
+              class="reviews__img"
+              src="/krovato-market/assets/bed-mk5@1x-14038806.webp"
+              alt="bed"
+            />
+          </picture>
+        <p class="reviews__bed-name">Диван Orange-Line Родео SF ...</p>
+        </div>
+      </li>
+    </ul>
+    <ul class="reviews__list2">
+      <li class="reviews__item2">
+        <a href="#" class="reviews__empty">
+          <svg class="reviews__empty-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cycle"></use>
+          </svg>
+        </a>
+        <a href="#" class="reviews__empty">
+          <svg class="reviews__empty-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cycle"></use>
+          </svg>
+        </a>
+        <a href="#" class="reviews__empty">
+          <svg class="reviews__full-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cycle-orange"></use>
+          </svg>
+        </a>
+        <a href="#" class="reviews__empty">
+          <svg class="reviews__empty-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cycle"></use>
+          </svg>
+        </a>
+        <a href="#" class="reviews__empty">
+          <svg class="reviews__empty-svg">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cycle"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="slider-container">
+    <input type="range" min="0" max="200" value="0" class="custom-slider" id="myRange">
+  </div>
+</div>
+</section>
+
+    <section class="questions">
+  <div class="container">
+    <h2 class="questions__title">У вас все ще залишилися питання?</h2>
+    <ul class="questions__list">
+      <li class="questions__item">
+        <input
+          class="questions__input"
+          id="cb1"
+          name="questions__input-name"
+          type="checkbox"
+        />
+        <label class="questions__label" for="cb1">
+          <svg class="questions__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-question"></use>
+          </svg>
+          <p class="questions__text">
+            Яке ліжко краще підійде для “хрущьовки”?
+          </p>
+        </label>
+        <div class="questions__paragraph">
+          <p class="questions__subtext">
+            Вибір ліжка для квартири типу "хрущовка" може залежати від розміру
+            приміщення, а також ваших власних вподобань і потреб. Оскільки у
+            "хрущовках" зазвичай обмежений простір, важливо обрати компактне і
+            функціональне ліжко.
+          </p>
+        </div>
+      </li>
+      <li class="questions__item">
+        <input
+          class="questions__input"
+          id="cb2"
+          name="questions__input-name"
+          type="checkbox"
+          checked
+        />
+        <label class="questions__label" for="cb2">
+          <svg class="questions__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-question"></use>
+          </svg>
+          <p class="questions__text">Як підібрати розмір ліжка?</p>
+        </label>
+        <div class="questions__paragraph">
+          <p class="questions__subtext">
+            Односпальне ліжко — оптимальний варіант для сну однієї людини.
+            Вироби представлені в декількох стандартних розмірах по ширині:
+            80-90, рідше — 100 сантиметрів. Полуторні ліжка нагадують
+            односпальні, але зі збільшеною шириною — в середньому 120-140
+            сантиметрів. Меблі підійдуть для одиночного сну людям з великою
+            статурою або для худорлявої пари. Двоспальне місце для сну
+            відрізняється простором і комфортом для двох дорослих, а також
+            сімей, в яких діти люблять засинати разом з батьками. Ширина ліжка —
+            від 160 см при стандартній довжині, а в розмірі king size — понад
+            200 см.
+          </p>
+        </div>
+      </li>
+      <li class="questions__item">
+        <input
+          class="questions__input"
+          id="cb3"
+          name="questions__input-name"
+          type="checkbox"
+        />
+        <label class="questions__label" for="cb3">
+          <svg class="questions__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-question"></use>
+          </svg>
+          <p class="questions__text">
+            У покупку ліжка входить її доставка, збирання та встановлення в
+            кімнаті?
+          </p>
+        </label>
+        <div class="questions__paragraph">
+          <p class="questions__subtext">
+            У покупку ліжка не входить доставка, збирання та встановлення.
+          </p>
+        </div>
+      </li>
+      <li class="questions__item">
+        <input
+          class="questions__input"
+          id="cb4"
+          name="questions__input-name"
+          type="checkbox"
+        />
+        <label class="questions__label" for="cb4">
+          <svg class="questions__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-question"></use>
+          </svg>
+          <p class="questions__text">
+            Найдешевші ліжка - це обов’язково погана якість?
+          </p>
+        </label>
+        <div class="questions__paragraph">
+          <p class="questions__subtext">
+            Ні, не обов'язково. Ціна не завжди є вказівником якості. На ринку
+            можна знайти різні варіанти ліжок за різними цінами, і деякі з них
+            можуть бути якісними, незважаючи на свою доступність.
+          </p>
+        </div>
+      </li>
+      <li class="questions__item">
+        <input
+          class="questions__input"
+          id="cb5"
+          name="questions__input-name"
+          type="checkbox"
+        />
+        <label class="questions__label" for="cb5">
+          <svg class="questions__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-question"></use>
+          </svg>
+          <p class="questions__text">Можно замовити ліжко під свої розміри?</p>
+        </label>
+        <div class="questions__paragraph">
+          <p class="questions__subtext">
+            Так, можно замовити ліжко під свої розімри але це може вплинути на
+            кіневу ціну ліжка
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section id="advantages" class="advantages">
+    <div class="container">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-bus"></use>
+          </svg>
+          <p class="advantages__text">Безкоштовна доставка</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-korobka"></use>
+          </svg>
+          <p class="advantages__text">Безкоштовна збірка</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-headphone"></use>
+          </svg>
+          <p class="advantages__text">Післягарантійне обслуговування</p>
+        </li>
+        <li class="advantages__item">
+          <svg class="advantages__icon">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-discounts"></use>
+          </svg>
+          <p class="advantages__text">Знижки клієнтам</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+    <section class="footer">
+  <div class="footer-mob-sec">
+    <div class="footer__logo-box footer__logo-box-mob">
+      <svg class="footer__logo-sofa">
+        <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-logo-sofa"></use>
+      </svg>
+      <svg class="footer__logo-text">
+        <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-footer-logo-text"></use>
+      </svg>
+    </div>
+    <div class="footer-menu">
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item">
+          <input
+            class="footer-menu__input"
+            type="checkbox"
+            name="footer__input-name"
+            id="fimput1"
+          />
+          <label class="footer-menu__label" for="fimput1">
+            <h3 class="footer-menu__title">Категорії</h3>
+            <svg class="footer-menu__arrow">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+            </svg>
+          </label>
+          <div class="footer-menu__paragraph">
+            <ul class="footer-menu__categories">
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Ліжка</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Матраци</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">М’які меблі</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Шафи</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Комоди</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Тумби</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Столи</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Стільці</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Меблеві стіни</a>
+              </li>
+              <li class="footer-menu__categorie">
+                <a href="#" class="footer-menu__link">Кухні</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="footer-menu__item">
+          <input
+            class="footer-menu__input"
+            type="checkbox"
+            name="footer__input-name"
+            id="fimput2"
+          />
+          <label class="footer-menu__label" for="fimput2">
+            <h3 class="footer-menu__title">Інформація</h3>
+            <svg class="footer-menu__arrow">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+            </svg>
+          </label>
+          <div class="footer-menu__paragraph">
+            <ul class="footer-menu__informations">
+              <li class="footer-menu__information">
+                <a href="./about-us.html" class="footer-menu__link"
+                  >Про нас</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="./pay.html" class="footer-menu__link">Оплата</a>
+              </li>
+              <li class="footer-menu__information">
+                <a href="./delivery.html" class="footer-menu__link"
+                  >Доставка та збірка</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="./reviews.html" class="footer-menu__link"
+                  >Відгуки</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="./blog-page.html" class="footer-menu__link"
+                  >Блог</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="./contacts.html" class="footer-menu__link"
+                  >Контакти</a
+                >
+              </li>
+              <li class="footer-menu__information">
+                <a href="./contacts.html" class="footer-menu__link"
+                  >Мапа сайту</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="footer-menu__item">
+          <input
+            class="footer-menu__input"
+            type="checkbox"
+            name="footer__input-name"
+            id="fimput3"
+          />
+          <label class="footer-menu__label" for="fimput3">
+            <h3 class="footer-menu__title">Клієнтам</h3>
+            <svg class="footer-menu__arrow">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-arrow"></use>
+            </svg>
+          </label>
+          <div class="footer-menu__paragraph">
+            <ul class="footer-menu__customers">
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Акції</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Розпродаж</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Купити в кредит</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link"
+                  >Обмін і повернення товару</a
+                >
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Часто задавані питання</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link">Умови покупки</a>
+              </li>
+              <li class="footer-menu__customer">
+                <a href="#" class="footer-menu__link"
+                  >Політика конфіденційності</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer__main-container">
+      <div class="footer__container1">
+        <div class="footer__logo-box">
+          <svg class="footer__logo-sofa">
+            <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-logo-sofa"></use>
+          </svg>
+          <svg class="footer__logo-text">
+            <use
+              href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-footer-logo-text"
+            ></use>
+          </svg>
+        </div>
+        <!-- <div class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <input class="footer-menu__input" type="checkbox" name="footer__input-name" id="fimput1" />
+                            <label class="footer-menu__label" for="fimput1">
+                                <h3 class="footer-menu__title">Категорії</h3>
+                                <svg class="footer-menu__arrow">
+                                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                            </label>
+                            <div class="footer-menu__paragraph">
+                                <ul class="footer-menu__categories">
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Ліжка</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Матраци</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">М’які меблі</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Шафи</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Комоди</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Тумби</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Столи</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Стільці</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Меблеві стіни</a></li>
+                                    <li class="footer-menu__categorie"><a href="#" class="footer-menu__link">Кухні</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer-menu__item">
+                            <input class="footer-menu__input" type="checkbox" name="footer__input-name" id="fimput2" />
+                            <label class="footer-menu__label" for="fimput2">
+                                <h3 class="footer-menu__title">Інформація</h3>
+                                <svg class="footer-menu__arrow">
+                                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                            </label>
+                            <div class="footer-menu__paragraph">
+                                <ul class="footer-menu__informations">
+                                    <li class="footer-menu__information"><a href="./about-us.html" class="footer-menu__link">Про
+                                            нас</a></li>
+                                    <li class="footer-menu__information"><a href="./pay.html"
+                                            class="footer-menu__link">Оплата</a></li>
+                                    <li class="footer-menu__information"><a href="./delivery.html"
+                                            class="footer-menu__link">Доставка та збірка</a></li>
+                                    <li class="footer-menu__information"><a href="./reviews.html"
+                                            class="footer-menu__link">Відгуки</a></li>
+                                    <li class="footer-menu__information"><a href="./blog-page.html"
+                                            class="footer-menu__link">Блог</a></li>
+                                    <li class="footer-menu__information"><a href="./contacts.html"
+                                            class="footer-menu__link">Контакти</a></li>
+                                    <li class="footer-menu__information"><a href="./contacts.html"
+                                            class="footer-menu__link">Мапа сайту</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="footer-menu__item">
+                            <input class="footer-menu__input" type="checkbox" name="footer__input-name" id="fimput3" />
+                            <label class="footer-menu__label" for="fimput3">
+                                <h3 class="footer-menu__title">Клієнтам</h3>
+                                <svg class="footer-menu__arrow">
+                                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                            </label>
+                            <div class="footer-menu__paragraph">
+                                <ul class="footer-menu__customers">
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Акції</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Розпродаж</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Купити в кредит</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Обмін і повернення
+                                            товару</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Часто задавані
+                                            питання</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Умови покупки</a></li>
+                                    <li class="footer-menu__customer"><a href="#" class="footer-menu__link">Політика
+                                            конфіденційності</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+        <div class="footer__socials-box-desk">
+          <p class="footer__text-join">Приєднуйтесь:</p>
+          <div class="footer__box-join">
+            <a href="https://www.facebook.com" class="footer__icon-link">
+              <svg class="footer__svg footer__facebook">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com" class="footer__icon-link">
+              <svg class="footer__svg footer__instagram">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__text-help">Допомога і консультація:</p>
+          <div class="footer__box-help">
+            <a href="https://web.whatsapp.com" class="footer__icon-link">
+              <div class="footer__svg-bug">
+                <svg class="footer__svg-whatsapp">
+                  <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-whatsapp"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="https://web.telegram.org" class="footer__icon-link">
+              <svg class="footer__svg footer__telegram">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-telegram"></use>
+              </svg>
+            </a>
+            <a href="https://account.viber.com" class="footer__icon-link">
+              <svg class="footer__svg footer__viber">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__box-pay">
+            <a href="#" class="footer__icon-link">
+              <svg class="footer__pay-svg footer__pay-svg-visa">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-visa"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__icon-link">
+              <svg class="footer__pay-svg footer__pay-svg-mastercard">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-mastercard"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="footer__main-list">
+        <li class="footer__main-item">
+          <ul class="footer__informations">
+            <li class="footer__informations">
+              <p class="footer__link-active">Інформація</p>
+            </li>
+            <li class="footer__informations">
+              <a href="./about-us.html" class="footer__link">Про нас</a>
+            </li>
+            <li class="footer__informations">
+              <a href="./pay.html" class="footer__link">Оплата</a>
+            </li>
+            <li class="footer__informations">
+              <a href="./delivery.html" class="footer__link"
+                >Доставка та збірка</a
+              >
+            </li>
+            <li class="footer__informations">
+              <a href="./reviews.html" class="footer__link">Відгуки</a>
+            </li>
+            <li class="footer__informations">
+              <a href="./blog-page.html" class="footer__link">Блог</a>
+            </li>
+            <li class="footer__informations">
+              <a href="./contacts.html" class="footer__link">Контакти</a>
+            </li>
+            <li class="footer__informations">
+              <a href="./contacts.html" class="footer__link">Мапа сайту</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__main-item">
+          <ul class="footer__categories">
+            <li class="footer__categorie">
+              <p class="footer__link-active">Категорії</p>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Ліжка</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Матраци</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">М’які меблі</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Шафи</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Комоди</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Тумби</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Столи</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Стільці</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Меблеві стіни</a>
+            </li>
+            <li class="footer__categorie">
+              <a href="#" class="footer__link">Кухні</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__main-item">
+          <ul class="footer__customers">
+            <li class="footer__customer">
+              <p class="footer__link-active">Клієнтам</p>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Акції</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Розпродаж</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Купити в кредит</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Обмін і повернення товару</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Часто задавані питання</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Умови покупки</a>
+            </li>
+            <li class="footer__customer">
+              <a href="#" class="footer__link">Політика конфіденційності</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer__box3">
+        <div class="footer__call">
+          <div class="footer__svg-phone-border">
+            <svg class="footer__svg-phone">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-telephone"></use>
+            </svg>
+          </div>
+          <div class="footer__numbers">
+            <a href="tel:+380679294545" class="footer__number"
+              >+38 067 929-45-45</a
+            >
+            <a href="tel:+380501334545" class="footer__number">
+              +38 050 133-45-45</a
+            >
+            <a href="tel:+380931707545" class="footer__number">
+              +38 093 170-75-45</a
+            >
+            <a href="#" class="footer__call-me">Передзвоніть мені</a>
+          </div>
+        </div>
+        <div class="footer__adress">
+          <div class="footer__adress-svg-border">
+            <svg class="footer__adress-svg">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-adres"></use>
+            </svg>
+          </div>
+          <a href="./contacts.html" class="footer__adress-text"
+            >м. Київ, провулок Ізяславський 52, поверх 2</a
+          >
+        </div>
+        <div class="footer__schedule">
+          <div class="footer__calendar-border">
+            <svg class="footer__calendar">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-calendar"></use>
+            </svg>
+          </div>
+          <p class="footer__schedule-text">Працюємо щодня з 9:00 до 18:00</p>
+        </div>
+      </div>
+      <div class="footer__socials-box-mob">
+        <p class="footer__text-join footer__text-join-mob">Приєднуйтесь:</p>
+        <div class="footer__box-join footer__box-join-mob">
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__facebook">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__instagram">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__text-help footer__text-help-mob">
+          Допомога і консультація:
+        </p>
+        <div class="footer__box-help-mob">
+          <a href="#" class="footer__icon-link">
+            <div class="footer__svg-bug">
+              <svg class="footer__svg-whatsapp">
+                <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-whatsapp"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__telegram">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-telegram"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__svg footer__viber">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-viber"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__box-pay footer__box-pay-mob">
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__pay-svg footer__pay-svg-visa">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-visa"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__icon-link">
+            <svg class="footer__pay-svg footer__pay-svg-mastercard">
+              <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-mastercard"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button id="back-to-top-btn" onclick="backToTop()">
+      <svg class="footer__pay-svg footer__pay-svg-mastercard">
+        <use href="/krovato-market/assets/symbol-defs-b0af7152.svg#icon-big-arrow"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="footer__copyright">
+    <p class="footer__copyright-text">
+      © KROVATO - Технології сну - 2022. Всі права захищені.
+    </p>
+  </div>
+</section>
+
+<script>
+  function backToTop() {
+    if (
+      document.body.scrollTop !== 0 ||
+      document.documentElement.scrollTop !== 0
+    ) {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      document.getElementById("back-to-top-btn").style.display = "block";
+    } else {
+      document.getElementById("back-to-top-btn").style.display = "none";
+    }
+  }
+</script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      function toggleFilter() {
+        let filterBox = document.getElementById("filterBox");
+        if (filterBox.classList.contains("hidden")) {
+          filterBox.classList.remove("hidden");
+          filterBox.style.opacity = "0";
+          filterBox.style.transform = "translateY(-100px)";
+          setTimeout(() => {
+            filterBox.style.opacity = "1";
+            filterBox.style.transform = "translateY(0)";
+          }, 50);
+        } else {
+          filterBox.style.opacity = "0";
+          filterBox.style.transform = "translateY(-100px)";
+          setTimeout(() => {
+            filterBox.classList.add("hidden");
+          }, 300);
+        }
+      }
+
+      const filterBox = document.getElementById("filterBox");
+      const filterBoxMob = document.getElementById("filterBoxMob");
+      const catalog = document.getElementById("catalog");
+
+      filterBox.addEventListener("click", (event) => {
+        if (event.target.tagName === "A") {
+          event.preventDefault();
+
+          const sortOption = event.target.textContent.trim();
+
+          sortCatalogItems(sortOption);
+        }
+      });
+
+      filterBoxMob.addEventListener("click", (event) => {
+        if (event.target.tagName === "A") {
+          event.preventDefault();
+
+          const sortOption = event.target.textContent.trim();
+
+          sortCatalogItems(sortOption);
+        }
+      });
+
+      function sortCatalogItems(sortOption) {
+        const catalogItems = catalog.getElementsByClassName("catalog__item");
+
+        const catalogItemsArray = Array.from(catalogItems);
+
+        catalogItemsArray.sort((a, b) => {
+          switch (sortOption) {
+            case "За зростанням ціни":
+              const priceA1 = parseFloat(
+                a
+                  .getElementsByClassName("catalog__price")[0]
+                  .textContent.replace(/\s+/g, "")
+                  .replace("грн.", "")
+              );
+              const priceB1 = parseFloat(
+                b
+                  .getElementsByClassName("catalog__price")[0]
+                  .textContent.replace(/\s+/g, "")
+                  .replace("грн.", "")
+              );
+              return priceA1 - priceB1;
+
+            case "За спаданням ціни":
+              const priceA2 = parseFloat(
+                a
+                  .getElementsByClassName("catalog__price")[0]
+                  .textContent.replace(/\s+/g, "")
+                  .replace("грн.", "")
+              );
+              const priceB2 = parseFloat(
+                b
+                  .getElementsByClassName("catalog__price")[0]
+                  .textContent.replace(/\s+/g, "")
+                  .replace("грн.", "")
+              );
+              return priceB2 - priceA2;
+
+            case "За рейтингом":
+              const ratingA =
+                a.getElementsByClassName("rating")[0]?.textContent || "0";
+              const ratingB =
+                b.getElementsByClassName("rating")[0]?.textContent || "0";
+              return parseInt(ratingB) - parseInt(ratingA);
+
+            case "Новинки":
+              const dateA = a.getAttribute("data-date") || "0";
+              const dateB = b.getAttribute("data-date") || "0";
+              return new Date(dateB) - new Date(dateA);
+
+            default:
+              return 0;
+          }
+        });
+
+        catalog.innerHTML = "";
+        catalogItemsArray.forEach((item) => {
+          catalog.appendChild(item);
+        });
+      }
+
+      function toggleFilterMob() {
+        let filterBox = document.getElementById("filterBoxMob");
+        if (filterBox.classList.contains("hidden")) {
+          filterBox.classList.remove("hidden");
+          console.log("toggle");
+          filterBox.style.opacity = "0";
+          filterBox.style.transform = "translateY(-100px)";
+          setTimeout(() => {
+            filterBox.style.opacity = "1";
+            filterBox.style.transform = "translateY(0)";
+          }, 50);
+        } else {
+          filterBox.style.opacity = "0";
+          filterBox.style.transform = "translateY(-100px)";
+          setTimeout(() => {
+            filterBox.classList.add("hidden");
+          }, 300);
+        }
+      }
+
+      // link menu
+
+      function toggleMenu() {
+        let menu = document.getElementById("mobileMenu");
+        let menuIcon = document.getElementById("menuIcon");
+        let body = document.body;
+
+        if (menu.style.display === "flex") {
+          menu.style.transform = "translateY(-100%)";
+          menu.style.opacity = "0";
+          setTimeout(function () {
+            menu.style.display = "none";
+          }, 300);
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-mobile-menu"
+          );
+          body.classList.remove("no-scroll");
+          removeBlurOverlay();
+        } else {
+          menu.style.display = "flex";
+          setTimeout(function () {
+            menu.style.transform = "translateY(0)";
+            menu.style.opacity = "1";
+          }, 10);
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"
+          );
+          body.classList.add("no-scroll");
+          createBlurOverlay();
+        }
+      }
+
+      function createBlurOverlay() {
+        let overlay = document.createElement("div");
+        overlay.classList.add("blur-overlay");
+        document.body.appendChild(overlay);
+      }
+
+      function removeBlurOverlay() {
+        let overlay = document.querySelector(".blur-overlay");
+        if (overlay) {
+          overlay.remove();
+        }
+      }
+
+      // find menu
+
+      function createBlurOverlayFind() {
+        let overlay = document.createElement("div");
+        overlay.classList.add("blur-overlay-find");
+        document.body.appendChild(overlay);
+      }
+
+      function removeBlurOverlayFind() {
+        let overlay = document.querySelector(".blur-overlay-find");
+        if (overlay) {
+          overlay.remove();
+        }
+      }
+
+      function toggleDropdownMenu() {
+        let dropdownMenu = document.getElementById("dropdownMenu");
+        dropdownMenu.classList.toggle("hidden");
+        let menuIcon = document.getElementById("searchIcon");
+
+        if (!dropdownMenu.classList.contains("hidden")) {
+          dropdownMenu.style.opacity = "0";
+          dropdownMenu.style.transform = "translateY(-20px)";
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-cross"
+          );
+          setTimeout(() => {
+            dropdownMenu.style.opacity = "1";
+            dropdownMenu.style.transform = "translateY(0)";
+          }, 10);
+          createBlurOverlayFind();
+          addNoScroll();
+        } else {
+          dropdownMenu.style.opacity = "0";
+          dropdownMenu.style.transform = "translateY(-20px)";
+          menuIcon.setAttribute(
+            "href",
+            "/krovato-market/assets/symbol-defs-b0af7152.svg#icon-search"
+          );
+          removeBlurOverlayFind();
+          removeNoScroll();
+        }
+      }
+
+      function addNoScroll() {
+        document.body.classList.add("no-scroll");
+      }
+
+      function removeNoScroll() {
+        document.body.classList.remove("no-scroll");
+      }
+
+      // number menu
+
+      function toggleAdditionalNumbers() {
+        let additionalNumbersBox = document.getElementById(
+          "additionalNumbersBox"
+        );
+        if (additionalNumbersBox.classList.contains("hidden")) {
+          additionalNumbersBox.classList.remove("hidden");
+          additionalNumbersBox.style.opacity = "0";
+          additionalNumbersBox.style.transform = "translateY(-100px)";
+          setTimeout(() => {
+            additionalNumbersBox.style.opacity = "1";
+            additionalNumbersBox.style.transform = "translateY(0)";
+          }, 50);
+        } else {
+          additionalNumbersBox.style.opacity = "0";
+          additionalNumbersBox.style.transform = "translateY(-100px)";
+          setTimeout(() => {
+            additionalNumbersBox.classList.add("hidden");
+          }, 300);
+        }
+      }
+
+      function toggleLanguage() {
+        let languageBox = document.getElementById("languageDrop");
+
+        if (languageBox.classList.contains("hidden")) {
+          languageBox.classList.remove("hidden");
+        } else {
+          languageBox.classList.add("hidden");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.getElementById("myRange");
+        const reviewsList = document.querySelector(".reviews__list");
+        const reviewsItems = document.querySelectorAll(".reviews__item");
+        const reviewsWidth = reviewsItems[0].offsetWidth;
+        const reviewsCount = reviewsItems.length;
+        const sliderMaxValue = reviewsWidth * (reviewsCount - 1);
+
+        slider.max = sliderMaxValue;
+
+        slider.addEventListener("input", function () {
+          const value = parseInt(slider.value);
+
+          reviewsItems.forEach((item, index) => {
+            let newPosition = -(value / reviewsWidth) * 100;
+
+            newPosition = Math.max(newPosition, -160.398);
+
+            item.style.transform = `translateX(${newPosition}%)`;
+          });
+        });
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    
+  </body>
+</html>

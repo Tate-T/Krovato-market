@@ -1,1 +1,0 @@
-# KROVATO-project
