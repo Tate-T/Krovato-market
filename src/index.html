@@ -213,6 +213,7 @@
         });
 
         function openAboutSection() {
+          if (window.innerWidth > 768) {
           aboutShadow.style.height = "0";
           aboutContainer.style.height = "auto";
           newText = document.createElement("p");
@@ -235,6 +236,7 @@
             newText.classList.remove("new-text");
           });
         }
+      }
 
         function closeAboutSection() {
           aboutShadow.style.height = "";
