@@ -28,15 +28,14 @@
     &__map {
     display: block;
     width: 100%;
-    max-width: 410px;
-    height: auto;
+    width: 410px;
+    height: 410px;
     }
 
     &__img {
         display: block;
         width: 100%;
-        max-width: 410px;
-        height: auto;
+        width: 410px;
     }
 
     &__link {
@@ -124,7 +123,7 @@
 
 
             &__img {
-                max-width: 320px;
+                width: 320px;
             }
 
             &__map {
